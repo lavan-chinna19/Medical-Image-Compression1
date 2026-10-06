@@ -1,0 +1,36 @@
+group,configuration,bd_psnr_vs_legacy,mean_bpp_q50,mean_psnr_q50
+baseline,"Legacy DWT (bior4.4, L4, theta=0, bias=0.25, legacy=True)",0.0,0.23014443516477195,36.147812175884624
+a_weights,weight_scheme=default,-0.0023,0.2302,36.15
+a_weights,weight_scheme=uniform,-0.0093,0.3218,38.39
+a_weights,weight_scheme=fine_1.15,0.0726,0.2754,37.45
+a_weights,weight_scheme=fine_0.9,-0.1989,0.371,39.13
+b_deadzone,"theta=0.50, bias=0.00 (weights=fine_1.15)",0.0509,0.4156,39.75
+b_deadzone,"theta=0.50, bias=0.10 (weights=fine_1.15)",-0.2928,0.4156,39.36
+b_deadzone,"theta=0.50, bias=0.20 (weights=fine_1.15)",-0.8043,0.4156,38.81
+b_deadzone,"theta=0.50, bias=0.30 (weights=fine_1.15)",-1.4246,0.4156,38.15
+b_deadzone,"theta=0.40, bias=0.00 (weights=fine_1.15)",0.3015,0.3724,39.4
+b_deadzone,"theta=0.40, bias=0.10 (weights=fine_1.15)",0.2549,0.3724,39.33
+b_deadzone,"theta=0.40, bias=0.20 (weights=fine_1.15)",0.0334,0.3724,39.07
+b_deadzone,"theta=0.40, bias=0.30 (weights=fine_1.15)",-0.334,0.3724,38.67
+b_deadzone,"theta=0.33, bias=0.00 (weights=fine_1.15)",0.2614,0.3484,38.99
+b_deadzone,"theta=0.33, bias=0.10 (weights=fine_1.15)",0.3525,0.3484,39.06
+b_deadzone,"theta=0.33, bias=0.20 (weights=fine_1.15)",0.2888,0.3484,38.97
+b_deadzone,"theta=0.33, bias=0.30 (weights=fine_1.15)",0.0803,0.3484,38.74
+b_deadzone,"theta=0.25, bias=0.00 (weights=fine_1.15)",0.1244,0.326,38.46
+b_deadzone,"theta=0.25, bias=0.10 (weights=fine_1.15)",0.3167,0.326,38.63
+b_deadzone,"theta=0.25, bias=0.20 (weights=fine_1.15)",0.3844,0.326,38.68
+b_deadzone,"theta=0.25, bias=0.30 (weights=fine_1.15)",0.3235,0.326,38.6
+c_context,context_mode=none,0.3844,0.326,38.68
+c_context,context_mode=run,0.6016,0.3053,38.68
+c_context,context_mode=direct,,1.2336,38.68
+d_wavelet_levels,bior2.2 L3,0.7701,0.3607,39.83
+d_wavelet_levels,bior2.2 L4,0.8896,0.3292,39.29
+d_wavelet_levels,bior2.2 L5,0.7318,0.3069,38.73
+d_wavelet_levels,bior4.4 L3,0.2998,0.3376,39.27
+d_wavelet_levels,bior4.4 L4,0.6016,0.3053,38.68
+d_wavelet_levels,bior4.4 L5,0.3943,0.2866,38.08
+d_wavelet_levels,db2 L3,0.0536,0.3406,38.85
+d_wavelet_levels,db2 L4,0.3448,0.3056,38.29
+d_wavelet_levels,db2 L5,0.2177,0.282,37.71
+final_benchmarks,Best Tuned DWT vs Custom DCT,0.9181,0.3292,39.29
+final_benchmarks,Best Tuned DWT vs JPEG2000,-2.3417,0.3292,39.29

@@ -1,28 +1,19 @@
-"""Run standard compression baselines (JPEG, JPEG 2000, PNG) on dataset images."""
+"""Benchmark custom DWT codec across dataset images with resume capability."""
 
 import argparse
 from concurrent.futures import ProcessPoolExecutor, as_completed
-import io
 import math
 from pathlib import Path
 import sys
 import time
 from typing import Any, Dict, List, Optional, Set, Tuple
-import cv2
 import numpy as np
 import pandas as pd
-from PIL import Image
 from tqdm import tqdm
 
 # Ensure src is on sys.path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from medcomp.baselines import (
-    check_jpeg2000_support,
-    jpeg2000_codec,
-    jpeg_codec,
-    png_codec,
-)
 from medcomp.config import (
     DATA_DIR,
     PROCESSED_IMAGES_DIR,
@@ -30,6 +21,7 @@ from medcomp.config import (
     RESULTS_DIR,
     compute_original_bytes,
 )
+from medcomp.dwt_codec import dwt_decode, dwt_encode_with_stats
 from medcomp.io_utils import load_image
 from medcomp.metrics import (
     bits_per_pixel,
@@ -37,50 +29,16 @@ from medcomp.metrics import (
     is_lossless,
     masked_psnr,
     masked_ssim,
-    mse,
     psnr,
     ssim,
 )
 
-# Standard evaluation settings
-JPEG_QUALITIES = [10, 20, 30, 50, 70, 90]
-JPEG2000_RATIOS = [5, 10, 20, 40, 80]
-PNG_SETTINGS = ["lossless"]
-
-BASELINES_CSV = RESULTS_DIR / "baselines.csv"
+DWT_QUALITIES = [10, 20, 30, 50, 70, 90]
+DWT_RESULTS_CSV = RESULTS_DIR / "dwt_results.csv"
 
 
-def encode_decode_timed(codec: str, img: np.ndarray, setting: Any) -> Tuple[bytes, np.ndarray, float, float]:
-    """Encode and decode with separate high-resolution timing."""
-    im = Image.fromarray(img, mode="L")
-    buf = io.BytesIO()
-
-    # Time encode
-    t0 = time.perf_counter()
-    if codec == "JPEG":
-        im.save(buf, format="JPEG", quality=int(setting))
-    elif codec == "JPEG2000":
-        im.save(buf, format="JPEG2000", quality_mode="rates", quality_layers=[float(setting)], irreversible=True)
-    elif codec == "PNG":
-        im.save(buf, format="PNG", compress_level=9)
-    else:
-        raise ValueError(f"Unknown codec: {codec}")
-    enc_time = time.perf_counter() - t0
-
-    comp_bytes = buf.getvalue()
-    buf.seek(0)
-
-    # Time decode
-    t1 = time.perf_counter()
-    with Image.open(buf) as rec_im:
-        reconstructed = np.array(rec_im, dtype=np.uint8)
-    dec_time = time.perf_counter() - t1
-
-    return comp_bytes, reconstructed, enc_time, dec_time
-
-
-def process_image_baselines(item_info: Dict[str, Any], existing_keys: Set[Tuple[str, str, str]]) -> List[Dict[str, Any]]:
-    """Evaluate all baseline configurations for a single image."""
+def process_image_dwt(item_info: Dict[str, Any], existing_keys: Set[Tuple[str, int]]) -> List[Dict[str, Any]]:
+    """Evaluate all DWT quality settings for a single image."""
     stem = item_info["stem"]
     source = item_info["source"]
     label = int(item_info["label"])
@@ -98,20 +56,20 @@ def process_image_baselines(item_info: Dict[str, Any], existing_keys: Set[Tuple[
     orig_bytes = compute_original_bytes(img)
     num_pixels = img.size
 
-    configs = []
-    for q in JPEG_QUALITIES:
-        configs.append(("JPEG", str(q)))
-    for r in JPEG2000_RATIOS:
-        configs.append(("JPEG2000", str(r)))
-    for p in PNG_SETTINGS:
-        configs.append(("PNG", str(p)))
-
     results = []
-    for codec, setting in configs:
-        if (stem, codec, setting) in existing_keys:
+    for q in DWT_QUALITIES:
+        if (stem, q) in existing_keys:
             continue
 
-        comp_bytes, recon, enc_time, dec_time = encode_decode_timed(codec, img, setting)
+        # Time encoding
+        t0 = time.perf_counter()
+        comp_bytes, recon, stats = dwt_encode_with_stats(img, quality=q)
+        enc_time = time.perf_counter() - t0
+
+        # Time decoding
+        t1 = time.perf_counter()
+        _ = dwt_decode(comp_bytes)
+        dec_time = time.perf_counter() - t1
 
         c_len = len(comp_bytes)
         cr = compression_ratio(orig_bytes, c_len)
@@ -138,8 +96,8 @@ def process_image_baselines(item_info: Dict[str, Any], existing_keys: Set[Tuple[
             "label": label,
             "fold": fold,
             "has_mask": has_mask,
-            "codec": codec,
-            "setting": setting,
+            "codec": "DWT",
+            "setting": q,
             "orig_bytes": orig_bytes,
             "compressed_bytes": c_len,
             "compression_ratio": round(cr, 6),
@@ -151,6 +109,10 @@ def process_image_baselines(item_info: Dict[str, Any], existing_keys: Set[Tuple[
             "ssim_roi": round(s_roi, 6) if not math.isnan(s_roi) else "",
             "ssim_background": round(s_bg, 6) if not math.isnan(s_bg) else "",
             "roi_lossless": roi_loss if not math.isnan(roi_loss) else "",
+            "ll_entropy": stats["ll_entropy"],
+            "ll_avg_code_length": stats["ll_avg_code_length"],
+            "detail_entropy": stats["detail_entropy"],
+            "detail_avg_code_length": stats["detail_avg_code_length"],
             "encode_time_s": round(enc_time, 6),
             "decode_time_s": round(dec_time, 6),
         })
@@ -158,11 +120,8 @@ def process_image_baselines(item_info: Dict[str, Any], existing_keys: Set[Tuple[
     return results
 
 
-def run_baselines(limit: Optional[int] = None, workers: int = 4, force: bool = False) -> pd.DataFrame:
-    """Run baseline benchmark across images with resume capability."""
-    if not check_jpeg2000_support():
-        raise RuntimeError("Pillow build lacks JPEG 2000 (OpenJPEG) support.")
-
+def run_dwt(limit: Optional[int] = None, workers: int = 4, force: bool = False) -> pd.DataFrame:
+    """Run custom DWT benchmark across images with resume capability."""
     manifest_csv = DATA_DIR / "manifest.csv"
     assert manifest_csv.is_file(), f"Manifest not found: {manifest_csv}"
     df = pd.read_csv(manifest_csv)
@@ -171,14 +130,12 @@ def run_baselines(limit: Optional[int] = None, workers: int = 4, force: bool = F
     if limit is not None and limit < len(df):
         print(f"Selecting stratified subset of {limit} images (source + label, seed=42)...")
         df["strat_group"] = df["source"].astype(str) + "_" + df["label"].astype(str)
-        # Proportionate stratified sampling
         sampled_indices = []
         rng = np.random.default_rng(42)
         for _, group in df.groupby("strat_group"):
             n_group = max(1, int(round(limit * len(group) / len(df))))
             chosen = rng.choice(group.index.values, size=min(n_group, len(group)), replace=False)
             sampled_indices.extend(chosen)
-        # Adjust to exact limit
         if len(sampled_indices) > limit:
             sampled_indices = sampled_indices[:limit]
         elif len(sampled_indices) < limit:
@@ -190,20 +147,17 @@ def run_baselines(limit: Optional[int] = None, workers: int = 4, force: bool = F
     items = df.to_dict(orient="records")
 
     # Resume check
-    existing_keys: Set[Tuple[str, str, str]] = set()
+    existing_keys: Set[Tuple[str, int]] = set()
     existing_rows: List[Dict[str, Any]] = []
-    if not force and BASELINES_CSV.is_file():
+    if not force and DWT_RESULTS_CSV.is_file():
         try:
-            prev_df = pd.read_csv(BASELINES_CSV)
-            if "ssim_roi" in prev_df.columns:
-                for _, r in prev_df.iterrows():
-                    existing_keys.add((str(r["stem"]), str(r["codec"]), str(r["setting"])))
-                existing_rows = prev_df.to_dict(orient="records")
-                print(f"Resuming: found {len(existing_keys)} existing evaluations in {BASELINES_CSV}")
-            else:
-                print(f"Existing {BASELINES_CSV} missing ssim_roi column; recomputing from scratch.")
+            prev_df = pd.read_csv(DWT_RESULTS_CSV)
+            for _, r in prev_df.iterrows():
+                existing_keys.add((str(r["stem"]), int(r["setting"])))
+            existing_rows = prev_df.to_dict(orient="records")
+            print(f"Resuming: found {len(existing_keys)} existing evaluations in {DWT_RESULTS_CSV}")
         except Exception as e:
-            print(f"Could not read existing {BASELINES_CSV}: {e}. Starting fresh.")
+            print(f"Could not read existing {DWT_RESULTS_CSV}: {e}. Starting fresh.")
     elif force:
         print("Force recomputation requested: starting fresh.")
 
@@ -211,44 +165,42 @@ def run_baselines(limit: Optional[int] = None, workers: int = 4, force: bool = F
     start_time = time.perf_counter()
 
     if workers <= 1:
-        for item in tqdm(items, desc="Evaluating baselines"):
-            res = process_image_baselines(item, existing_keys)
+        for item in tqdm(items, desc="Evaluating DWT"):
+            res = process_image_dwt(item, existing_keys)
             new_results.extend(res)
     else:
         with ProcessPoolExecutor(max_workers=workers) as executor:
-            futures = [executor.submit(process_image_baselines, item, existing_keys) for item in items]
-            for fut in tqdm(as_completed(futures), total=len(items), desc="Evaluating baselines"):
+            futures = [executor.submit(process_image_dwt, item, existing_keys) for item in items]
+            for fut in tqdm(as_completed(futures), total=len(items), desc="Evaluating DWT"):
                 res = fut.result()
                 new_results.extend(res)
 
     total_time = time.perf_counter() - start_time
-    print(f"Execution completed in {total_time:.2f}s ({total_time / max(1, len(items)):.4f}s per image)")
+    print(f"DWT execution completed in {total_time:.2f}s ({total_time / max(1, len(items)):.4f}s per image)")
 
     # Combine and save
     all_rows = existing_rows + new_results
-    # Deduplicate in case of resume overlaps
     unique_rows = {}
     for r in all_rows:
-        key = (str(r["stem"]), str(r["codec"]), str(r["setting"]))
+        key = (str(r["stem"]), int(r["setting"]))
         unique_rows[key] = r
 
     df_out = pd.DataFrame(list(unique_rows.values()))
-    # Sort for clean presentation
-    df_out.sort_values(by=["stem", "codec", "setting"], inplace=True)
-    df_out.to_csv(BASELINES_CSV, index=False)
-    print(f"Saved {len(df_out)} baseline rows to {BASELINES_CSV}")
+    df_out.sort_values(by=["stem", "setting"], inplace=True)
+    df_out.to_csv(DWT_RESULTS_CSV, index=False)
+    print(f"Saved {len(df_out)} DWT evaluation rows to {DWT_RESULTS_CSV}")
 
     return df_out
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Run compression baselines benchmark.")
+    parser = argparse.ArgumentParser(description="Run custom DWT codec benchmark.")
     parser.add_argument("--workers", type=int, default=4, help="Number of worker processes")
     parser.add_argument("--limit", type=int, default=None, help="Limit number of images to evaluate")
     parser.add_argument("--force", action="store_true", help="Force recomputation without resume")
     args = parser.parse_args()
 
-    run_baselines(limit=args.limit, workers=args.workers, force=args.force)
+    run_dwt(limit=args.limit, workers=args.workers, force=args.force)
 
 
 if __name__ == "__main__":

@@ -5,10 +5,12 @@ import numpy as np
 import pytest
 
 from medcomp.metrics import (
+    bd_psnr,
     bits_per_pixel,
     compression_ratio,
     is_lossless,
     masked_psnr,
+    masked_ssim,
     mse,
     psnr,
     shannon_entropy,
@@ -111,6 +113,36 @@ def test_masked_psnr():
     assert masked_psnr(orig, recon, mask, region="roi") == pytest.approx(expected_roi_psnr, rel=1e-5)
 
 
+def test_masked_ssim():
+    """Verify masked_ssim behavior on identical, perturbed ROI, and empty masks."""
+    rng = np.random.default_rng(42)
+    # 64x64 textured image to avoid degenerate flat variance in SSIM
+    orig = rng.integers(50, 200, size=(64, 64), dtype=np.uint8)
+    mask = np.zeros((64, 64), dtype=np.uint8)
+    mask[16:48, 16:48] = 255  # center square ROI
+
+    # 1. Identical images give 1.0 for both regions
+    assert masked_ssim(orig, orig, mask, region="roi") == pytest.approx(1.0, rel=1e-5)
+    assert masked_ssim(orig, orig, mask, region="background") == pytest.approx(1.0, rel=1e-5)
+
+    # 2. Distortion applied only strictly inside the mask (leaving margin to background)
+    recon = orig.copy()
+    recon[28:36, 28:36] = np.uint8((recon[28:36, 28:36].astype(int) + 50) % 256)
+
+    roi_ssim = masked_ssim(orig, recon, mask, region="roi")
+    bg_ssim = masked_ssim(orig, recon, mask, region="background")
+    assert roi_ssim < 0.99
+    assert bg_ssim == pytest.approx(1.0, rel=1e-5)
+
+    # 3. An empty mask returns NaN
+    empty_mask = np.zeros((64, 64), dtype=np.uint8)
+    assert math.isnan(masked_ssim(orig, recon, empty_mask, region="roi"))
+
+    # Also background of all-ones mask returns NaN
+    full_mask = np.ones((64, 64), dtype=np.uint8)
+    assert math.isnan(masked_ssim(orig, recon, full_mask, region="background"))
+
+
 def test_shape_mismatch_raises_error():
     """All distortion functions must raise ValueError on shape mismatch."""
     a = np.zeros((10, 10), dtype=np.uint8)
@@ -129,3 +161,39 @@ def test_shape_mismatch_raises_error():
         masked_psnr(a, b, mask)
     with pytest.raises(ValueError):
         masked_psnr(a, a, b)
+    with pytest.raises(ValueError):
+        masked_ssim(a, b, mask)
+    with pytest.raises(ValueError):
+        masked_ssim(a, a, b)
+
+
+def test_bd_psnr_shift_synthetic():
+    """A rate-distortion curve shifted by +1 dB must give BD-PSNR = +1.0."""
+    bpp = [0.1, 0.2, 0.4, 0.8]
+    psnr_ref = [30.0, 33.0, 36.0, 39.0]
+    psnr_test = [p + 1.0 for p in psnr_ref]
+
+    delta = bd_psnr(bpp, psnr_ref, bpp, psnr_test)
+    assert delta == pytest.approx(1.0, rel=1e-5)
+
+    delta_neg = bd_psnr(bpp, psnr_ref, bpp, [p - 0.5 for p in psnr_ref])
+    assert delta_neg == pytest.approx(-0.5, rel=1e-5)
+
+
+def test_bd_psnr_partial_overlap_and_errors():
+    """Verify BD-PSNR handles partially overlapping ranges and validates input lengths."""
+    bpp_ref = [0.1, 0.2, 0.4, 0.8]
+    psnr_ref = [30.0, 33.0, 36.0, 39.0]
+    bpp_test = [0.15, 0.3, 0.6, 1.2]
+    psnr_test = [32.0, 35.0, 38.0, 41.0]
+
+    delta = bd_psnr(bpp_ref, psnr_ref, bpp_test, psnr_test)
+    assert not math.isnan(delta)
+
+    # Disjoint curves
+    bpp_disjoint = [2.0, 4.0, 8.0, 16.0]
+    assert math.isnan(bd_psnr(bpp_ref, psnr_ref, bpp_disjoint, psnr_ref))
+
+    # Fewer than 4 points
+    with pytest.raises(ValueError):
+        bd_psnr([0.1, 0.2, 0.3], [30.0, 32.0, 34.0], bpp_ref, psnr_ref)

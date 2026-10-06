@@ -23,9 +23,10 @@ def compute_group_summary(df: pd.DataFrame, source_label: str) -> pd.DataFrame:
     """Compute mean metrics for each (codec, setting) pair within a dataset subset."""
     # Ensure numeric columns
     numeric_df = df.copy()
-    num_cols = ["bpp", "compression_ratio", "psnr_full", "ssim_full", "psnr_roi", "psnr_background"]
+    num_cols = ["bpp", "compression_ratio", "psnr_full", "ssim_full", "psnr_roi", "psnr_background", "ssim_roi", "ssim_background"]
     for c in num_cols:
-        numeric_df[c] = parse_numeric(numeric_df[c])
+        if c in numeric_df.columns:
+            numeric_df[c] = parse_numeric(numeric_df[c])
 
     # Convert roi_lossless to boolean / NaN
     numeric_df["roi_lossless_bool"] = numeric_df["roi_lossless"].apply(
@@ -64,10 +65,14 @@ def compute_group_summary(df: pd.DataFrame, source_label: str) -> pd.DataFrame:
             if not masked_sub.empty:
                 mean_psnr_roi = np.inf if (masked_sub["psnr_roi"] == np.inf).any() else masked_sub["psnr_roi"].mean()
                 mean_psnr_bg = np.inf if (masked_sub["psnr_background"] == np.inf).any() else masked_sub["psnr_background"].mean()
+                mean_ssim_roi = masked_sub["ssim_roi"].mean() if "ssim_roi" in masked_sub.columns else np.nan
+                mean_ssim_bg = masked_sub["ssim_background"].mean() if "ssim_background" in masked_sub.columns else np.nan
                 lossless_frac = masked_sub["roi_lossless_bool"].mean()
             else:
                 mean_psnr_roi = np.nan
                 mean_psnr_bg = np.nan
+                mean_ssim_roi = np.nan
+                mean_ssim_bg = np.nan
                 lossless_frac = np.nan
 
             rows.append({
@@ -80,6 +85,8 @@ def compute_group_summary(df: pd.DataFrame, source_label: str) -> pd.DataFrame:
                 "ssim_full": round(mean_ssim, 4),
                 "psnr_roi": round(mean_psnr_roi, 2) if (mean_psnr_roi != np.inf and not np.isnan(mean_psnr_roi)) else ("inf" if mean_psnr_roi == np.inf else ""),
                 "psnr_background": round(mean_psnr_bg, 2) if (mean_psnr_bg != np.inf and not np.isnan(mean_psnr_bg)) else ("inf" if mean_psnr_bg == np.inf else ""),
+                "ssim_roi": round(mean_ssim_roi, 4) if not np.isnan(mean_ssim_roi) else "",
+                "ssim_background": round(mean_ssim_bg, 4) if not np.isnan(mean_ssim_bg) else "",
                 "roi_lossless_fraction": round(lossless_frac, 4) if not np.isnan(lossless_frac) else "",
             })
 

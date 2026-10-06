@@ -18,8 +18,9 @@ PLOTS_DIR = RESULTS_DIR / "plots"
 def safe_numeric_df(df: pd.DataFrame) -> pd.DataFrame:
     """Prepare numeric dataframe filtering out infinities and missing values."""
     res = df.copy()
-    for col in ["bpp", "psnr_full", "ssim_full", "psnr_roi"]:
-        res[col] = pd.to_numeric(res[col].replace("inf", np.nan), errors="coerce")
+    for col in ["bpp", "psnr_full", "ssim_full", "psnr_roi", "ssim_roi", "ssim_background"]:
+        if col in res.columns:
+            res[col] = pd.to_numeric(res[col].replace("inf", np.nan), errors="coerce")
     return res
 
 
@@ -201,6 +202,46 @@ def plot_rd_by_source(df: pd.DataFrame, out_path: Path) -> None:
     print(f"Saved RD by Source plot to {out_path}")
 
 
+def plot_rd_roi_ssim(df: pd.DataFrame, out_path: Path) -> None:
+    """Plot ROI-only SSIM vs bpp on masked images."""
+    plt.figure(figsize=(8, 5.5), dpi=300)
+
+    colors = {"JPEG": "#1f77b4", "JPEG2000": "#ff7f0e", "PNG": "#2ca02c"}
+    markers = {"JPEG": "o", "JPEG2000": "s"}
+
+    masked_df = df[df["has_mask"] == True].copy()
+
+    for codec in ["JPEG", "JPEG2000"]:
+        sub = masked_df[masked_df["codec"] == codec].dropna(subset=["bpp", "ssim_roi"])
+        if sub.empty:
+            continue
+
+        agg = sub.groupby("setting").agg(
+            mean_bpp=("bpp", "mean"),
+            mean_roi=("ssim_roi", "mean"),
+            sem_roi=("ssim_roi", "sem"),
+        ).sort_values("mean_bpp")
+
+        plt.plot(agg["mean_bpp"], agg["mean_roi"], marker=markers[codec], color=colors[codec], label=f"{codec} (ROI)", lw=2)
+        plt.fill_between(
+            agg["mean_bpp"],
+            agg["mean_roi"] - agg["sem_roi"],
+            agg["mean_roi"] + agg["sem_roi"],
+            color=colors[codec],
+            alpha=0.2,
+        )
+
+    plt.xlabel("Bitrate (bits per pixel, bpp)", fontsize=11, fontweight="bold")
+    plt.ylabel("Lung ROI SSIM", fontsize=11, fontweight="bold")
+    plt.title("Lung ROI Structural Similarity vs Bitrate (Masked Images)", fontsize=12, fontweight="bold")
+    plt.legend(frameon=True, fontsize=10)
+    plt.grid(True, linestyle=":", alpha=0.6)
+    plt.tight_layout()
+    plt.savefig(out_path)
+    plt.close()
+    print(f"Saved RD ROI SSIM plot to {out_path}")
+
+
 def generate_all_plots() -> None:
     """Generate all baseline rate-distortion plots."""
     assert BASELINES_CSV.is_file(), f"Baselines CSV not found: {BASELINES_CSV}"
@@ -212,6 +253,7 @@ def generate_all_plots() -> None:
     plot_rd_psnr(df, PLOTS_DIR / "rd_curve_psnr.png")
     plot_rd_ssim(df, PLOTS_DIR / "rd_curve_ssim.png")
     plot_rd_roi_psnr(df, PLOTS_DIR / "rd_curve_psnr_roi.png")
+    plot_rd_roi_ssim(df, PLOTS_DIR / "rd_curve_ssim_roi.png")
     plot_rd_by_source(df, PLOTS_DIR / "rd_curve_psnr_by_source.png")
 
 

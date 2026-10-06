@@ -1,6 +1,6 @@
 """Distortion, rate, and fidelity evaluation metrics for medical image compression."""
 
-from typing import Literal, Optional, Union
+from typing import Literal, Optional, Sequence, Union
 import numpy as np
 from skimage.metrics import structural_similarity
 
@@ -185,6 +185,52 @@ def masked_psnr(
     return float(10.0 * np.log10((data_range ** 2) / region_mse))
 
 
+def masked_ssim(
+    orig: np.ndarray,
+    recon: np.ndarray,
+    mask: np.ndarray,
+    region: Literal["roi", "background"] = "roi",
+    data_range: float = 255.0,
+) -> float:
+    """Compute Structural Similarity Index (SSIM) restricted to either ROI or background.
+
+    Computes full SSIM map using skimage.metrics.structural_similarity and averages
+    the values over the selected region.
+
+    Args:
+        orig: Original image array.
+        recon: Reconstructed image array.
+        mask: Binary or label mask array matching image shape.
+        region: Target region, either 'roi' or 'background'.
+        data_range: Dynamic range of input images (default 255.0).
+
+    Returns:
+        Mean SSIM over the specified region, or NaN if the region contains 0 pixels.
+
+    Raises:
+        ValueError: If array shapes mismatch or region parameter is invalid.
+    """
+    if orig.shape != recon.shape:
+        raise ValueError(f"Shape mismatch between original {orig.shape} and reconstructed {recon.shape}")
+    if orig.shape != mask.shape:
+        raise ValueError(f"Shape mismatch between image {orig.shape} and mask {mask.shape}")
+
+    region_key = region.lower().strip()
+    if region_key == "roi":
+        selection = mask > 0
+    elif region_key == "background":
+        selection = mask == 0
+    else:
+        raise ValueError(f"Invalid region '{region}'. Must be 'roi' or 'background'.")
+
+    num_selected = int(np.count_nonzero(selection))
+    if num_selected == 0:
+        return float("nan")
+
+    _, ssim_map = structural_similarity(orig, recon, data_range=data_range, full=True)
+    return float(np.mean(ssim_map[selection]))
+
+
 def is_lossless(
     orig: np.ndarray,
     recon: np.ndarray,
@@ -216,3 +262,60 @@ def is_lossless(
         return bool(np.array_equal(orig[selection], recon[selection]))
 
     return bool(np.array_equal(orig, recon))
+
+
+def bd_psnr(
+    bpp_ref: Sequence[float],
+    psnr_ref: Sequence[float],
+    bpp_test: Sequence[float],
+    psnr_test: Sequence[float],
+) -> float:
+    """Compute Bjontegaard Delta Peak Signal-to-Noise Ratio (BD-PSNR).
+
+    Fits a cubic polynomial of PSNR against log10(bpp) for both reference and
+    test rate-distortion curves, then computes the average PSNR difference
+    integrated over the overlapping log10(bpp) range.
+
+    Args:
+        bpp_ref: Sequence of bitrates for reference codec.
+        psnr_ref: Sequence of PSNR values for reference codec.
+        bpp_test: Sequence of bitrates for test codec.
+        psnr_test: Sequence of PSNR values for test codec.
+
+    Returns:
+        Average delta PSNR in dB (positive means test curve has better PSNR at equal rate).
+        Returns NaN if overlapping range is empty or invalid.
+
+    Raises:
+        ValueError: If fewer than 4 valid points are provided for either curve.
+    """
+    def _clean_curve(bpp_seq: Sequence[float], psnr_seq: Sequence[float]) -> tuple[np.ndarray, np.ndarray]:
+        b = np.asarray(bpp_seq, dtype=np.float64)
+        p = np.asarray(psnr_seq, dtype=np.float64)
+        valid = (b > 0) & np.isfinite(b) & np.isfinite(p)
+        b_clean = b[valid]
+        p_clean = p[valid]
+        if len(b_clean) < 4:
+            raise ValueError(f"BD-PSNR requires at least 4 rate-distortion points, got {len(b_clean)}")
+        idx = np.argsort(b_clean)
+        return np.log10(b_clean[idx]), p_clean[idx]
+
+    x_r, y_r = _clean_curve(bpp_ref, psnr_ref)
+    x_t, y_t = _clean_curve(bpp_test, psnr_test)
+
+    x_min = max(float(x_r.min()), float(x_t.min()))
+    x_max = min(float(x_r.max()), float(x_t.max()))
+
+    if x_max <= x_min:
+        return float("nan")
+
+    poly_r = np.polyfit(x_r, y_r, 3)
+    poly_t = np.polyfit(x_t, y_t, 3)
+
+    int_r = np.polyint(poly_r)
+    int_t = np.polyint(poly_t)
+
+    val_r = float(np.polyval(int_r, x_max) - np.polyval(int_r, x_min))
+    val_t = float(np.polyval(int_t, x_max) - np.polyval(int_t, x_min))
+
+    return float((val_t - val_r) / (x_max - x_min))

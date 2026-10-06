@@ -1,0 +1,4 @@
+source,images_count,mean_roi_pixels,mean_roi_fraction,mean_roi_bytes,mean_roi_bpp,mean_context_roi_bytes,mean_context_roi_bpp,mean_roi_residual_entropy,mean_roi_avg_code_length,mean_mask_bytes,mean_mask_rle_bytes,mean_mask_bbox_bytes,mean_full_lossless_bpp,mean_png_bpp,mean_encode_time_s,mean_decode_time_s,roi_exact_fraction
+all,704,60976.1,0.2532,31749.4,4.1544,31524.8,4.1255,2.153,2.2639,1618.8,1943.8,1618.8,3.4191,3.4095,0.759,0.7515,1.0
+Montgomery,138,55066.3,0.2555,26870.4,3.9083,26593.2,3.8689,2.1082,2.2364,1491.9,1810.2,1491.9,2.9373,2.7625,0.686,0.679,1.0
+Shenzhen,566,62417.0,0.2526,32939.0,4.2144,32727.1,4.188,2.164,2.2706,1649.7,1976.3,1649.7,3.5366,3.5673,0.7768,0.7692,1.0
