@@ -1,0 +1,33 @@
+# Dataset (read-only raw Kaggle data)
+Lung Segmentation/
+
+# Scratch & Virtual Environment
+work/
+.venv/
+venv/
+ENV/
+
+# Python cache & build
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Testing & Linting
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Large generated plots/artifacts
+results/plots/
+
+
+# IDE / OS junk
+.vscode/
+.idea/
+.ipynb_checkpoints/
+Thumbs.db
+desktop.ini
+*.DS_Store

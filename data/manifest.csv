@@ -1,0 +1,801 @@
+source,stem,patient_id,image_path,mask_path,has_mask,label,sex,age_years,findings_text,orig_h,orig_w,mask_shape_matches_image,roi_fraction,fold,split_xscanner
+Shenzhen,CHNCXR_0001_0,CHNCXR_0001,Lung Segmentation/CXR_png/CHNCXR_0001_0.png,Lung Segmentation/masks/CHNCXR_0001_0_mask.png,True,0,M,45.0,normal,2919,3000,True,0.245491,3,train
+Shenzhen,CHNCXR_0002_0,CHNCXR_0002,Lung Segmentation/CXR_png/CHNCXR_0002_0.png,Lung Segmentation/masks/CHNCXR_0002_0_mask.png,True,0,M,63.0,normal,2951,3000,True,0.216718,1,train
+Shenzhen,CHNCXR_0003_0,CHNCXR_0003,Lung Segmentation/CXR_png/CHNCXR_0003_0.png,Lung Segmentation/masks/CHNCXR_0003_0_mask.png,True,0,F,48.0,normal,2945,2987,True,0.239267,3,train
+Shenzhen,CHNCXR_0004_0,CHNCXR_0004,Lung Segmentation/CXR_png/CHNCXR_0004_0.png,Lung Segmentation/masks/CHNCXR_0004_0_mask.png,True,0,M,58.0,normal,2933,3000,True,0.222923,0,train
+Shenzhen,CHNCXR_0005_0,CHNCXR_0005,Lung Segmentation/CXR_png/CHNCXR_0005_0.png,Lung Segmentation/masks/CHNCXR_0005_0_mask.png,True,0,M,28.0,normal,2933,3000,True,0.238209,1,train
+Shenzhen,CHNCXR_0006_0,CHNCXR_0006,Lung Segmentation/CXR_png/CHNCXR_0006_0.png,Lung Segmentation/masks/CHNCXR_0006_0_mask.png,True,0,M,60.0,normal,2948,2775,True,0.23056,3,train
+Shenzhen,CHNCXR_0007_0,CHNCXR_0007,Lung Segmentation/CXR_png/CHNCXR_0007_0.png,Lung Segmentation/masks/CHNCXR_0007_0_mask.png,True,0,F,53.0,normal,2320,2306,True,0.352822,4,train
+Shenzhen,CHNCXR_0008_0,CHNCXR_0008,Lung Segmentation/CXR_png/CHNCXR_0008_0.png,Lung Segmentation/masks/CHNCXR_0008_0_mask.png,True,0,M,48.0,normal,2937,3000,True,0.166574,3,train
+Shenzhen,CHNCXR_0009_0,CHNCXR_0009,Lung Segmentation/CXR_png/CHNCXR_0009_0.png,Lung Segmentation/masks/CHNCXR_0009_0_mask.png,True,0,F,71.0,normal,2942,2516,True,0.210659,3,train
+Shenzhen,CHNCXR_0010_0,CHNCXR_0010,Lung Segmentation/CXR_png/CHNCXR_0010_0.png,Lung Segmentation/masks/CHNCXR_0010_0_mask.png,True,0,F,59.0,normal,2947,3000,True,0.155161,1,train
+Shenzhen,CHNCXR_0011_0,CHNCXR_0011,Lung Segmentation/CXR_png/CHNCXR_0011_0.png,Lung Segmentation/masks/CHNCXR_0011_0_mask.png,True,0,M,43.0,normal,2921,3000,True,0.21104,2,train
+Shenzhen,CHNCXR_0012_0,CHNCXR_0012,Lung Segmentation/CXR_png/CHNCXR_0012_0.png,Lung Segmentation/masks/CHNCXR_0012_0_mask.png,True,0,M,39.0,normal,2959,3000,True,0.263317,3,train
+Shenzhen,CHNCXR_0013_0,CHNCXR_0013,Lung Segmentation/CXR_png/CHNCXR_0013_0.png,Lung Segmentation/masks/CHNCXR_0013_0_mask.png,True,0,M,41.0,normal,2937,3000,True,0.213439,4,train
+Shenzhen,CHNCXR_0014_0,CHNCXR_0014,Lung Segmentation/CXR_png/CHNCXR_0014_0.png,Lung Segmentation/masks/CHNCXR_0014_0_mask.png,True,0,M,39.0,normal,2919,3000,True,0.198794,2,train
+Shenzhen,CHNCXR_0015_0,CHNCXR_0015,Lung Segmentation/CXR_png/CHNCXR_0015_0.png,Lung Segmentation/masks/CHNCXR_0015_0_mask.png,True,0,F,28.0,normal,2941,3000,True,0.225719,4,train
+Shenzhen,CHNCXR_0016_0,CHNCXR_0016,Lung Segmentation/CXR_png/CHNCXR_0016_0.png,Lung Segmentation/masks/CHNCXR_0016_0_mask.png,True,0,F,57.0,normal,2943,3000,True,0.203172,2,train
+Shenzhen,CHNCXR_0017_0,CHNCXR_0017,Lung Segmentation/CXR_png/CHNCXR_0017_0.png,Lung Segmentation/masks/CHNCXR_0017_0_mask.png,True,0,M,35.0,normal,2908,2789,True,0.234863,2,train
+Shenzhen,CHNCXR_0018_0,CHNCXR_0018,Lung Segmentation/CXR_png/CHNCXR_0018_0.png,Lung Segmentation/masks/CHNCXR_0018_0_mask.png,True,0,M,42.0,normal,2907,2991,True,0.289709,2,train
+Shenzhen,CHNCXR_0019_0,CHNCXR_0019,Lung Segmentation/CXR_png/CHNCXR_0019_0.png,Lung Segmentation/masks/CHNCXR_0019_0_mask.png,True,0,M,27.0,normal,2941,3000,True,0.25279,0,train
+Shenzhen,CHNCXR_0020_0,CHNCXR_0020,Lung Segmentation/CXR_png/CHNCXR_0020_0.png,Lung Segmentation/masks/CHNCXR_0020_0_mask.png,True,0,M,32.0,normal,2555,2760,True,0.314553,0,train
+Shenzhen,CHNCXR_0021_0,CHNCXR_0021,Lung Segmentation/CXR_png/CHNCXR_0021_0.png,Lung Segmentation/masks/CHNCXR_0021_0_mask.png,True,0,F,38.0,normal,2953,2868,True,0.252978,1,train
+Shenzhen,CHNCXR_0022_0,CHNCXR_0022,Lung Segmentation/CXR_png/CHNCXR_0022_0.png,Lung Segmentation/masks/CHNCXR_0022_0_mask.png,True,0,M,56.0,normal,2951,3000,True,0.269653,2,train
+Shenzhen,CHNCXR_0023_0,CHNCXR_0023,Lung Segmentation/CXR_png/CHNCXR_0023_0.png,Lung Segmentation/masks/CHNCXR_0023_0_mask.png,True,0,M,32.0,normal,2937,3000,True,0.24618,0,train
+Shenzhen,CHNCXR_0024_0,CHNCXR_0024,Lung Segmentation/CXR_png/CHNCXR_0024_0.png,Lung Segmentation/masks/CHNCXR_0024_0_mask.png,True,0,M,22.0,normal,2951,3000,True,0.221838,4,train
+Shenzhen,CHNCXR_0025_0,CHNCXR_0025,Lung Segmentation/CXR_png/CHNCXR_0025_0.png,,False,0,M,29.0,normal,2937,3000,,,1,train
+Shenzhen,CHNCXR_0026_0,CHNCXR_0026,Lung Segmentation/CXR_png/CHNCXR_0026_0.png,Lung Segmentation/masks/CHNCXR_0026_0_mask.png,True,0,M,29.0,normal,2933,3000,True,0.212356,3,train
+Shenzhen,CHNCXR_0027_0,CHNCXR_0027,Lung Segmentation/CXR_png/CHNCXR_0027_0.png,Lung Segmentation/masks/CHNCXR_0027_0_mask.png,True,0,F,57.0,normal,2925,2997,True,0.199992,1,train
+Shenzhen,CHNCXR_0028_0,CHNCXR_0028,Lung Segmentation/CXR_png/CHNCXR_0028_0.png,Lung Segmentation/masks/CHNCXR_0028_0_mask.png,True,0,M,39.0,normal,2941,3000,True,0.320331,1,train
+Shenzhen,CHNCXR_0029_0,CHNCXR_0029,Lung Segmentation/CXR_png/CHNCXR_0029_0.png,Lung Segmentation/masks/CHNCXR_0029_0_mask.png,True,0,M,43.0,normal,2935,3000,True,0.158781,0,train
+Shenzhen,CHNCXR_0030_0,CHNCXR_0030,Lung Segmentation/CXR_png/CHNCXR_0030_0.png,Lung Segmentation/masks/CHNCXR_0030_0_mask.png,True,0,F,38.0,normal,2461,2357,True,0.337061,4,train
+Shenzhen,CHNCXR_0031_0,CHNCXR_0031,Lung Segmentation/CXR_png/CHNCXR_0031_0.png,Lung Segmentation/masks/CHNCXR_0031_0_mask.png,True,0,F,27.0,normal,2939,2989,True,0.249913,4,train
+Shenzhen,CHNCXR_0032_0,CHNCXR_0032,Lung Segmentation/CXR_png/CHNCXR_0032_0.png,Lung Segmentation/masks/CHNCXR_0032_0_mask.png,True,0,F,53.0,normal,2927,3000,True,0.237367,3,train
+Shenzhen,CHNCXR_0033_0,CHNCXR_0033,Lung Segmentation/CXR_png/CHNCXR_0033_0.png,Lung Segmentation/masks/CHNCXR_0033_0_mask.png,True,0,M,34.0,normal,2957,3000,True,0.262506,3,train
+Shenzhen,CHNCXR_0034_0,CHNCXR_0034,Lung Segmentation/CXR_png/CHNCXR_0034_0.png,Lung Segmentation/masks/CHNCXR_0034_0_mask.png,True,0,F,60.0,normal,2600,2395,True,0.165464,2,train
+Shenzhen,CHNCXR_0035_0,CHNCXR_0035,Lung Segmentation/CXR_png/CHNCXR_0035_0.png,Lung Segmentation/masks/CHNCXR_0035_0_mask.png,True,0,F,59.0,normal,2933,3000,True,0.176087,4,train
+Shenzhen,CHNCXR_0036_0,CHNCXR_0036,Lung Segmentation/CXR_png/CHNCXR_0036_0.png,,False,0,M,26.0,normal,2951,3000,,,2,train
+Shenzhen,CHNCXR_0037_0,CHNCXR_0037,Lung Segmentation/CXR_png/CHNCXR_0037_0.png,,False,0,M,24.0,normal,2963,3000,,,0,train
+Shenzhen,CHNCXR_0038_0,CHNCXR_0038,Lung Segmentation/CXR_png/CHNCXR_0038_0.png,,False,0,M,27.0,normal,3000,2744,,,0,train
+Shenzhen,CHNCXR_0039_0,CHNCXR_0039,Lung Segmentation/CXR_png/CHNCXR_0039_0.png,,False,0,M,23.0,normal,3001,2844,,,2,train
+Shenzhen,CHNCXR_0040_0,CHNCXR_0040,Lung Segmentation/CXR_png/CHNCXR_0040_0.png,,False,0,F,55.0,normal,2941,3000,,,2,train
+Shenzhen,CHNCXR_0041_0,CHNCXR_0041,Lung Segmentation/CXR_png/CHNCXR_0041_0.png,Lung Segmentation/masks/CHNCXR_0041_0_mask.png,True,0,M,32.0,normal,2481,2498,True,0.333974,3,train
+Shenzhen,CHNCXR_0042_0,CHNCXR_0042,Lung Segmentation/CXR_png/CHNCXR_0042_0.png,Lung Segmentation/masks/CHNCXR_0042_0_mask.png,True,0,M,58.0,normal,2943,3000,True,0.209632,0,train
+Shenzhen,CHNCXR_0043_0,CHNCXR_0043,Lung Segmentation/CXR_png/CHNCXR_0043_0.png,Lung Segmentation/masks/CHNCXR_0043_0_mask.png,True,0,M,38.0,normal,2939,3000,True,0.196171,1,train
+Shenzhen,CHNCXR_0044_0,CHNCXR_0044,Lung Segmentation/CXR_png/CHNCXR_0044_0.png,Lung Segmentation/masks/CHNCXR_0044_0_mask.png,True,0,F,32.0,normal,2308,2308,True,0.269192,2,train
+Shenzhen,CHNCXR_0045_0,CHNCXR_0045,Lung Segmentation/CXR_png/CHNCXR_0045_0.png,Lung Segmentation/masks/CHNCXR_0045_0_mask.png,True,0,F,60.0,normal,2941,3000,True,0.157,0,train
+Shenzhen,CHNCXR_0046_0,CHNCXR_0046,Lung Segmentation/CXR_png/CHNCXR_0046_0.png,Lung Segmentation/masks/CHNCXR_0046_0_mask.png,True,0,M,44.0,normal,2931,3000,True,0.284254,4,train
+Shenzhen,CHNCXR_0047_0,CHNCXR_0047,Lung Segmentation/CXR_png/CHNCXR_0047_0.png,Lung Segmentation/masks/CHNCXR_0047_0_mask.png,True,0,M,34.0,normal,2927,2699,True,0.339939,1,train
+Shenzhen,CHNCXR_0048_0,CHNCXR_0048,Lung Segmentation/CXR_png/CHNCXR_0048_0.png,Lung Segmentation/masks/CHNCXR_0048_0_mask.png,True,0,M,23.0,normal,2949,3000,True,0.221118,4,train
+Shenzhen,CHNCXR_0049_0,CHNCXR_0049,Lung Segmentation/CXR_png/CHNCXR_0049_0.png,Lung Segmentation/masks/CHNCXR_0049_0_mask.png,True,0,F,35.0,normal,2931,2996,True,0.159433,0,train
+Shenzhen,CHNCXR_0050_0,CHNCXR_0050,Lung Segmentation/CXR_png/CHNCXR_0050_0.png,Lung Segmentation/masks/CHNCXR_0050_0_mask.png,True,0,F,38.0,normal,2947,3000,True,0.20865,0,train
+Shenzhen,CHNCXR_0051_0,CHNCXR_0051,Lung Segmentation/CXR_png/CHNCXR_0051_0.png,Lung Segmentation/masks/CHNCXR_0051_0_mask.png,True,0,F,63.0,normal,2935,2985,True,0.207327,1,train
+Shenzhen,CHNCXR_0052_0,CHNCXR_0052,Lung Segmentation/CXR_png/CHNCXR_0052_0.png,Lung Segmentation/masks/CHNCXR_0052_0_mask.png,True,0,F,35.0,normal,2548,2419,True,0.254385,1,train
+Shenzhen,CHNCXR_0053_0,CHNCXR_0053,Lung Segmentation/CXR_png/CHNCXR_0053_0.png,Lung Segmentation/masks/CHNCXR_0053_0_mask.png,True,0,M,52.0,normal,2890,2531,True,0.206818,0,train
+Shenzhen,CHNCXR_0054_0,CHNCXR_0054,Lung Segmentation/CXR_png/CHNCXR_0054_0.png,Lung Segmentation/masks/CHNCXR_0054_0_mask.png,True,0,F,25.0,normal,2933,3000,True,0.213553,1,train
+Shenzhen,CHNCXR_0055_0,CHNCXR_0055,Lung Segmentation/CXR_png/CHNCXR_0055_0.png,Lung Segmentation/masks/CHNCXR_0055_0_mask.png,True,0,M,41.0,normal,2941,2739,True,0.205423,1,train
+Shenzhen,CHNCXR_0056_0,CHNCXR_0056,Lung Segmentation/CXR_png/CHNCXR_0056_0.png,Lung Segmentation/masks/CHNCXR_0056_0_mask.png,True,0,M,48.0,normal,2947,3000,True,0.16287,4,train
+Shenzhen,CHNCXR_0057_0,CHNCXR_0057,Lung Segmentation/CXR_png/CHNCXR_0057_0.png,Lung Segmentation/masks/CHNCXR_0057_0_mask.png,True,0,F,54.0,normal,2941,3000,True,0.189296,4,train
+Shenzhen,CHNCXR_0058_0,CHNCXR_0058,Lung Segmentation/CXR_png/CHNCXR_0058_0.png,Lung Segmentation/masks/CHNCXR_0058_0_mask.png,True,0,F,56.0,normal,2937,3000,True,0.145824,2,train
+Shenzhen,CHNCXR_0059_0,CHNCXR_0059,Lung Segmentation/CXR_png/CHNCXR_0059_0.png,Lung Segmentation/masks/CHNCXR_0059_0_mask.png,True,0,M,68.0,normale,2947,3000,True,0.191528,0,train
+Shenzhen,CHNCXR_0060_0,CHNCXR_0060,Lung Segmentation/CXR_png/CHNCXR_0060_0.png,Lung Segmentation/masks/CHNCXR_0060_0_mask.png,True,0,F,33.0,normal,2931,3000,True,0.181137,1,train
+Shenzhen,CHNCXR_0061_0,CHNCXR_0061,Lung Segmentation/CXR_png/CHNCXR_0061_0.png,Lung Segmentation/masks/CHNCXR_0061_0_mask.png,True,0,M,23.0,normal,2955,3000,True,0.289787,4,train
+Shenzhen,CHNCXR_0062_0,CHNCXR_0062,Lung Segmentation/CXR_png/CHNCXR_0062_0.png,Lung Segmentation/masks/CHNCXR_0062_0_mask.png,True,0,F,28.0,normal,2943,3000,True,0.215528,3,train
+Shenzhen,CHNCXR_0063_0,CHNCXR_0063,Lung Segmentation/CXR_png/CHNCXR_0063_0.png,Lung Segmentation/masks/CHNCXR_0063_0_mask.png,True,0,F,29.0,normal,2939,3000,True,0.278367,0,train
+Shenzhen,CHNCXR_0064_0,CHNCXR_0064,Lung Segmentation/CXR_png/CHNCXR_0064_0.png,Lung Segmentation/masks/CHNCXR_0064_0_mask.png,True,0,M,36.0,normal,2943,3000,True,0.205808,1,train
+Shenzhen,CHNCXR_0065_0,CHNCXR_0065,Lung Segmentation/CXR_png/CHNCXR_0065_0.png,,False,0,F,22.0,normal,2945,2996,,,3,train
+Shenzhen,CHNCXR_0066_0,CHNCXR_0066,Lung Segmentation/CXR_png/CHNCXR_0066_0.png,Lung Segmentation/masks/CHNCXR_0066_0_mask.png,True,0,M,36.0,normal,2941,3000,True,0.142588,2,train
+Shenzhen,CHNCXR_0067_0,CHNCXR_0067,Lung Segmentation/CXR_png/CHNCXR_0067_0.png,Lung Segmentation/masks/CHNCXR_0067_0_mask.png,True,0,M,32.0,normal,2941,2996,True,0.247006,2,train
+Shenzhen,CHNCXR_0068_0,CHNCXR_0068,Lung Segmentation/CXR_png/CHNCXR_0068_0.png,Lung Segmentation/masks/CHNCXR_0068_0_mask.png,True,0,M,31.0,normal,2939,3000,True,0.189206,0,train
+Shenzhen,CHNCXR_0069_0,CHNCXR_0069,Lung Segmentation/CXR_png/CHNCXR_0069_0.png,Lung Segmentation/masks/CHNCXR_0069_0_mask.png,True,0,F,46.0,normal,2406,2631,True,0.237256,0,train
+Shenzhen,CHNCXR_0070_0,CHNCXR_0070,Lung Segmentation/CXR_png/CHNCXR_0070_0.png,Lung Segmentation/masks/CHNCXR_0070_0_mask.png,True,0,F,20.0,normal,2617,2486,True,0.303329,2,train
+Shenzhen,CHNCXR_0071_0,CHNCXR_0071,Lung Segmentation/CXR_png/CHNCXR_0071_0.png,Lung Segmentation/masks/CHNCXR_0071_0_mask.png,True,0,F,39.0,normal,2452,2384,True,0.236132,1,train
+Shenzhen,CHNCXR_0072_0,CHNCXR_0072,Lung Segmentation/CXR_png/CHNCXR_0072_0.png,Lung Segmentation/masks/CHNCXR_0072_0_mask.png,True,0,M,25.0,normal,2731,2733,True,0.272105,3,train
+Shenzhen,CHNCXR_0073_0,CHNCXR_0073,Lung Segmentation/CXR_png/CHNCXR_0073_0.png,Lung Segmentation/masks/CHNCXR_0073_0_mask.png,True,0,F,34.0,normal,2949,3000,True,0.165847,1,train
+Shenzhen,CHNCXR_0074_0,CHNCXR_0074,Lung Segmentation/CXR_png/CHNCXR_0074_0.png,Lung Segmentation/masks/CHNCXR_0074_0_mask.png,True,0,M,3.0,normal,989,1255,True,0.127929,4,train
+Shenzhen,CHNCXR_0075_0,CHNCXR_0075,Lung Segmentation/CXR_png/CHNCXR_0075_0.png,Lung Segmentation/masks/CHNCXR_0075_0_mask.png,True,0,F,1.0,normal,1110,1233,True,0.153131,2,train
+Shenzhen,CHNCXR_0076_0,CHNCXR_0076,Lung Segmentation/CXR_png/CHNCXR_0076_0.png,Lung Segmentation/masks/CHNCXR_0076_0_mask.png,True,0,M,1.0,normal,1136,1250,True,0.149265,2,train
+Shenzhen,CHNCXR_0077_0,CHNCXR_0077,Lung Segmentation/CXR_png/CHNCXR_0077_0.png,Lung Segmentation/masks/CHNCXR_0077_0_mask.png,True,0,M,28.0,normal,2939,3000,True,0.189769,1,train
+Shenzhen,CHNCXR_0078_0,CHNCXR_0078,Lung Segmentation/CXR_png/CHNCXR_0078_0.png,Lung Segmentation/masks/CHNCXR_0078_0_mask.png,True,0,M,31.0,normal,2967,3000,True,0.248227,1,train
+Shenzhen,CHNCXR_0079_0,CHNCXR_0079,Lung Segmentation/CXR_png/CHNCXR_0079_0.png,Lung Segmentation/masks/CHNCXR_0079_0_mask.png,True,0,M,30.0,normal,2943,3000,True,0.23917,1,train
+Shenzhen,CHNCXR_0080_0,CHNCXR_0080,Lung Segmentation/CXR_png/CHNCXR_0080_0.png,Lung Segmentation/masks/CHNCXR_0080_0_mask.png,True,0,M,39.0,normal,2955,3000,True,0.184972,1,train
+Shenzhen,CHNCXR_0081_0,CHNCXR_0081,Lung Segmentation/CXR_png/CHNCXR_0081_0.png,Lung Segmentation/masks/CHNCXR_0081_0_mask.png,True,0,M,37.0,normal,2947,3000,True,0.315,3,train
+Shenzhen,CHNCXR_0082_0,CHNCXR_0082,Lung Segmentation/CXR_png/CHNCXR_0082_0.png,Lung Segmentation/masks/CHNCXR_0082_0_mask.png,True,0,M,45.0,normal,2945,3000,True,0.228028,0,train
+Shenzhen,CHNCXR_0083_0,CHNCXR_0083,Lung Segmentation/CXR_png/CHNCXR_0083_0.png,Lung Segmentation/masks/CHNCXR_0083_0_mask.png,True,0,M,37.0,normal,2947,3000,True,0.191064,3,train
+Shenzhen,CHNCXR_0084_0,CHNCXR_0084,Lung Segmentation/CXR_png/CHNCXR_0084_0.png,Lung Segmentation/masks/CHNCXR_0084_0_mask.png,True,0,F,27.0,normal,2944,2739,True,0.264417,2,train
+Shenzhen,CHNCXR_0085_0,CHNCXR_0085,Lung Segmentation/CXR_png/CHNCXR_0085_0.png,Lung Segmentation/masks/CHNCXR_0085_0_mask.png,True,0,M,42.0,normal,2949,3000,True,0.213499,2,train
+Shenzhen,CHNCXR_0086_0,CHNCXR_0086,Lung Segmentation/CXR_png/CHNCXR_0086_0.png,Lung Segmentation/masks/CHNCXR_0086_0_mask.png,True,0,F,53.0,normal,2951,3000,True,0.165302,3,train
+Shenzhen,CHNCXR_0087_0,CHNCXR_0087,Lung Segmentation/CXR_png/CHNCXR_0087_0.png,Lung Segmentation/masks/CHNCXR_0087_0_mask.png,True,0,M,28.0,normal,3001,2679,True,0.292444,4,train
+Shenzhen,CHNCXR_0088_0,CHNCXR_0088,Lung Segmentation/CXR_png/CHNCXR_0088_0.png,Lung Segmentation/masks/CHNCXR_0088_0_mask.png,True,0,M,30.0,normal,2954,2788,True,0.261705,4,train
+Shenzhen,CHNCXR_0089_0,CHNCXR_0089,Lung Segmentation/CXR_png/CHNCXR_0089_0.png,Lung Segmentation/masks/CHNCXR_0089_0_mask.png,True,0,M,39.0,normal,2685,2674,True,0.238685,0,train
+Shenzhen,CHNCXR_0090_0,CHNCXR_0090,Lung Segmentation/CXR_png/CHNCXR_0090_0.png,Lung Segmentation/masks/CHNCXR_0090_0_mask.png,True,0,M,39.0,normal,2931,2786,True,0.225036,3,train
+Shenzhen,CHNCXR_0091_0,CHNCXR_0091,Lung Segmentation/CXR_png/CHNCXR_0091_0.png,Lung Segmentation/masks/CHNCXR_0091_0_mask.png,True,0,M,37.0,normal,2968,2587,True,0.326611,0,train
+Shenzhen,CHNCXR_0092_0,CHNCXR_0092,Lung Segmentation/CXR_png/CHNCXR_0092_0.png,Lung Segmentation/masks/CHNCXR_0092_0_mask.png,True,0,M,37.0,normal,2652,2796,True,0.244505,4,train
+Shenzhen,CHNCXR_0093_0,CHNCXR_0093,Lung Segmentation/CXR_png/CHNCXR_0093_0.png,Lung Segmentation/masks/CHNCXR_0093_0_mask.png,True,0,M,27.0,normal,2960,2776,True,0.304862,0,train
+Shenzhen,CHNCXR_0094_0,CHNCXR_0094,Lung Segmentation/CXR_png/CHNCXR_0094_0.png,Lung Segmentation/masks/CHNCXR_0094_0_mask.png,True,0,F,24.0,normal,2945,3000,True,0.242021,0,train
+Shenzhen,CHNCXR_0095_0,CHNCXR_0095,Lung Segmentation/CXR_png/CHNCXR_0095_0.png,Lung Segmentation/masks/CHNCXR_0095_0_mask.png,True,0,M,18.0,normal,2949,3000,True,0.270801,4,train
+Shenzhen,CHNCXR_0096_0,CHNCXR_0096,Lung Segmentation/CXR_png/CHNCXR_0096_0.png,Lung Segmentation/masks/CHNCXR_0096_0_mask.png,True,0,F,69.0,normal,2080,2119,True,0.308083,4,train
+Shenzhen,CHNCXR_0097_0,CHNCXR_0097,Lung Segmentation/CXR_png/CHNCXR_0097_0.png,Lung Segmentation/masks/CHNCXR_0097_0_mask.png,True,0,F,30.0,normal,2203,2260,True,0.399283,0,train
+Shenzhen,CHNCXR_0098_0,CHNCXR_0098,Lung Segmentation/CXR_png/CHNCXR_0098_0.png,Lung Segmentation/masks/CHNCXR_0098_0_mask.png,True,0,M,54.0,normal,2951,3000,True,0.187563,4,train
+Shenzhen,CHNCXR_0099_0,CHNCXR_0099,Lung Segmentation/CXR_png/CHNCXR_0099_0.png,Lung Segmentation/masks/CHNCXR_0099_0_mask.png,True,0,F,26.0,normal,2804,2415,True,0.267046,2,train
+Shenzhen,CHNCXR_0100_0,CHNCXR_0100,Lung Segmentation/CXR_png/CHNCXR_0100_0.png,Lung Segmentation/masks/CHNCXR_0100_0_mask.png,True,0,M,25.0,normal,2562,2419,True,0.288045,3,train
+Shenzhen,CHNCXR_0101_0,CHNCXR_0101,Lung Segmentation/CXR_png/CHNCXR_0101_0.png,Lung Segmentation/masks/CHNCXR_0101_0_mask.png,True,0,M,23.0,normal,3001,3000,True,0.238518,1,train
+Shenzhen,CHNCXR_0102_0,CHNCXR_0102,Lung Segmentation/CXR_png/CHNCXR_0102_0.png,Lung Segmentation/masks/CHNCXR_0102_0_mask.png,True,0,F,25.0,normal,2405,2128,True,0.272281,2,train
+Shenzhen,CHNCXR_0103_0,CHNCXR_0103,Lung Segmentation/CXR_png/CHNCXR_0103_0.png,Lung Segmentation/masks/CHNCXR_0103_0_mask.png,True,0,F,25.0,normal,2946,2238,True,0.292478,0,train
+Shenzhen,CHNCXR_0104_0,CHNCXR_0104,Lung Segmentation/CXR_png/CHNCXR_0104_0.png,Lung Segmentation/masks/CHNCXR_0104_0_mask.png,True,0,M,43.0,normal,2989,2990,True,0.259976,3,train
+Shenzhen,CHNCXR_0105_0,CHNCXR_0105,Lung Segmentation/CXR_png/CHNCXR_0105_0.png,Lung Segmentation/masks/CHNCXR_0105_0_mask.png,True,0,M,22.0,normal,2988,2602,True,0.231311,1,train
+Shenzhen,CHNCXR_0106_0,CHNCXR_0106,Lung Segmentation/CXR_png/CHNCXR_0106_0.png,Lung Segmentation/masks/CHNCXR_0106_0_mask.png,True,0,M,26.0,normal,2943,3000,True,0.253539,2,train
+Shenzhen,CHNCXR_0107_0,CHNCXR_0107,Lung Segmentation/CXR_png/CHNCXR_0107_0.png,Lung Segmentation/masks/CHNCXR_0107_0_mask.png,True,0,F,36.0,normal,2317,2464,True,0.284019,2,train
+Shenzhen,CHNCXR_0108_0,CHNCXR_0108,Lung Segmentation/CXR_png/CHNCXR_0108_0.png,Lung Segmentation/masks/CHNCXR_0108_0_mask.png,True,0,M,22.0,normal,2953,2897,True,0.299304,2,train
+Shenzhen,CHNCXR_0109_0,CHNCXR_0109,Lung Segmentation/CXR_png/CHNCXR_0109_0.png,Lung Segmentation/masks/CHNCXR_0109_0_mask.png,True,0,F,21.0,normal,2942,2369,True,0.186492,3,train
+Shenzhen,CHNCXR_0110_0,CHNCXR_0110,Lung Segmentation/CXR_png/CHNCXR_0110_0.png,Lung Segmentation/masks/CHNCXR_0110_0_mask.png,True,0,M,42.0,normal,2946,2715,True,0.207392,2,train
+Shenzhen,CHNCXR_0111_0,CHNCXR_0111,Lung Segmentation/CXR_png/CHNCXR_0111_0.png,Lung Segmentation/masks/CHNCXR_0111_0_mask.png,True,0,M,44.0,normal,2489,2609,True,0.272159,1,train
+Shenzhen,CHNCXR_0112_0,CHNCXR_0112,Lung Segmentation/CXR_png/CHNCXR_0112_0.png,Lung Segmentation/masks/CHNCXR_0112_0_mask.png,True,0,M,33.0,normal,2667,2589,True,0.285497,3,train
+Shenzhen,CHNCXR_0113_0,CHNCXR_0113,Lung Segmentation/CXR_png/CHNCXR_0113_0.png,Lung Segmentation/masks/CHNCXR_0113_0_mask.png,True,0,M,30.0,normal,2876,2724,True,0.288938,0,train
+Shenzhen,CHNCXR_0114_0,CHNCXR_0114,Lung Segmentation/CXR_png/CHNCXR_0114_0.png,Lung Segmentation/masks/CHNCXR_0114_0_mask.png,True,0,M,20.0,normal,2933,3000,True,0.210496,4,train
+Shenzhen,CHNCXR_0115_0,CHNCXR_0115,Lung Segmentation/CXR_png/CHNCXR_0115_0.png,Lung Segmentation/masks/CHNCXR_0115_0_mask.png,True,0,M,1.3333333333333333,normal,1149,1225,True,0.177834,4,train
+Shenzhen,CHNCXR_0116_0,CHNCXR_0116,Lung Segmentation/CXR_png/CHNCXR_0116_0.png,Lung Segmentation/masks/CHNCXR_0116_0_mask.png,True,0,M,49.0,normal,2931,3000,True,0.260293,0,train
+Shenzhen,CHNCXR_0117_0,CHNCXR_0117,Lung Segmentation/CXR_png/CHNCXR_0117_0.png,Lung Segmentation/masks/CHNCXR_0117_0_mask.png,True,0,M,48.0,normal,2959,2521,True,0.210245,2,train
+Shenzhen,CHNCXR_0118_0,CHNCXR_0118,Lung Segmentation/CXR_png/CHNCXR_0118_0.png,Lung Segmentation/masks/CHNCXR_0118_0_mask.png,True,0,F,26.0,normal,2996,2990,True,0.14625,1,train
+Shenzhen,CHNCXR_0119_0,CHNCXR_0119,Lung Segmentation/CXR_png/CHNCXR_0119_0.png,Lung Segmentation/masks/CHNCXR_0119_0_mask.png,True,0,M,20.0,normal,2869,2682,True,0.204934,1,train
+Shenzhen,CHNCXR_0120_0,CHNCXR_0120,Lung Segmentation/CXR_png/CHNCXR_0120_0.png,Lung Segmentation/masks/CHNCXR_0120_0_mask.png,True,0,M,19.0,normal,2945,3000,True,0.233935,3,train
+Shenzhen,CHNCXR_0121_0,CHNCXR_0121,Lung Segmentation/CXR_png/CHNCXR_0121_0.png,Lung Segmentation/masks/CHNCXR_0121_0_mask.png,True,0,M,21.0,normal,2990,2751,True,0.265105,2,train
+Shenzhen,CHNCXR_0122_0,CHNCXR_0122,Lung Segmentation/CXR_png/CHNCXR_0122_0.png,Lung Segmentation/masks/CHNCXR_0122_0_mask.png,True,0,F,20.0,normal,2843,2536,True,0.233176,1,train
+Shenzhen,CHNCXR_0123_0,CHNCXR_0123,Lung Segmentation/CXR_png/CHNCXR_0123_0.png,Lung Segmentation/masks/CHNCXR_0123_0_mask.png,True,0,F,64.0,normal,2945,3000,True,0.149358,1,train
+Shenzhen,CHNCXR_0124_0,CHNCXR_0124,Lung Segmentation/CXR_png/CHNCXR_0124_0.png,Lung Segmentation/masks/CHNCXR_0124_0_mask.png,True,0,M,34.0,normal,2889,2365,True,0.253122,0,train
+Shenzhen,CHNCXR_0125_0,CHNCXR_0125,Lung Segmentation/CXR_png/CHNCXR_0125_0.png,Lung Segmentation/masks/CHNCXR_0125_0_mask.png,True,0,M,30.0,normal,2993,2991,True,0.2321,1,train
+Shenzhen,CHNCXR_0126_0,CHNCXR_0126,Lung Segmentation/CXR_png/CHNCXR_0126_0.png,Lung Segmentation/masks/CHNCXR_0126_0_mask.png,True,0,F,65.0,normal,2933,2997,True,0.126425,0,train
+Shenzhen,CHNCXR_0127_0,CHNCXR_0127,Lung Segmentation/CXR_png/CHNCXR_0127_0.png,Lung Segmentation/masks/CHNCXR_0127_0_mask.png,True,0,F,24.0,normal,2382,2478,True,0.284258,2,train
+Shenzhen,CHNCXR_0128_0,CHNCXR_0128,Lung Segmentation/CXR_png/CHNCXR_0128_0.png,Lung Segmentation/masks/CHNCXR_0128_0_mask.png,True,0,M,28.0,normal,2992,2991,True,0.224821,1,train
+Shenzhen,CHNCXR_0129_0,CHNCXR_0129,Lung Segmentation/CXR_png/CHNCXR_0129_0.png,Lung Segmentation/masks/CHNCXR_0129_0_mask.png,True,0,F,43.0,normal,2947,2452,True,0.179717,1,train
+Shenzhen,CHNCXR_0130_0,CHNCXR_0130,Lung Segmentation/CXR_png/CHNCXR_0130_0.png,Lung Segmentation/masks/CHNCXR_0130_0_mask.png,True,0,M,26.0,normal,2994,2991,True,0.228098,2,train
+Shenzhen,CHNCXR_0131_0,CHNCXR_0131,Lung Segmentation/CXR_png/CHNCXR_0131_0.png,Lung Segmentation/masks/CHNCXR_0131_0_mask.png,True,0,M,19.0,normal,2994,2600,True,0.258098,1,train
+Shenzhen,CHNCXR_0132_0,CHNCXR_0132,Lung Segmentation/CXR_png/CHNCXR_0132_0.png,Lung Segmentation/masks/CHNCXR_0132_0_mask.png,True,0,F,50.0,normal,2943,2997,True,0.189337,0,train
+Shenzhen,CHNCXR_0133_0,CHNCXR_0133,Lung Segmentation/CXR_png/CHNCXR_0133_0.png,Lung Segmentation/masks/CHNCXR_0133_0_mask.png,True,0,M,28.0,normal,2953,3000,True,0.205963,0,train
+Shenzhen,CHNCXR_0134_0,CHNCXR_0134,Lung Segmentation/CXR_png/CHNCXR_0134_0.png,Lung Segmentation/masks/CHNCXR_0134_0_mask.png,True,0,M,29.0,normal,2957,2493,True,0.307682,4,train
+Shenzhen,CHNCXR_0135_0,CHNCXR_0135,Lung Segmentation/CXR_png/CHNCXR_0135_0.png,Lung Segmentation/masks/CHNCXR_0135_0_mask.png,True,0,M,20.0,normal,2949,3000,True,0.212531,1,train
+Shenzhen,CHNCXR_0136_0,CHNCXR_0136,Lung Segmentation/CXR_png/CHNCXR_0136_0.png,Lung Segmentation/masks/CHNCXR_0136_0_mask.png,True,0,M,30.0,normal,2937,2997,True,0.144422,4,train
+Shenzhen,CHNCXR_0137_0,CHNCXR_0137,Lung Segmentation/CXR_png/CHNCXR_0137_0.png,Lung Segmentation/masks/CHNCXR_0137_0_mask.png,True,0,M,24.0,normal,2939,3000,True,0.205426,4,train
+Shenzhen,CHNCXR_0138_0,CHNCXR_0138,Lung Segmentation/CXR_png/CHNCXR_0138_0.png,Lung Segmentation/masks/CHNCXR_0138_0_mask.png,True,0,F,30.0,normal,2943,3000,True,0.189239,1,train
+Shenzhen,CHNCXR_0139_0,CHNCXR_0139,Lung Segmentation/CXR_png/CHNCXR_0139_0.png,Lung Segmentation/masks/CHNCXR_0139_0_mask.png,True,0,F,27.0,normal,2931,3000,True,0.166117,2,train
+Shenzhen,CHNCXR_0140_0,CHNCXR_0140,Lung Segmentation/CXR_png/CHNCXR_0140_0.png,Lung Segmentation/masks/CHNCXR_0140_0_mask.png,True,0,F,39.0,normal,2066,2227,True,0.326526,1,train
+Shenzhen,CHNCXR_0141_0,CHNCXR_0141,Lung Segmentation/CXR_png/CHNCXR_0141_0.png,Lung Segmentation/masks/CHNCXR_0141_0_mask.png,True,0,F,36.0,normal,2927,3000,True,0.214046,4,train
+Shenzhen,CHNCXR_0142_0,CHNCXR_0142,Lung Segmentation/CXR_png/CHNCXR_0142_0.png,Lung Segmentation/masks/CHNCXR_0142_0_mask.png,True,0,M,22.0,normal,2388,2407,True,0.269382,4,train
+Shenzhen,CHNCXR_0143_0,CHNCXR_0143,Lung Segmentation/CXR_png/CHNCXR_0143_0.png,Lung Segmentation/masks/CHNCXR_0143_0_mask.png,True,0,F,47.0,normal,2854,2791,True,0.178151,4,train
+Shenzhen,CHNCXR_0144_0,CHNCXR_0144,Lung Segmentation/CXR_png/CHNCXR_0144_0.png,Lung Segmentation/masks/CHNCXR_0144_0_mask.png,True,0,M,31.0,normal,2768,2271,True,0.281426,2,train
+Shenzhen,CHNCXR_0145_0,CHNCXR_0145,Lung Segmentation/CXR_png/CHNCXR_0145_0.png,Lung Segmentation/masks/CHNCXR_0145_0_mask.png,True,0,M,45.0,normal,2990,2990,True,0.248149,4,train
+Shenzhen,CHNCXR_0146_0,CHNCXR_0146,Lung Segmentation/CXR_png/CHNCXR_0146_0.png,Lung Segmentation/masks/CHNCXR_0146_0_mask.png,True,0,M,22.0,normal,2975,2985,True,0.177068,2,train
+Shenzhen,CHNCXR_0147_0,CHNCXR_0147,Lung Segmentation/CXR_png/CHNCXR_0147_0.png,Lung Segmentation/masks/CHNCXR_0147_0_mask.png,True,0,M,23.0,normal,2951,3000,True,0.255618,3,train
+Shenzhen,CHNCXR_0148_0,CHNCXR_0148,Lung Segmentation/CXR_png/CHNCXR_0148_0.png,Lung Segmentation/masks/CHNCXR_0148_0_mask.png,True,0,M,24.0,normal,2930,2692,True,0.221373,3,train
+Shenzhen,CHNCXR_0149_0,CHNCXR_0149,Lung Segmentation/CXR_png/CHNCXR_0149_0.png,Lung Segmentation/masks/CHNCXR_0149_0_mask.png,True,0,M,31.0,normal,2995,2993,True,0.199641,3,train
+Shenzhen,CHNCXR_0150_0,CHNCXR_0150,Lung Segmentation/CXR_png/CHNCXR_0150_0.png,Lung Segmentation/masks/CHNCXR_0150_0_mask.png,True,0,M,45.0,normal,2941,2730,True,0.23676,1,train
+Shenzhen,CHNCXR_0151_0,CHNCXR_0151,Lung Segmentation/CXR_png/CHNCXR_0151_0.png,Lung Segmentation/masks/CHNCXR_0151_0_mask.png,True,0,F,25.0,normal,2931,2985,True,0.170605,0,train
+Shenzhen,CHNCXR_0152_0,CHNCXR_0152,Lung Segmentation/CXR_png/CHNCXR_0152_0.png,Lung Segmentation/masks/CHNCXR_0152_0_mask.png,True,0,F,24.0,normal,2638,2512,True,0.263234,3,train
+Shenzhen,CHNCXR_0153_0,CHNCXR_0153,Lung Segmentation/CXR_png/CHNCXR_0153_0.png,Lung Segmentation/masks/CHNCXR_0153_0_mask.png,True,0,F,37.0,normal,2939,3000,True,0.20508,3,train
+Shenzhen,CHNCXR_0154_0,CHNCXR_0154,Lung Segmentation/CXR_png/CHNCXR_0154_0.png,Lung Segmentation/masks/CHNCXR_0154_0_mask.png,True,0,M,31.0,normal,2943,3000,True,0.220679,4,train
+Shenzhen,CHNCXR_0155_0,CHNCXR_0155,Lung Segmentation/CXR_png/CHNCXR_0155_0.png,Lung Segmentation/masks/CHNCXR_0155_0_mask.png,True,0,M,5.0,normal,1737,2253,True,0.136183,1,train
+Shenzhen,CHNCXR_0156_0,CHNCXR_0156,Lung Segmentation/CXR_png/CHNCXR_0156_0.png,Lung Segmentation/masks/CHNCXR_0156_0_mask.png,True,0,F,38.0,normal,2957,2997,True,0.154841,2,train
+Shenzhen,CHNCXR_0157_0,CHNCXR_0157,Lung Segmentation/CXR_png/CHNCXR_0157_0.png,Lung Segmentation/masks/CHNCXR_0157_0_mask.png,True,0,M,23.0,normal,2953,2985,True,0.192571,1,train
+Shenzhen,CHNCXR_0158_0,CHNCXR_0158,Lung Segmentation/CXR_png/CHNCXR_0158_0.png,Lung Segmentation/masks/CHNCXR_0158_0_mask.png,True,0,F,36.0,normal,2904,2655,True,0.189013,4,train
+Shenzhen,CHNCXR_0159_0,CHNCXR_0159,Lung Segmentation/CXR_png/CHNCXR_0159_0.png,Lung Segmentation/masks/CHNCXR_0159_0_mask.png,True,0,M,22.0,normal,2989,2991,True,0.182017,4,train
+Shenzhen,CHNCXR_0160_0,CHNCXR_0160,Lung Segmentation/CXR_png/CHNCXR_0160_0.png,Lung Segmentation/masks/CHNCXR_0160_0_mask.png,True,0,F,23.0,normal,2786,2529,True,0.275247,4,train
+Shenzhen,CHNCXR_0161_0,CHNCXR_0161,Lung Segmentation/CXR_png/CHNCXR_0161_0.png,Lung Segmentation/masks/CHNCXR_0161_0_mask.png,True,0,F,48.0,normal,2880,2697,True,0.196983,2,train
+Shenzhen,CHNCXR_0162_0,CHNCXR_0162,Lung Segmentation/CXR_png/CHNCXR_0162_0.png,Lung Segmentation/masks/CHNCXR_0162_0_mask.png,True,0,M,23.0,normal,2945,3000,True,0.242837,3,train
+Shenzhen,CHNCXR_0163_0,CHNCXR_0163,Lung Segmentation/CXR_png/CHNCXR_0163_0.png,Lung Segmentation/masks/CHNCXR_0163_0_mask.png,True,0,M,28.0,normal,2951,2989,True,0.189886,2,train
+Shenzhen,CHNCXR_0164_0,CHNCXR_0164,Lung Segmentation/CXR_png/CHNCXR_0164_0.png,Lung Segmentation/masks/CHNCXR_0164_0_mask.png,True,0,M,53.0,normal,2939,3000,True,0.167113,3,train
+Shenzhen,CHNCXR_0165_0,CHNCXR_0165,Lung Segmentation/CXR_png/CHNCXR_0165_0.png,Lung Segmentation/masks/CHNCXR_0165_0_mask.png,True,0,M,39.0,normal,2993,2967,True,0.245521,0,train
+Shenzhen,CHNCXR_0166_0,CHNCXR_0166,Lung Segmentation/CXR_png/CHNCXR_0166_0.png,Lung Segmentation/masks/CHNCXR_0166_0_mask.png,True,0,F,31.0,normal,2527,2443,True,0.296982,1,train
+Shenzhen,CHNCXR_0167_0,CHNCXR_0167,Lung Segmentation/CXR_png/CHNCXR_0167_0.png,Lung Segmentation/masks/CHNCXR_0167_0_mask.png,True,0,M,47.0,normal,2961,2761,True,0.254644,2,train
+Shenzhen,CHNCXR_0168_0,CHNCXR_0168,Lung Segmentation/CXR_png/CHNCXR_0168_0.png,Lung Segmentation/masks/CHNCXR_0168_0_mask.png,True,0,M,27.0,normal,2931,3000,True,0.353071,3,train
+Shenzhen,CHNCXR_0169_0,CHNCXR_0169,Lung Segmentation/CXR_png/CHNCXR_0169_0.png,Lung Segmentation/masks/CHNCXR_0169_0_mask.png,True,0,M,2.0,normal,1761,1671,True,0.203775,1,train
+Shenzhen,CHNCXR_0170_0,CHNCXR_0170,Lung Segmentation/CXR_png/CHNCXR_0170_0.png,Lung Segmentation/masks/CHNCXR_0170_0_mask.png,True,0,M,23.0,normal,2953,3000,True,0.158365,3,train
+Shenzhen,CHNCXR_0171_0,CHNCXR_0171,Lung Segmentation/CXR_png/CHNCXR_0171_0.png,Lung Segmentation/masks/CHNCXR_0171_0_mask.png,True,0,M,19.0,normal,2991,2991,True,0.234342,4,train
+Shenzhen,CHNCXR_0172_0,CHNCXR_0172,Lung Segmentation/CXR_png/CHNCXR_0172_0.png,Lung Segmentation/masks/CHNCXR_0172_0_mask.png,True,0,F,26.0,normal,2556,2434,True,0.322234,1,train
+Shenzhen,CHNCXR_0173_0,CHNCXR_0173,Lung Segmentation/CXR_png/CHNCXR_0173_0.png,Lung Segmentation/masks/CHNCXR_0173_0_mask.png,True,0,M,28.0,normal,2903,2566,True,0.259782,1,train
+Shenzhen,CHNCXR_0174_0,CHNCXR_0174,Lung Segmentation/CXR_png/CHNCXR_0174_0.png,Lung Segmentation/masks/CHNCXR_0174_0_mask.png,True,0,M,68.0,normal,2970,2585,True,0.243452,0,train
+Shenzhen,CHNCXR_0175_0,CHNCXR_0175,Lung Segmentation/CXR_png/CHNCXR_0175_0.png,Lung Segmentation/masks/CHNCXR_0175_0_mask.png,True,0,F,70.0,normal,2009,2205,True,0.21836,1,train
+Shenzhen,CHNCXR_0176_0,CHNCXR_0176,Lung Segmentation/CXR_png/CHNCXR_0176_0.png,Lung Segmentation/masks/CHNCXR_0176_0_mask.png,True,0,F,64.0,normal,2929,2987,True,0.159598,4,train
+Shenzhen,CHNCXR_0177_0,CHNCXR_0177,Lung Segmentation/CXR_png/CHNCXR_0177_0.png,Lung Segmentation/masks/CHNCXR_0177_0_mask.png,True,0,M,19.0,normal,2530,2504,True,0.339561,1,train
+Shenzhen,CHNCXR_0178_0,CHNCXR_0178,Lung Segmentation/CXR_png/CHNCXR_0178_0.png,Lung Segmentation/masks/CHNCXR_0178_0_mask.png,True,0,M,1.0,normal,1341,1521,True,0.216401,3,train
+Shenzhen,CHNCXR_0179_0,CHNCXR_0179,Lung Segmentation/CXR_png/CHNCXR_0179_0.png,Lung Segmentation/masks/CHNCXR_0179_0_mask.png,True,0,M,22.0,normal,2941,3000,True,0.173805,2,train
+Shenzhen,CHNCXR_0180_0,CHNCXR_0180,Lung Segmentation/CXR_png/CHNCXR_0180_0.png,Lung Segmentation/masks/CHNCXR_0180_0_mask.png,True,0,F,36.0,normal,2457,2997,True,0.17997,2,train
+Shenzhen,CHNCXR_0181_0,CHNCXR_0181,Lung Segmentation/CXR_png/CHNCXR_0181_0.png,,False,0,F,43.0,normal,2937,3000,,,3,train
+Shenzhen,CHNCXR_0182_0,CHNCXR_0182,Lung Segmentation/CXR_png/CHNCXR_0182_0.png,,False,0,M,37.0,normal,2925,3000,,,3,train
+Shenzhen,CHNCXR_0183_0,CHNCXR_0183,Lung Segmentation/CXR_png/CHNCXR_0183_0.png,,False,0,M,32.0,normal,2945,3000,,,4,train
+Shenzhen,CHNCXR_0184_0,CHNCXR_0184,Lung Segmentation/CXR_png/CHNCXR_0184_0.png,,False,0,F,33.0,normal,2947,3000,,,0,train
+Shenzhen,CHNCXR_0185_0,CHNCXR_0185,Lung Segmentation/CXR_png/CHNCXR_0185_0.png,,False,0,M,44.0,normal,2929,2793,,,3,train
+Shenzhen,CHNCXR_0186_0,CHNCXR_0186,Lung Segmentation/CXR_png/CHNCXR_0186_0.png,,False,0,M,44.0,normal,2861,2464,,,1,train
+Shenzhen,CHNCXR_0187_0,CHNCXR_0187,Lung Segmentation/CXR_png/CHNCXR_0187_0.png,,False,0,M,23.0,normal,2940,2339,,,4,train
+Shenzhen,CHNCXR_0188_0,CHNCXR_0188,Lung Segmentation/CXR_png/CHNCXR_0188_0.png,,False,0,M,25.0,normal,2989,2992,,,2,train
+Shenzhen,CHNCXR_0189_0,CHNCXR_0189,Lung Segmentation/CXR_png/CHNCXR_0189_0.png,,False,0,M,27.0,normal,2758,2478,,,0,train
+Shenzhen,CHNCXR_0190_0,CHNCXR_0190,Lung Segmentation/CXR_png/CHNCXR_0190_0.png,,False,0,M,34.0,normal,2933,3000,,,0,train
+Shenzhen,CHNCXR_0191_0,CHNCXR_0191,Lung Segmentation/CXR_png/CHNCXR_0191_0.png,,False,0,M,33.0,normal,2947,3000,,,0,train
+Shenzhen,CHNCXR_0192_0,CHNCXR_0192,Lung Segmentation/CXR_png/CHNCXR_0192_0.png,,False,0,M,24.0,normal,2989,2992,,,2,train
+Shenzhen,CHNCXR_0193_0,CHNCXR_0193,Lung Segmentation/CXR_png/CHNCXR_0193_0.png,,False,0,F,24.0,normal,2601,2512,,,2,train
+Shenzhen,CHNCXR_0194_0,CHNCXR_0194,Lung Segmentation/CXR_png/CHNCXR_0194_0.png,,False,0,M,23.0,normal,2992,2991,,,3,train
+Shenzhen,CHNCXR_0195_0,CHNCXR_0195,Lung Segmentation/CXR_png/CHNCXR_0195_0.png,,False,0,M,26.0,normal,2993,2990,,,2,train
+Shenzhen,CHNCXR_0196_0,CHNCXR_0196,Lung Segmentation/CXR_png/CHNCXR_0196_0.png,,False,0,M,26.0,normal,2989,2988,,,3,train
+Shenzhen,CHNCXR_0197_0,CHNCXR_0197,Lung Segmentation/CXR_png/CHNCXR_0197_0.png,,False,0,M,36.0,normal,2939,3000,,,0,train
+Shenzhen,CHNCXR_0198_0,CHNCXR_0198,Lung Segmentation/CXR_png/CHNCXR_0198_0.png,,False,0,M,26.0,normal,2978,2990,,,1,train
+Shenzhen,CHNCXR_0199_0,CHNCXR_0199,Lung Segmentation/CXR_png/CHNCXR_0199_0.png,,False,0,F,26.0,normal,2174,2136,,,3,train
+Shenzhen,CHNCXR_0200_0,CHNCXR_0200,Lung Segmentation/CXR_png/CHNCXR_0200_0.png,,False,0,M,24.0,normal,2985,2989,,,2,train
+Shenzhen,CHNCXR_0201_0,CHNCXR_0201,Lung Segmentation/CXR_png/CHNCXR_0201_0.png,,False,0,M,1.3333333333333333,normal,1583,1571,,,1,train
+Shenzhen,CHNCXR_0202_0,CHNCXR_0202,Lung Segmentation/CXR_png/CHNCXR_0202_0.png,,False,0,F,0.1752224503764544,normal,948,1130,,,0,train
+Shenzhen,CHNCXR_0203_0,CHNCXR_0203,Lung Segmentation/CXR_png/CHNCXR_0203_0.png,,False,0,M,25.0,normal,2993,2990,,,1,train
+Shenzhen,CHNCXR_0204_0,CHNCXR_0204,Lung Segmentation/CXR_png/CHNCXR_0204_0.png,,False,0,M,24.0,normal,2990,2987,,,3,train
+Shenzhen,CHNCXR_0205_0,CHNCXR_0205,Lung Segmentation/CXR_png/CHNCXR_0205_0.png,,False,0,M,1.0,normal,1811,1836,,,2,train
+Shenzhen,CHNCXR_0206_0,CHNCXR_0206,Lung Segmentation/CXR_png/CHNCXR_0206_0.png,,False,0,M,3.0,normal,1679,1893,,,0,train
+Shenzhen,CHNCXR_0207_0,CHNCXR_0207,Lung Segmentation/CXR_png/CHNCXR_0207_0.png,,False,0,M,25.0,normal,2991,2990,,,4,train
+Shenzhen,CHNCXR_0208_0,CHNCXR_0208,Lung Segmentation/CXR_png/CHNCXR_0208_0.png,,False,0,F,30.0,normal,2843,2622,,,2,train
+Shenzhen,CHNCXR_0209_0,CHNCXR_0209,Lung Segmentation/CXR_png/CHNCXR_0209_0.png,,False,0,M,25.0,normal,2982,2991,,,3,train
+Shenzhen,CHNCXR_0210_0,CHNCXR_0210,Lung Segmentation/CXR_png/CHNCXR_0210_0.png,,False,0,M,27.0,normal,2990,2988,,,0,train
+Shenzhen,CHNCXR_0211_0,CHNCXR_0211,Lung Segmentation/CXR_png/CHNCXR_0211_0.png,,False,0,M,27.0,normal,2992,2986,,,4,train
+Shenzhen,CHNCXR_0212_0,CHNCXR_0212,Lung Segmentation/CXR_png/CHNCXR_0212_0.png,,False,0,M,32.0,normal,2585,2792,,,4,train
+Shenzhen,CHNCXR_0213_0,CHNCXR_0213,Lung Segmentation/CXR_png/CHNCXR_0213_0.png,,False,0,M,43.0,normal,2941,3000,,,4,train
+Shenzhen,CHNCXR_0214_0,CHNCXR_0214,Lung Segmentation/CXR_png/CHNCXR_0214_0.png,,False,0,M,31.0,normal,2750,2627,,,1,train
+Shenzhen,CHNCXR_0215_0,CHNCXR_0215,Lung Segmentation/CXR_png/CHNCXR_0215_0.png,,False,0,M,4.0,normal,1993,1954,,,2,train
+Shenzhen,CHNCXR_0216_0,CHNCXR_0216,Lung Segmentation/CXR_png/CHNCXR_0216_0.png,,False,0,M,40.0,normal,3001,3000,,,4,train
+Shenzhen,CHNCXR_0217_0,CHNCXR_0217,Lung Segmentation/CXR_png/CHNCXR_0217_0.png,,False,0,F,28.0,normal,2713,2763,,,3,train
+Shenzhen,CHNCXR_0218_0,CHNCXR_0218,Lung Segmentation/CXR_png/CHNCXR_0218_0.png,,False,0,M,24.0,normal,2978,2989,,,1,train
+Shenzhen,CHNCXR_0219_0,CHNCXR_0219,Lung Segmentation/CXR_png/CHNCXR_0219_0.png,,False,0,M,33.0,normal,2985,2992,,,2,train
+Shenzhen,CHNCXR_0220_0,CHNCXR_0220,Lung Segmentation/CXR_png/CHNCXR_0220_0.png,,False,0,M,45.0,normal,2575,2554,,,1,train
+Shenzhen,CHNCXR_0221_0,CHNCXR_0221,Lung Segmentation/CXR_png/CHNCXR_0221_0.png,Lung Segmentation/masks/CHNCXR_0221_0_mask.png,True,0,M,29.0,normal,2928,2464,True,0.270712,0,train
+Shenzhen,CHNCXR_0222_0,CHNCXR_0222,Lung Segmentation/CXR_png/CHNCXR_0222_0.png,Lung Segmentation/masks/CHNCXR_0222_0_mask.png,True,0,M,25.0,normal,2998,2989,True,0.213483,3,train
+Shenzhen,CHNCXR_0223_0,CHNCXR_0223,Lung Segmentation/CXR_png/CHNCXR_0223_0.png,Lung Segmentation/masks/CHNCXR_0223_0_mask.png,True,0,M,20.0,normal,2939,3000,True,0.13083,0,train
+Shenzhen,CHNCXR_0224_0,CHNCXR_0224,Lung Segmentation/CXR_png/CHNCXR_0224_0.png,Lung Segmentation/masks/CHNCXR_0224_0_mask.png,True,0,M,25.0,normal,2978,2988,True,0.203218,2,train
+Shenzhen,CHNCXR_0225_0,CHNCXR_0225,Lung Segmentation/CXR_png/CHNCXR_0225_0.png,Lung Segmentation/masks/CHNCXR_0225_0_mask.png,True,0,M,30.0,normal,2999,3000,True,0.246989,0,train
+Shenzhen,CHNCXR_0226_0,CHNCXR_0226,Lung Segmentation/CXR_png/CHNCXR_0226_0.png,Lung Segmentation/masks/CHNCXR_0226_0_mask.png,True,0,M,25.0,normal,2992,2991,True,0.180943,3,train
+Shenzhen,CHNCXR_0227_0,CHNCXR_0227,Lung Segmentation/CXR_png/CHNCXR_0227_0.png,Lung Segmentation/masks/CHNCXR_0227_0_mask.png,True,0,M,50.0,normal,2993,2991,True,0.241712,4,train
+Shenzhen,CHNCXR_0228_0,CHNCXR_0228,Lung Segmentation/CXR_png/CHNCXR_0228_0.png,Lung Segmentation/masks/CHNCXR_0228_0_mask.png,True,0,M,1.0,normal,1252,1286,True,0.227985,0,train
+Shenzhen,CHNCXR_0229_0,CHNCXR_0229,Lung Segmentation/CXR_png/CHNCXR_0229_0.png,Lung Segmentation/masks/CHNCXR_0229_0_mask.png,True,0,F,40.0,normal,2992,2982,True,0.154739,4,train
+Shenzhen,CHNCXR_0230_0,CHNCXR_0230,Lung Segmentation/CXR_png/CHNCXR_0230_0.png,Lung Segmentation/masks/CHNCXR_0230_0_mask.png,True,0,M,44.0,normal,2989,2993,True,0.175991,3,train
+Shenzhen,CHNCXR_0231_0,CHNCXR_0231,Lung Segmentation/CXR_png/CHNCXR_0231_0.png,Lung Segmentation/masks/CHNCXR_0231_0_mask.png,True,0,M,33.0,normal,2994,2987,True,0.210192,4,train
+Shenzhen,CHNCXR_0232_0,CHNCXR_0232,Lung Segmentation/CXR_png/CHNCXR_0232_0.png,Lung Segmentation/masks/CHNCXR_0232_0_mask.png,True,0,M,23.0,normal,2993,2988,True,0.160243,0,train
+Shenzhen,CHNCXR_0233_0,CHNCXR_0233,Lung Segmentation/CXR_png/CHNCXR_0233_0.png,Lung Segmentation/masks/CHNCXR_0233_0_mask.png,True,0,M,41.0,normal,2939,3000,True,0.187195,4,train
+Shenzhen,CHNCXR_0234_0,CHNCXR_0234,Lung Segmentation/CXR_png/CHNCXR_0234_0.png,Lung Segmentation/masks/CHNCXR_0234_0_mask.png,True,0,M,23.0,normal,2992,2992,True,0.159079,3,train
+Shenzhen,CHNCXR_0235_0,CHNCXR_0235,Lung Segmentation/CXR_png/CHNCXR_0235_0.png,Lung Segmentation/masks/CHNCXR_0235_0_mask.png,True,0,F,31.0,normal,2488,2383,True,0.331854,3,train
+Shenzhen,CHNCXR_0236_0,CHNCXR_0236,Lung Segmentation/CXR_png/CHNCXR_0236_0.png,Lung Segmentation/masks/CHNCXR_0236_0_mask.png,True,0,M,24.0,normal,2988,2759,True,0.205452,0,train
+Shenzhen,CHNCXR_0237_0,CHNCXR_0237,Lung Segmentation/CXR_png/CHNCXR_0237_0.png,Lung Segmentation/masks/CHNCXR_0237_0_mask.png,True,0,M,34.0,normal,2937,3000,True,0.185973,1,train
+Shenzhen,CHNCXR_0238_0,CHNCXR_0238,Lung Segmentation/CXR_png/CHNCXR_0238_0.png,Lung Segmentation/masks/CHNCXR_0238_0_mask.png,True,0,M,42.0,normal,2951,3000,True,0.206263,0,train
+Shenzhen,CHNCXR_0239_0,CHNCXR_0239,Lung Segmentation/CXR_png/CHNCXR_0239_0.png,Lung Segmentation/masks/CHNCXR_0239_0_mask.png,True,0,M,30.0,normal,2995,2991,True,0.239046,3,train
+Shenzhen,CHNCXR_0240_0,CHNCXR_0240,Lung Segmentation/CXR_png/CHNCXR_0240_0.png,Lung Segmentation/masks/CHNCXR_0240_0_mask.png,True,0,M,26.0,normal,2995,2988,True,0.208022,2,train
+Shenzhen,CHNCXR_0241_0,CHNCXR_0241,Lung Segmentation/CXR_png/CHNCXR_0241_0.png,Lung Segmentation/masks/CHNCXR_0241_0_mask.png,True,0,F,34.0,normal,2344,2324,True,0.387215,3,train
+Shenzhen,CHNCXR_0242_0,CHNCXR_0242,Lung Segmentation/CXR_png/CHNCXR_0242_0.png,Lung Segmentation/masks/CHNCXR_0242_0_mask.png,True,0,F,33.0,normal,2366,2461,True,0.396726,4,train
+Shenzhen,CHNCXR_0243_0,CHNCXR_0243,Lung Segmentation/CXR_png/CHNCXR_0243_0.png,Lung Segmentation/masks/CHNCXR_0243_0_mask.png,True,0,M,27.0,normal,2939,3000,True,0.27942,3,train
+Shenzhen,CHNCXR_0244_0,CHNCXR_0244,Lung Segmentation/CXR_png/CHNCXR_0244_0.png,Lung Segmentation/masks/CHNCXR_0244_0_mask.png,True,0,F,26.0,normal,2386,2282,True,0.336134,2,train
+Shenzhen,CHNCXR_0245_0,CHNCXR_0245,Lung Segmentation/CXR_png/CHNCXR_0245_0.png,Lung Segmentation/masks/CHNCXR_0245_0_mask.png,True,0,M,23.0,normal,2993,2991,True,0.228616,0,train
+Shenzhen,CHNCXR_0246_0,CHNCXR_0246,Lung Segmentation/CXR_png/CHNCXR_0246_0.png,Lung Segmentation/masks/CHNCXR_0246_0_mask.png,True,0,M,35.0,normal,2945,3000,True,0.225681,3,train
+Shenzhen,CHNCXR_0247_0,CHNCXR_0247,Lung Segmentation/CXR_png/CHNCXR_0247_0.png,Lung Segmentation/masks/CHNCXR_0247_0_mask.png,True,0,F,39.0,normal,2939,3000,True,0.188002,2,train
+Shenzhen,CHNCXR_0248_0,CHNCXR_0248,Lung Segmentation/CXR_png/CHNCXR_0248_0.png,Lung Segmentation/masks/CHNCXR_0248_0_mask.png,True,0,F,2.0,normal,1468,1285,True,0.28663,4,train
+Shenzhen,CHNCXR_0249_0,CHNCXR_0249,Lung Segmentation/CXR_png/CHNCXR_0249_0.png,Lung Segmentation/masks/CHNCXR_0249_0_mask.png,True,0,M,31.0,normal,2982,2990,True,0.181714,1,train
+Shenzhen,CHNCXR_0250_0,CHNCXR_0250,Lung Segmentation/CXR_png/CHNCXR_0250_0.png,Lung Segmentation/masks/CHNCXR_0250_0_mask.png,True,0,M,35.0,normal,2953,3000,True,0.303957,4,train
+Shenzhen,CHNCXR_0251_0,CHNCXR_0251,Lung Segmentation/CXR_png/CHNCXR_0251_0.png,Lung Segmentation/masks/CHNCXR_0251_0_mask.png,True,0,M,52.0,normal,2537,2501,True,0.264992,0,train
+Shenzhen,CHNCXR_0252_0,CHNCXR_0252,Lung Segmentation/CXR_png/CHNCXR_0252_0.png,Lung Segmentation/masks/CHNCXR_0252_0_mask.png,True,0,M,25.0,normal,3001,2990,True,0.252119,1,train
+Shenzhen,CHNCXR_0253_0,CHNCXR_0253,Lung Segmentation/CXR_png/CHNCXR_0253_0.png,Lung Segmentation/masks/CHNCXR_0253_0_mask.png,True,0,M,85.0,normal,2939,3000,True,0.233101,4,train
+Shenzhen,CHNCXR_0254_0,CHNCXR_0254,Lung Segmentation/CXR_png/CHNCXR_0254_0.png,Lung Segmentation/masks/CHNCXR_0254_0_mask.png,True,0,M,53.0,normal,2941,2975,True,0.298757,0,train
+Shenzhen,CHNCXR_0255_0,CHNCXR_0255,Lung Segmentation/CXR_png/CHNCXR_0255_0.png,Lung Segmentation/masks/CHNCXR_0255_0_mask.png,True,0,M,33.0,normal,2930,2600,True,0.278029,0,train
+Shenzhen,CHNCXR_0256_0,CHNCXR_0256,Lung Segmentation/CXR_png/CHNCXR_0256_0.png,Lung Segmentation/masks/CHNCXR_0256_0_mask.png,True,0,F,5.0,normal,1772,1615,True,0.22193,0,train
+Shenzhen,CHNCXR_0257_0,CHNCXR_0257,Lung Segmentation/CXR_png/CHNCXR_0257_0.png,Lung Segmentation/masks/CHNCXR_0257_0_mask.png,True,0,M,42.0,normal,2992,2986,True,0.254428,2,train
+Shenzhen,CHNCXR_0258_0,CHNCXR_0258,Lung Segmentation/CXR_png/CHNCXR_0258_0.png,Lung Segmentation/masks/CHNCXR_0258_0_mask.png,True,0,M,30.0,normal,2943,2997,True,0.224661,0,train
+Shenzhen,CHNCXR_0259_0,CHNCXR_0259,Lung Segmentation/CXR_png/CHNCXR_0259_0.png,Lung Segmentation/masks/CHNCXR_0259_0_mask.png,True,0,M,7.0,normal,2202,1964,True,0.173646,4,train
+Shenzhen,CHNCXR_0260_0,CHNCXR_0260,Lung Segmentation/CXR_png/CHNCXR_0260_0.png,Lung Segmentation/masks/CHNCXR_0260_0_mask.png,True,0,F,46.0,normal,2935,3000,True,0.207354,4,train
+Shenzhen,CHNCXR_0261_0,CHNCXR_0261,Lung Segmentation/CXR_png/CHNCXR_0261_0.png,Lung Segmentation/masks/CHNCXR_0261_0_mask.png,True,0,F,25.0,normal,2956,3001,True,0.219215,3,train
+Shenzhen,CHNCXR_0262_0,CHNCXR_0262,Lung Segmentation/CXR_png/CHNCXR_0262_0.png,Lung Segmentation/masks/CHNCXR_0262_0_mask.png,True,0,M,36.0,normal,2937,3000,True,0.247986,4,train
+Shenzhen,CHNCXR_0263_0,CHNCXR_0263,Lung Segmentation/CXR_png/CHNCXR_0263_0.png,Lung Segmentation/masks/CHNCXR_0263_0_mask.png,True,0,,24.0,normal,2941,3000,True,0.223727,3,train
+Shenzhen,CHNCXR_0264_0,CHNCXR_0264,Lung Segmentation/CXR_png/CHNCXR_0264_0.png,Lung Segmentation/masks/CHNCXR_0264_0_mask.png,True,0,F,27.0,normal,2994,2992,True,0.190295,3,train
+Shenzhen,CHNCXR_0265_0,CHNCXR_0265,Lung Segmentation/CXR_png/CHNCXR_0265_0.png,Lung Segmentation/masks/CHNCXR_0265_0_mask.png,True,0,F,6.0,normal,2205,1936,True,0.169005,3,train
+Shenzhen,CHNCXR_0266_0,CHNCXR_0266,Lung Segmentation/CXR_png/CHNCXR_0266_0.png,Lung Segmentation/masks/CHNCXR_0266_0_mask.png,True,0,M,23.0,normal,2995,2991,True,0.166847,4,train
+Shenzhen,CHNCXR_0267_0,CHNCXR_0267,Lung Segmentation/CXR_png/CHNCXR_0267_0.png,Lung Segmentation/masks/CHNCXR_0267_0_mask.png,True,0,F,53.0,normal,2921,2997,True,0.145932,3,train
+Shenzhen,CHNCXR_0268_0,CHNCXR_0268,Lung Segmentation/CXR_png/CHNCXR_0268_0.png,Lung Segmentation/masks/CHNCXR_0268_0_mask.png,True,0,M,33.0,normal,2994,2588,True,0.208747,4,train
+Shenzhen,CHNCXR_0269_0,CHNCXR_0269,Lung Segmentation/CXR_png/CHNCXR_0269_0.png,Lung Segmentation/masks/CHNCXR_0269_0_mask.png,True,0,M,31.0,normal,3001,2967,True,0.184474,3,train
+Shenzhen,CHNCXR_0270_0,CHNCXR_0270,Lung Segmentation/CXR_png/CHNCXR_0270_0.png,Lung Segmentation/masks/CHNCXR_0270_0_mask.png,True,0,M,28.0,normal,2992,2991,True,0.181411,2,train
+Shenzhen,CHNCXR_0271_0,CHNCXR_0271,Lung Segmentation/CXR_png/CHNCXR_0271_0.png,Lung Segmentation/masks/CHNCXR_0271_0_mask.png,True,0,M,26.0,normal,2995,2989,True,0.253243,0,train
+Shenzhen,CHNCXR_0272_0,CHNCXR_0272,Lung Segmentation/CXR_png/CHNCXR_0272_0.png,Lung Segmentation/masks/CHNCXR_0272_0_mask.png,True,0,F,62.0,normal,2283,2272,True,0.34897,3,train
+Shenzhen,CHNCXR_0273_0,CHNCXR_0273,Lung Segmentation/CXR_png/CHNCXR_0273_0.png,Lung Segmentation/masks/CHNCXR_0273_0_mask.png,True,0,M,8.0,normal,2374,2048,True,0.277381,2,train
+Shenzhen,CHNCXR_0274_0,CHNCXR_0274,Lung Segmentation/CXR_png/CHNCXR_0274_0.png,Lung Segmentation/masks/CHNCXR_0274_0_mask.png,True,0,F,64.0,normal,2733,2423,True,0.323113,3,train
+Shenzhen,CHNCXR_0275_0,CHNCXR_0275,Lung Segmentation/CXR_png/CHNCXR_0275_0.png,Lung Segmentation/masks/CHNCXR_0275_0_mask.png,True,0,M,32.0,normal,2994,2992,True,0.161367,1,train
+Shenzhen,CHNCXR_0276_0,CHNCXR_0276,Lung Segmentation/CXR_png/CHNCXR_0276_0.png,Lung Segmentation/masks/CHNCXR_0276_0_mask.png,True,0,M,48.0,normal,2980,3001,True,0.198175,0,train
+Shenzhen,CHNCXR_0277_0,CHNCXR_0277,Lung Segmentation/CXR_png/CHNCXR_0277_0.png,Lung Segmentation/masks/CHNCXR_0277_0_mask.png,True,0,M,47.0,normal,2979,2609,True,0.220729,0,train
+Shenzhen,CHNCXR_0278_0,CHNCXR_0278,Lung Segmentation/CXR_png/CHNCXR_0278_0.png,Lung Segmentation/masks/CHNCXR_0278_0_mask.png,True,0,M,14.0,normal,2582,2316,True,0.346688,0,train
+Shenzhen,CHNCXR_0279_0,CHNCXR_0279,Lung Segmentation/CXR_png/CHNCXR_0279_0.png,Lung Segmentation/masks/CHNCXR_0279_0_mask.png,True,0,M,35.0,normal,2710,2549,True,0.320602,1,train
+Shenzhen,CHNCXR_0280_0,CHNCXR_0280,Lung Segmentation/CXR_png/CHNCXR_0280_0.png,Lung Segmentation/masks/CHNCXR_0280_0_mask.png,True,0,M,29.0,normal,2945,2793,True,0.164791,3,train
+Shenzhen,CHNCXR_0281_0,CHNCXR_0281,Lung Segmentation/CXR_png/CHNCXR_0281_0.png,Lung Segmentation/masks/CHNCXR_0281_0_mask.png,True,0,M,28.0,normal,2945,3000,True,0.26326,0,train
+Shenzhen,CHNCXR_0282_0,CHNCXR_0282,Lung Segmentation/CXR_png/CHNCXR_0282_0.png,Lung Segmentation/masks/CHNCXR_0282_0_mask.png,True,0,M,46.0,normal,2967,3000,True,0.261777,4,train
+Shenzhen,CHNCXR_0283_0,CHNCXR_0283,Lung Segmentation/CXR_png/CHNCXR_0283_0.png,Lung Segmentation/masks/CHNCXR_0283_0_mask.png,True,0,M,25.0,normal,2993,3000,True,0.234697,1,train
+Shenzhen,CHNCXR_0284_0,CHNCXR_0284,Lung Segmentation/CXR_png/CHNCXR_0284_0.png,Lung Segmentation/masks/CHNCXR_0284_0_mask.png,True,0,M,59.0,normal,2959,3000,True,0.167423,0,train
+Shenzhen,CHNCXR_0285_0,CHNCXR_0285,Lung Segmentation/CXR_png/CHNCXR_0285_0.png,Lung Segmentation/masks/CHNCXR_0285_0_mask.png,True,0,M,35.0,normal,3001,3001,True,0.265913,4,train
+Shenzhen,CHNCXR_0286_0,CHNCXR_0286,Lung Segmentation/CXR_png/CHNCXR_0286_0.png,Lung Segmentation/masks/CHNCXR_0286_0_mask.png,True,0,M,64.0,normal,2943,2989,True,0.300645,3,train
+Shenzhen,CHNCXR_0287_0,CHNCXR_0287,Lung Segmentation/CXR_png/CHNCXR_0287_0.png,Lung Segmentation/masks/CHNCXR_0287_0_mask.png,True,0,F,35.0,normal,2838,2617,True,0.260865,0,train
+Shenzhen,CHNCXR_0288_0,CHNCXR_0288,Lung Segmentation/CXR_png/CHNCXR_0288_0.png,Lung Segmentation/masks/CHNCXR_0288_0_mask.png,True,0,M,28.0,normal,2940,2324,True,0.276645,1,train
+Shenzhen,CHNCXR_0289_0,CHNCXR_0289,Lung Segmentation/CXR_png/CHNCXR_0289_0.png,Lung Segmentation/masks/CHNCXR_0289_0_mask.png,True,0,F,21.0,normal,2945,3000,True,0.218084,4,train
+Shenzhen,CHNCXR_0290_0,CHNCXR_0290,Lung Segmentation/CXR_png/CHNCXR_0290_0.png,Lung Segmentation/masks/CHNCXR_0290_0_mask.png,True,0,M,42.0,normal,2933,2987,True,0.241065,2,train
+Shenzhen,CHNCXR_0291_0,CHNCXR_0291,Lung Segmentation/CXR_png/CHNCXR_0291_0.png,Lung Segmentation/masks/CHNCXR_0291_0_mask.png,True,0,F,37.0,normal,2449,2403,True,0.363619,4,train
+Shenzhen,CHNCXR_0292_0,CHNCXR_0292,Lung Segmentation/CXR_png/CHNCXR_0292_0.png,Lung Segmentation/masks/CHNCXR_0292_0_mask.png,True,0,F,28.0,normal,2935,2987,True,0.222883,2,train
+Shenzhen,CHNCXR_0293_0,CHNCXR_0293,Lung Segmentation/CXR_png/CHNCXR_0293_0.png,Lung Segmentation/masks/CHNCXR_0293_0_mask.png,True,0,M,36.0,normal,2949,3000,True,0.289473,4,train
+Shenzhen,CHNCXR_0294_0,CHNCXR_0294,Lung Segmentation/CXR_png/CHNCXR_0294_0.png,Lung Segmentation/masks/CHNCXR_0294_0_mask.png,True,0,F,30.0,normal,2945,3000,True,0.291955,3,train
+Shenzhen,CHNCXR_0295_0,CHNCXR_0295,Lung Segmentation/CXR_png/CHNCXR_0295_0.png,Lung Segmentation/masks/CHNCXR_0295_0_mask.png,True,0,F,52.0,normal,2482,2344,True,0.327842,0,train
+Shenzhen,CHNCXR_0296_0,CHNCXR_0296,Lung Segmentation/CXR_png/CHNCXR_0296_0.png,Lung Segmentation/masks/CHNCXR_0296_0_mask.png,True,0,F,39.0,normal,2571,2430,True,0.332374,0,train
+Shenzhen,CHNCXR_0297_0,CHNCXR_0297,Lung Segmentation/CXR_png/CHNCXR_0297_0.png,Lung Segmentation/masks/CHNCXR_0297_0_mask.png,True,0,M,1.0,normal,1551,1418,True,0.237407,2,train
+Shenzhen,CHNCXR_0298_0,CHNCXR_0298,Lung Segmentation/CXR_png/CHNCXR_0298_0.png,Lung Segmentation/masks/CHNCXR_0298_0_mask.png,True,0,M,37.0,normal,2947,3000,True,0.291928,2,train
+Shenzhen,CHNCXR_0299_0,CHNCXR_0299,Lung Segmentation/CXR_png/CHNCXR_0299_0.png,Lung Segmentation/masks/CHNCXR_0299_0_mask.png,True,0,F,5.0,normal,2143,1767,True,0.152559,4,train
+Shenzhen,CHNCXR_0300_0,CHNCXR_0300,Lung Segmentation/CXR_png/CHNCXR_0300_0.png,Lung Segmentation/masks/CHNCXR_0300_0_mask.png,True,0,M,36.0,normal,2951,3000,True,0.237965,2,train
+Shenzhen,CHNCXR_0301_0,CHNCXR_0301,Lung Segmentation/CXR_png/CHNCXR_0301_0.png,Lung Segmentation/masks/CHNCXR_0301_0_mask.png,True,0,F,42.0,normal,2949,3000,True,0.205211,2,train
+Shenzhen,CHNCXR_0302_0,CHNCXR_0302,Lung Segmentation/CXR_png/CHNCXR_0302_0.png,Lung Segmentation/masks/CHNCXR_0302_0_mask.png,True,0,F,28.0,normal,2968,2604,True,0.232485,0,train
+Shenzhen,CHNCXR_0303_0,CHNCXR_0303,Lung Segmentation/CXR_png/CHNCXR_0303_0.png,Lung Segmentation/masks/CHNCXR_0303_0_mask.png,True,0,M,3.0,normal,1887,1872,True,0.098788,0,train
+Shenzhen,CHNCXR_0304_0,CHNCXR_0304,Lung Segmentation/CXR_png/CHNCXR_0304_0.png,Lung Segmentation/masks/CHNCXR_0304_0_mask.png,True,0,M,19.0,normal,2945,3000,True,0.209741,3,train
+Shenzhen,CHNCXR_0305_0,CHNCXR_0305,Lung Segmentation/CXR_png/CHNCXR_0305_0.png,Lung Segmentation/masks/CHNCXR_0305_0_mask.png,True,0,M,24.0,normal,3001,2689,True,0.236793,3,train
+Shenzhen,CHNCXR_0306_0,CHNCXR_0306,Lung Segmentation/CXR_png/CHNCXR_0306_0.png,Lung Segmentation/masks/CHNCXR_0306_0_mask.png,True,0,M,17.0,normal,2931,3000,True,0.15794,0,train
+Shenzhen,CHNCXR_0307_0,CHNCXR_0307,Lung Segmentation/CXR_png/CHNCXR_0307_0.png,Lung Segmentation/masks/CHNCXR_0307_0_mask.png,True,0,F,38.0,normal,2947,3000,True,0.179757,2,train
+Shenzhen,CHNCXR_0308_0,CHNCXR_0308,Lung Segmentation/CXR_png/CHNCXR_0308_0.png,Lung Segmentation/masks/CHNCXR_0308_0_mask.png,True,0,M,32.0,normal,2943,2997,True,0.223,4,train
+Shenzhen,CHNCXR_0309_0,CHNCXR_0309,Lung Segmentation/CXR_png/CHNCXR_0309_0.png,Lung Segmentation/masks/CHNCXR_0309_0_mask.png,True,0,F,27.0,normal,2915,3000,True,0.283064,2,train
+Shenzhen,CHNCXR_0310_0,CHNCXR_0310,Lung Segmentation/CXR_png/CHNCXR_0310_0.png,Lung Segmentation/masks/CHNCXR_0310_0_mask.png,True,0,F,36.0,normal,2278,2301,True,0.253207,4,train
+Shenzhen,CHNCXR_0311_0,CHNCXR_0311,Lung Segmentation/CXR_png/CHNCXR_0311_0.png,Lung Segmentation/masks/CHNCXR_0311_0_mask.png,True,0,M,39.0,normal,2955,3000,True,0.296059,3,train
+Shenzhen,CHNCXR_0312_0,CHNCXR_0312,Lung Segmentation/CXR_png/CHNCXR_0312_0.png,Lung Segmentation/masks/CHNCXR_0312_0_mask.png,True,0,F,47.0,normal,2935,3000,True,0.188275,4,train
+Shenzhen,CHNCXR_0313_0,CHNCXR_0313,Lung Segmentation/CXR_png/CHNCXR_0313_0.png,Lung Segmentation/masks/CHNCXR_0313_0_mask.png,True,0,M,6.0,normal,2034,1814,True,0.191484,2,train
+Shenzhen,CHNCXR_0314_0,CHNCXR_0314,Lung Segmentation/CXR_png/CHNCXR_0314_0.png,Lung Segmentation/masks/CHNCXR_0314_0_mask.png,True,0,M,30.0,normal,2955,2689,True,0.244586,1,train
+Shenzhen,CHNCXR_0315_0,CHNCXR_0315,Lung Segmentation/CXR_png/CHNCXR_0315_0.png,Lung Segmentation/masks/CHNCXR_0315_0_mask.png,True,0,M,30.0,normal,2985,3000,True,0.2682,2,train
+Shenzhen,CHNCXR_0316_0,CHNCXR_0316,Lung Segmentation/CXR_png/CHNCXR_0316_0.png,Lung Segmentation/masks/CHNCXR_0316_0_mask.png,True,0,F,43.0,normal,2658,2377,True,0.264111,1,train
+Shenzhen,CHNCXR_0317_0,CHNCXR_0317,Lung Segmentation/CXR_png/CHNCXR_0317_0.png,Lung Segmentation/masks/CHNCXR_0317_0_mask.png,True,0,M,30.0,normal,2937,3000,True,0.245407,1,train
+Shenzhen,CHNCXR_0318_0,CHNCXR_0318,Lung Segmentation/CXR_png/CHNCXR_0318_0.png,Lung Segmentation/masks/CHNCXR_0318_0_mask.png,True,0,M,25.0,normal,2935,3000,True,0.277544,3,train
+Shenzhen,CHNCXR_0319_0,CHNCXR_0319,Lung Segmentation/CXR_png/CHNCXR_0319_0.png,Lung Segmentation/masks/CHNCXR_0319_0_mask.png,True,0,F,50.0,normal,2949,3000,True,0.200209,1,train
+Shenzhen,CHNCXR_0320_0,CHNCXR_0320,Lung Segmentation/CXR_png/CHNCXR_0320_0.png,Lung Segmentation/masks/CHNCXR_0320_0_mask.png,True,0,M,38.0,normal,2937,3000,True,0.230958,4,train
+Shenzhen,CHNCXR_0321_0,CHNCXR_0321,Lung Segmentation/CXR_png/CHNCXR_0321_0.png,Lung Segmentation/masks/CHNCXR_0321_0_mask.png,True,0,M,30.0,normal,2953,3000,True,0.2395,0,train
+Shenzhen,CHNCXR_0322_0,CHNCXR_0322,Lung Segmentation/CXR_png/CHNCXR_0322_0.png,Lung Segmentation/masks/CHNCXR_0322_0_mask.png,True,0,M,38.0,normal,2949,3000,True,0.29394,2,train
+Shenzhen,CHNCXR_0323_0,CHNCXR_0323,Lung Segmentation/CXR_png/CHNCXR_0323_0.png,Lung Segmentation/masks/CHNCXR_0323_0_mask.png,True,0,M,28.0,normal,2951,3000,True,0.199913,1,train
+Shenzhen,CHNCXR_0324_0,CHNCXR_0324,Lung Segmentation/CXR_png/CHNCXR_0324_0.png,Lung Segmentation/masks/CHNCXR_0324_0_mask.png,True,0,M,32.0,normal,2945,3000,True,0.234166,1,train
+Shenzhen,CHNCXR_0325_0,CHNCXR_0325,Lung Segmentation/CXR_png/CHNCXR_0325_0.png,Lung Segmentation/masks/CHNCXR_0325_0_mask.png,True,0,M,39.0,normal,2943,3000,True,0.215248,4,train
+Shenzhen,CHNCXR_0326_0,CHNCXR_0326,Lung Segmentation/CXR_png/CHNCXR_0326_0.png,Lung Segmentation/masks/CHNCXR_0326_0_mask.png,True,0,M,38.0,normal,2939,3000,True,0.225097,1,train
+Shenzhen,CHNCXR_0327_1,CHNCXR_0327,Lung Segmentation/CXR_png/CHNCXR_0327_1.png,Lung Segmentation/masks/CHNCXR_0327_1_mask.png,True,1,M,28.0,STB,2566,2566,True,0.402913,0,train
+Shenzhen,CHNCXR_0328_1,CHNCXR_0328,Lung Segmentation/CXR_png/CHNCXR_0328_1.png,Lung Segmentation/masks/CHNCXR_0328_1_mask.png,True,1,F,40.0,STB NATB,2939,2985,True,0.218062,4,train
+Shenzhen,CHNCXR_0329_1,CHNCXR_0329,Lung Segmentation/CXR_png/CHNCXR_0329_1.png,Lung Segmentation/masks/CHNCXR_0329_1_mask.png,True,1,F,40.0,TB,2303,2383,True,0.321276,0,train
+Shenzhen,CHNCXR_0330_1,CHNCXR_0330,Lung Segmentation/CXR_png/CHNCXR_0330_1.png,Lung Segmentation/masks/CHNCXR_0330_1_mask.png,True,1,M,32.0,STB ATB tuberculosis pleuritis,2787,2632,True,0.37856,4,train
+Shenzhen,CHNCXR_0331_1,CHNCXR_0331,Lung Segmentation/CXR_png/CHNCXR_0331_1.png,Lung Segmentation/masks/CHNCXR_0331_1_mask.png,True,1,F,36.0,STB NATB Tuberculosis pleuritis,2261,2282,True,0.391539,1,train
+Shenzhen,CHNCXR_0332_1,CHNCXR_0332,Lung Segmentation/CXR_png/CHNCXR_0332_1.png,Lung Segmentation/masks/CHNCXR_0332_1_mask.png,True,1,M,58.0,STB,2639,2749,True,0.349984,1,train
+Shenzhen,CHNCXR_0333_1,CHNCXR_0333,Lung Segmentation/CXR_png/CHNCXR_0333_1.png,Lung Segmentation/masks/CHNCXR_0333_1_mask.png,True,1,M,32.0,STB,2595,2613,True,0.383574,3,train
+Shenzhen,CHNCXR_0334_1,CHNCXR_0334,Lung Segmentation/CXR_png/CHNCXR_0334_1.png,Lung Segmentation/masks/CHNCXR_0334_1_mask.png,True,1,M,44.0,STB NATB,2925,3000,True,0.302187,2,train
+Shenzhen,CHNCXR_0335_1,CHNCXR_0335,Lung Segmentation/CXR_png/CHNCXR_0335_1.png,Lung Segmentation/masks/CHNCXR_0335_1_mask.png,True,1,M,37.0,STB NATB,2424,2569,True,0.273578,2,train
+Shenzhen,CHNCXR_0336_1,CHNCXR_0336,Lung Segmentation/CXR_png/CHNCXR_0336_1.png,,False,1,M,30.0,STB,2742,2472,,,3,train
+Shenzhen,CHNCXR_0337_1,CHNCXR_0337,Lung Segmentation/CXR_png/CHNCXR_0337_1.png,Lung Segmentation/masks/CHNCXR_0337_1_mask.png,True,1,M,31.0,STB,2562,2464,True,0.401441,4,train
+Shenzhen,CHNCXR_0338_1,CHNCXR_0338,Lung Segmentation/CXR_png/CHNCXR_0338_1.png,Lung Segmentation/masks/CHNCXR_0338_1_mask.png,True,1,M,49.0,STB ATB,2924,2397,True,0.319292,3,train
+Shenzhen,CHNCXR_0339_1,CHNCXR_0339,Lung Segmentation/CXR_png/CHNCXR_0339_1.png,Lung Segmentation/masks/CHNCXR_0339_1_mask.png,True,1,M,24.0,STB ATB,2493,2573,True,0.432649,3,train
+Shenzhen,CHNCXR_0340_1,CHNCXR_0340,Lung Segmentation/CXR_png/CHNCXR_0340_1.png,Lung Segmentation/masks/CHNCXR_0340_1_mask.png,True,1,M,34.0,STB,2810,2808,True,0.330654,3,train
+Shenzhen,CHNCXR_0341_1,CHNCXR_0341,Lung Segmentation/CXR_png/CHNCXR_0341_1.png,,False,1,F,43.0,STB,2945,3000,,,1,train
+Shenzhen,CHNCXR_0342_1,CHNCXR_0342,Lung Segmentation/CXR_png/CHNCXR_0342_1.png,,False,1,M,27.0,STB NATB,2916,2746,,,4,train
+Shenzhen,CHNCXR_0343_1,CHNCXR_0343,Lung Segmentation/CXR_png/CHNCXR_0343_1.png,,False,1,M,24.0,STB NATB,2958,2800,,,3,train
+Shenzhen,CHNCXR_0344_1,CHNCXR_0344,Lung Segmentation/CXR_png/CHNCXR_0344_1.png,,False,1,F,29.0,STB ATB,2485,2499,,,0,train
+Shenzhen,CHNCXR_0345_1,CHNCXR_0345,Lung Segmentation/CXR_png/CHNCXR_0345_1.png,,False,1,M,40.0,STB,2638,2495,,,3,train
+Shenzhen,CHNCXR_0346_1,CHNCXR_0346,Lung Segmentation/CXR_png/CHNCXR_0346_1.png,,False,1,F,26.0,STB tuberculosis pleuritis,2334,2128,,,3,train
+Shenzhen,CHNCXR_0347_1,CHNCXR_0347,Lung Segmentation/CXR_png/CHNCXR_0347_1.png,,False,1,M,24.0,PTB in the left lower field,2916,2678,,,2,train
+Shenzhen,CHNCXR_0348_1,CHNCXR_0348,Lung Segmentation/CXR_png/CHNCXR_0348_1.png,,False,1,F,32.0,"Bilateral secondary PTB , right pleural change after decortication",2787,2485,,,1,train
+Shenzhen,CHNCXR_0349_1,CHNCXR_0349,Lung Segmentation/CXR_png/CHNCXR_0349_1.png,,False,1,M,46.0,bilateral PTB ?right pleurisy with pleural effusion,2949,3000,,,4,train
+Shenzhen,CHNCXR_0350_1,CHNCXR_0350,Lung Segmentation/CXR_png/CHNCXR_0350_1.png,,False,1,M,55.0,PTB in the left upper field,2889,2776,,,2,train
+Shenzhen,CHNCXR_0351_1,CHNCXR_0351,Lung Segmentation/CXR_png/CHNCXR_0351_1.png,,False,1,M,39.0,secondary PTB in the right upper field,2951,3000,,,2,train
+Shenzhen,CHNCXR_0352_1,CHNCXR_0352,Lung Segmentation/CXR_png/CHNCXR_0352_1.png,,False,1,M,17.0,secondary PTB in the bilateral upper field,2921,2573,,,0,train
+Shenzhen,CHNCXR_0353_1,CHNCXR_0353,Lung Segmentation/CXR_png/CHNCXR_0353_1.png,,False,1,F,16.0,PTB in the left upper field,2550,2307,,,1,train
+Shenzhen,CHNCXR_0354_1,CHNCXR_0354,Lung Segmentation/CXR_png/CHNCXR_0354_1.png,,False,1,M,27.0,PTB in the right upper field,2931,2618,,,3,train
+Shenzhen,CHNCXR_0355_1,CHNCXR_0355,Lung Segmentation/CXR_png/CHNCXR_0355_1.png,,False,1,M,79.0,bilateral PTB,2967,3001,,,4,train
+Shenzhen,CHNCXR_0356_1,CHNCXR_0356,Lung Segmentation/CXR_png/CHNCXR_0356_1.png,,False,1,F,78.0,bilateral PTB,2700,2416,,,3,train
+Shenzhen,CHNCXR_0357_1,CHNCXR_0357,Lung Segmentation/CXR_png/CHNCXR_0357_1.png,,False,1,M,49.0,PTB in the left upper field,2921,2849,,,3,train
+Shenzhen,CHNCXR_0358_1,CHNCXR_0358,Lung Segmentation/CXR_png/CHNCXR_0358_1.png,,False,1,F,39.0,secondary PTB  in the right upper field,2939,2542,,,4,train
+Shenzhen,CHNCXR_0359_1,CHNCXR_0359,Lung Segmentation/CXR_png/CHNCXR_0359_1.png,,False,1,M,24.0,"bilateral PTB,right upper field atelectasis",2892,2552,,,4,train
+Shenzhen,CHNCXR_0360_1,CHNCXR_0360,Lung Segmentation/CXR_png/CHNCXR_0360_1.png,,False,1,F,23.0,Bilateral secondary PTB,2783,2562,,,1,train
+Shenzhen,CHNCXR_0361_1,CHNCXR_0361,Lung Segmentation/CXR_png/CHNCXR_0361_1.png,Lung Segmentation/masks/CHNCXR_0361_1_mask.png,True,1,F,49.0,"Bilateral secondary PTB, left encapsulated intrathoracic fluid",2690,2646,True,0.199068,0,train
+Shenzhen,CHNCXR_0362_1,CHNCXR_0362,Lung Segmentation/CXR_png/CHNCXR_0362_1.png,Lung Segmentation/masks/CHNCXR_0362_1_mask.png,True,1,M,25.0,PTB in the right lower field,2963,3001,True,0.295765,4,train
+Shenzhen,CHNCXR_0363_1,CHNCXR_0363,Lung Segmentation/CXR_png/CHNCXR_0363_1.png,Lung Segmentation/masks/CHNCXR_0363_1_mask.png,True,1,F,38.0,secondary PTB  in the right upper field,2788,2460,True,0.276553,2,train
+Shenzhen,CHNCXR_0364_1,CHNCXR_0364,Lung Segmentation/CXR_png/CHNCXR_0364_1.png,Lung Segmentation/masks/CHNCXR_0364_1_mask.png,True,1,M,24.0,Right PTB,2971,3000,True,0.202426,1,train
+Shenzhen,CHNCXR_0365_1,CHNCXR_0365,Lung Segmentation/CXR_png/CHNCXR_0365_1.png,Lung Segmentation/masks/CHNCXR_0365_1_mask.png,True,1,F,38.0,"Left PTB, left pleural thickening",2808,2458,True,0.280209,1,train
+Shenzhen,CHNCXR_0366_1,CHNCXR_0366,Lung Segmentation/CXR_png/CHNCXR_0366_1.png,Lung Segmentation/masks/CHNCXR_0366_1_mask.png,True,1,M,33.0,PTB in the bilateral upper and middle field,2960,2804,True,0.184553,1,train
+Shenzhen,CHNCXR_0367_1,CHNCXR_0367,Lung Segmentation/CXR_png/CHNCXR_0367_1.png,Lung Segmentation/masks/CHNCXR_0367_1_mask.png,True,1,M,27.0,Old PTB in the right upper field,2944,2485,True,0.360049,1,train
+Shenzhen,CHNCXR_0368_1,CHNCXR_0368,Lung Segmentation/CXR_png/CHNCXR_0368_1.png,Lung Segmentation/masks/CHNCXR_0368_1_mask.png,True,1,F,10.0,"left PTB,pleural thickening",2400,2039,True,0.233885,1,train
+Shenzhen,CHNCXR_0369_1,CHNCXR_0369,Lung Segmentation/CXR_png/CHNCXR_0369_1.png,Lung Segmentation/masks/CHNCXR_0369_1_mask.png,True,1,M,39.0,bilateral PTB,2945,2814,True,0.224984,0,train
+Shenzhen,CHNCXR_0370_1,CHNCXR_0370,Lung Segmentation/CXR_png/CHNCXR_0370_1.png,Lung Segmentation/masks/CHNCXR_0370_1_mask.png,True,1,M,75.0,"bilateral PTB, with left pleural effusion",2941,2996,True,0.137889,1,train
+Shenzhen,CHNCXR_0371_1,CHNCXR_0371,Lung Segmentation/CXR_png/CHNCXR_0371_1.png,Lung Segmentation/masks/CHNCXR_0371_1_mask.png,True,1,M,40.0,PTB  in the right upper field,2945,3000,True,0.230272,2,train
+Shenzhen,CHNCXR_0372_1,CHNCXR_0372,Lung Segmentation/CXR_png/CHNCXR_0372_1.png,Lung Segmentation/masks/CHNCXR_0372_1_mask.png,True,1,M,42.0,Right PTB,2949,3000,True,0.244394,2,train
+Shenzhen,CHNCXR_0373_1,CHNCXR_0373,Lung Segmentation/CXR_png/CHNCXR_0373_1.png,Lung Segmentation/masks/CHNCXR_0373_1_mask.png,True,1,M,39.0,PTB  in the right upper field,2833,2638,True,0.278657,3,train
+Shenzhen,CHNCXR_0374_1,CHNCXR_0374,Lung Segmentation/CXR_png/CHNCXR_0374_1.png,Lung Segmentation/masks/CHNCXR_0374_1_mask.png,True,1,M,19.0,PTB  in the right upper field,2927,3000,True,0.223161,1,train
+Shenzhen,CHNCXR_0375_1,CHNCXR_0375,Lung Segmentation/CXR_png/CHNCXR_0375_1.png,Lung Segmentation/masks/CHNCXR_0375_1_mask.png,True,1,M,34.0,left PTB,2995,2990,True,0.271101,0,train
+Shenzhen,CHNCXR_0376_1,CHNCXR_0376,Lung Segmentation/CXR_png/CHNCXR_0376_1.png,Lung Segmentation/masks/CHNCXR_0376_1_mask.png,True,1,M,56.0,Right PTB,2958,2991,True,0.223611,3,train
+Shenzhen,CHNCXR_0377_1,CHNCXR_0377,Lung Segmentation/CXR_png/CHNCXR_0377_1.png,Lung Segmentation/masks/CHNCXR_0377_1_mask.png,True,1,M,25.0,PTB in the bilateral upper field,2730,2344,True,0.22524,3,train
+Shenzhen,CHNCXR_0378_1,CHNCXR_0378,Lung Segmentation/CXR_png/CHNCXR_0378_1.png,Lung Segmentation/masks/CHNCXR_0378_1_mask.png,True,1,M,78.0,Right PTB,2959,2983,True,0.186744,0,train
+Shenzhen,CHNCXR_0379_1,CHNCXR_0379,Lung Segmentation/CXR_png/CHNCXR_0379_1.png,Lung Segmentation/masks/CHNCXR_0379_1_mask.png,True,1,F,28.0,PTB in the bilateral upper field,2240,2377,True,0.272784,4,train
+Shenzhen,CHNCXR_0380_1,CHNCXR_0380,Lung Segmentation/CXR_png/CHNCXR_0380_1.png,Lung Segmentation/masks/CHNCXR_0380_1_mask.png,True,1,F,55.0,"left PTB,left pleurisy",2977,2978,True,0.140572,2,train
+Shenzhen,CHNCXR_0381_1,CHNCXR_0381,Lung Segmentation/CXR_png/CHNCXR_0381_1.png,Lung Segmentation/masks/CHNCXR_0381_1_mask.png,True,1,M,40.0,"left PTB,left pleurisy",2958,3001,True,0.182916,4,train
+Shenzhen,CHNCXR_0382_1,CHNCXR_0382,Lung Segmentation/CXR_png/CHNCXR_0382_1.png,Lung Segmentation/masks/CHNCXR_0382_1_mask.png,True,1,M,33.0,bilateral PTB,2897,2499,True,0.255918,0,train
+Shenzhen,CHNCXR_0383_1,CHNCXR_0383,Lung Segmentation/CXR_png/CHNCXR_0383_1.png,Lung Segmentation/masks/CHNCXR_0383_1_mask.png,True,1,M,58.0,bilateral PTB,2639,2709,True,0.209243,1,train
+Shenzhen,CHNCXR_0384_1,CHNCXR_0384,Lung Segmentation/CXR_png/CHNCXR_0384_1.png,Lung Segmentation/masks/CHNCXR_0384_1_mask.png,True,1,F,29.0,bilateral PTB,2935,2991,True,0.243361,2,train
+Shenzhen,CHNCXR_0385_1,CHNCXR_0385,Lung Segmentation/CXR_png/CHNCXR_0385_1.png,Lung Segmentation/masks/CHNCXR_0385_1_mask.png,True,1,M,60.0,Right PTB,2947,2804,True,0.261776,1,train
+Shenzhen,CHNCXR_0386_1,CHNCXR_0386,Lung Segmentation/CXR_png/CHNCXR_0386_1.png,Lung Segmentation/masks/CHNCXR_0386_1_mask.png,True,1,F,47.0,secondary PTB  in the bilateral upper field,2947,3000,True,0.21725,0,train
+Shenzhen,CHNCXR_0387_1,CHNCXR_0387,Lung Segmentation/CXR_png/CHNCXR_0387_1.png,Lung Segmentation/masks/CHNCXR_0387_1_mask.png,True,1,M,34.0,Right PTB,2603,2516,True,0.298816,3,train
+Shenzhen,CHNCXR_0388_1,CHNCXR_0388,Lung Segmentation/CXR_png/CHNCXR_0388_1.png,Lung Segmentation/masks/CHNCXR_0388_1_mask.png,True,1,M,18.0,bilateral PTB,2925,2773,True,0.270738,1,train
+Shenzhen,CHNCXR_0389_1,CHNCXR_0389,Lung Segmentation/CXR_png/CHNCXR_0389_1.png,Lung Segmentation/masks/CHNCXR_0389_1_mask.png,True,1,M,63.0,"Right pneumothorax, Right upper PTB, bilateral widespread infection",3001,2763,True,0.194468,0,train
+Shenzhen,CHNCXR_0390_1,CHNCXR_0390,Lung Segmentation/CXR_png/CHNCXR_0390_1.png,Lung Segmentation/masks/CHNCXR_0390_1_mask.png,True,1,M,25.0,Right PTB,2951,2824,True,0.316646,4,train
+Shenzhen,CHNCXR_0391_1,CHNCXR_0391,Lung Segmentation/CXR_png/CHNCXR_0391_1.png,Lung Segmentation/masks/CHNCXR_0391_1_mask.png,True,1,F,67.0,right upper pneumonia,2611,2227,True,0.212607,4,train
+Shenzhen,CHNCXR_0392_1,CHNCXR_0392,Lung Segmentation/CXR_png/CHNCXR_0392_1.png,Lung Segmentation/masks/CHNCXR_0392_1_mask.png,True,1,M,28.0,Right PTB,2722,2572,True,0.336139,4,train
+Shenzhen,CHNCXR_0393_1,CHNCXR_0393,Lung Segmentation/CXR_png/CHNCXR_0393_1.png,Lung Segmentation/masks/CHNCXR_0393_1_mask.png,True,1,F,24.0,"right upper PTB, pleural adhesions in  left lower field",2417,2479,True,0.31017,3,train
+Shenzhen,CHNCXR_0394_1,CHNCXR_0394,Lung Segmentation/CXR_png/CHNCXR_0394_1.png,Lung Segmentation/masks/CHNCXR_0394_1_mask.png,True,1,M,45.0,right upper PTB,2955,2994,True,0.282313,1,train
+Shenzhen,CHNCXR_0395_1,CHNCXR_0395,Lung Segmentation/CXR_png/CHNCXR_0395_1.png,Lung Segmentation/masks/CHNCXR_0395_1_mask.png,True,1,M,31.0,"bilateral PTB, right pleurisy",2904,2715,True,0.269833,2,train
+Shenzhen,CHNCXR_0396_1,CHNCXR_0396,Lung Segmentation/CXR_png/CHNCXR_0396_1.png,Lung Segmentation/masks/CHNCXR_0396_1_mask.png,True,1,M,35.0,right upper PTB,2900,2624,True,0.312085,3,train
+Shenzhen,CHNCXR_0397_1,CHNCXR_0397,Lung Segmentation/CXR_png/CHNCXR_0397_1.png,Lung Segmentation/masks/CHNCXR_0397_1_mask.png,True,1,F,32.0,PTB in the right upper field,2788,2537,True,0.227359,1,train
+Shenzhen,CHNCXR_0398_1,CHNCXR_0398,Lung Segmentation/CXR_png/CHNCXR_0398_1.png,Lung Segmentation/masks/CHNCXR_0398_1_mask.png,True,1,F,33.0,PTB in the right upper field,2854,2344,True,0.218606,4,train
+Shenzhen,CHNCXR_0399_1,CHNCXR_0399,Lung Segmentation/CXR_png/CHNCXR_0399_1.png,Lung Segmentation/masks/CHNCXR_0399_1_mask.png,True,1,M,81.0,PTB in the bilateral upper field,2948,2704,True,0.228966,4,train
+Shenzhen,CHNCXR_0400_1,CHNCXR_0400,Lung Segmentation/CXR_png/CHNCXR_0400_1.png,Lung Segmentation/masks/CHNCXR_0400_1_mask.png,True,1,F,28.0,right upper PTB with fibrous changes,2750,2710,True,0.286989,4,train
+Shenzhen,CHNCXR_0401_1,CHNCXR_0401,Lung Segmentation/CXR_png/CHNCXR_0401_1.png,Lung Segmentation/masks/CHNCXR_0401_1_mask.png,True,1,F,60.0,bilateral PTB,2843,2370,True,0.204103,0,train
+Shenzhen,CHNCXR_0402_1,CHNCXR_0402,Lung Segmentation/CXR_png/CHNCXR_0402_1.png,Lung Segmentation/masks/CHNCXR_0402_1_mask.png,True,1,M,25.0,Right PTB with fibrous changes,2948,2610,True,0.230802,3,train
+Shenzhen,CHNCXR_0403_1,CHNCXR_0403,Lung Segmentation/CXR_png/CHNCXR_0403_1.png,Lung Segmentation/masks/CHNCXR_0403_1_mask.png,True,1,M,32.0,"bilateral PTB,  right upper lobe atelectasis",2959,2792,True,0.290254,0,train
+Shenzhen,CHNCXR_0404_1,CHNCXR_0404,Lung Segmentation/CXR_png/CHNCXR_0404_1.png,Lung Segmentation/masks/CHNCXR_0404_1_mask.png,True,1,M,19.0,PTB in the bilateral upper field,2926,2460,True,0.287715,1,train
+Shenzhen,CHNCXR_0405_1,CHNCXR_0405,Lung Segmentation/CXR_png/CHNCXR_0405_1.png,Lung Segmentation/masks/CHNCXR_0405_1_mask.png,True,1,M,44.0,PTB in the left upper field,2914,2801,True,0.249318,4,train
+Shenzhen,CHNCXR_0406_1,CHNCXR_0406,Lung Segmentation/CXR_png/CHNCXR_0406_1.png,Lung Segmentation/masks/CHNCXR_0406_1_mask.png,True,1,F,29.0,bilateral PTB,2733,2384,True,0.269059,3,train
+Shenzhen,CHNCXR_0407_1,CHNCXR_0407,Lung Segmentation/CXR_png/CHNCXR_0407_1.png,Lung Segmentation/masks/CHNCXR_0407_1_mask.png,True,1,F,28.0,PTB in the right upper field,2967,2983,True,0.230553,0,train
+Shenzhen,CHNCXR_0408_1,CHNCXR_0408,Lung Segmentation/CXR_png/CHNCXR_0408_1.png,Lung Segmentation/masks/CHNCXR_0408_1_mask.png,True,1,M,30.0,"bilateral PTB, with cavity formation in right upper field",2970,3001,True,0.318241,1,train
+Shenzhen,CHNCXR_0409_1,CHNCXR_0409,Lung Segmentation/CXR_png/CHNCXR_0409_1.png,Lung Segmentation/masks/CHNCXR_0409_1_mask.png,True,1,F,33.0,PTB in the bilateral upper field,2938,2758,True,0.28682,4,train
+Shenzhen,CHNCXR_0410_1,CHNCXR_0410,Lung Segmentation/CXR_png/CHNCXR_0410_1.png,Lung Segmentation/masks/CHNCXR_0410_1_mask.png,True,1,F,18.0,secondary PTB  in the bilateral upper fields,2691,2545,True,0.277145,3,train
+Shenzhen,CHNCXR_0411_1,CHNCXR_0411,Lung Segmentation/CXR_png/CHNCXR_0411_1.png,Lung Segmentation/masks/CHNCXR_0411_1_mask.png,True,1,M,38.0,left secondary PTB,2944,2994,True,0.217506,3,train
+Shenzhen,CHNCXR_0412_1,CHNCXR_0412,Lung Segmentation/CXR_png/CHNCXR_0412_1.png,Lung Segmentation/masks/CHNCXR_0412_1_mask.png,True,1,F,39.0,secondary PTB  in the right upper field,2943,2993,True,0.182165,1,train
+Shenzhen,CHNCXR_0413_1,CHNCXR_0413,Lung Segmentation/CXR_png/CHNCXR_0413_1.png,Lung Segmentation/masks/CHNCXR_0413_1_mask.png,True,1,F,20.0,PTB in the right upper field,2990,2493,True,0.242458,0,train
+Shenzhen,CHNCXR_0414_1,CHNCXR_0414,Lung Segmentation/CXR_png/CHNCXR_0414_1.png,Lung Segmentation/masks/CHNCXR_0414_1_mask.png,True,1,M,31.0,Right PTB,2693,2544,True,0.235807,4,train
+Shenzhen,CHNCXR_0415_1,CHNCXR_0415,Lung Segmentation/CXR_png/CHNCXR_0415_1.png,Lung Segmentation/masks/CHNCXR_0415_1_mask.png,True,1,M,23.0,PTB in the right upper field,2988,2517,True,0.306647,3,train
+Shenzhen,CHNCXR_0416_1,CHNCXR_0416,Lung Segmentation/CXR_png/CHNCXR_0416_1.png,Lung Segmentation/masks/CHNCXR_0416_1_mask.png,True,1,F,61.0,PTB in the right upper field,2875,2523,True,0.234021,1,train
+Shenzhen,CHNCXR_0417_1,CHNCXR_0417,Lung Segmentation/CXR_png/CHNCXR_0417_1.png,Lung Segmentation/masks/CHNCXR_0417_1_mask.png,True,1,M,67.0,"PTB in the right upper field,COPD",2957,2747,True,0.286233,0,train
+Shenzhen,CHNCXR_0418_1,CHNCXR_0418,Lung Segmentation/CXR_png/CHNCXR_0418_1.png,Lung Segmentation/masks/CHNCXR_0418_1_mask.png,True,1,M,32.0,PTB in the right upper field,2944,2720,True,0.275432,0,train
+Shenzhen,CHNCXR_0419_1,CHNCXR_0419,Lung Segmentation/CXR_png/CHNCXR_0419_1.png,Lung Segmentation/masks/CHNCXR_0419_1_mask.png,True,1,F,40.0,secondary PTB  in the bilateral upper field,2954,2477,True,0.206379,0,train
+Shenzhen,CHNCXR_0420_1,CHNCXR_0420,Lung Segmentation/CXR_png/CHNCXR_0420_1.png,Lung Segmentation/masks/CHNCXR_0420_1_mask.png,True,1,M,27.0,secondary PTB  in the left upper field,3000,2844,True,0.283571,4,train
+Shenzhen,CHNCXR_0421_1,CHNCXR_0421,Lung Segmentation/CXR_png/CHNCXR_0421_1.png,Lung Segmentation/masks/CHNCXR_0421_1_mask.png,True,1,M,49.0,PTB in the right upper field,2995,3000,True,0.331774,3,train
+Shenzhen,CHNCXR_0422_1,CHNCXR_0422,Lung Segmentation/CXR_png/CHNCXR_0422_1.png,Lung Segmentation/masks/CHNCXR_0422_1_mask.png,True,1,M,28.0,PTB in the bilateral upper field,2953,3001,True,0.223696,0,train
+Shenzhen,CHNCXR_0423_1,CHNCXR_0423,Lung Segmentation/CXR_png/CHNCXR_0423_1.png,Lung Segmentation/masks/CHNCXR_0423_1_mask.png,True,1,M,50.0,Bilateral secondary PTB,2951,2993,True,0.296663,4,train
+Shenzhen,CHNCXR_0424_1,CHNCXR_0424,Lung Segmentation/CXR_png/CHNCXR_0424_1.png,Lung Segmentation/masks/CHNCXR_0424_1_mask.png,True,1,F,35.0,"right secondary PTB, right pleurisy with  pleural effusion",2944,2980,True,0.24661,2,train
+Shenzhen,CHNCXR_0425_1,CHNCXR_0425,Lung Segmentation/CXR_png/CHNCXR_0425_1.png,Lung Segmentation/masks/CHNCXR_0425_1_mask.png,True,1,M,43.0,Bilateral secondary PTB,2946,2994,True,0.262123,0,train
+Shenzhen,CHNCXR_0426_1,CHNCXR_0426,Lung Segmentation/CXR_png/CHNCXR_0426_1.png,Lung Segmentation/masks/CHNCXR_0426_1_mask.png,True,1,M,33.0,PTB in the right upper field,2813,2540,True,0.318861,2,train
+Shenzhen,CHNCXR_0427_1,CHNCXR_0427,Lung Segmentation/CXR_png/CHNCXR_0427_1.png,Lung Segmentation/masks/CHNCXR_0427_1_mask.png,True,1,M,24.0,secondary PTB  in the right upper field,2945,2993,True,0.202527,2,train
+Shenzhen,CHNCXR_0428_1,CHNCXR_0428,Lung Segmentation/CXR_png/CHNCXR_0428_1.png,Lung Segmentation/masks/CHNCXR_0428_1_mask.png,True,1,F,39.0,secondary PTB  in the right upper field,2948,2962,True,0.230711,2,train
+Shenzhen,CHNCXR_0429_1,CHNCXR_0429,Lung Segmentation/CXR_png/CHNCXR_0429_1.png,Lung Segmentation/masks/CHNCXR_0429_1_mask.png,True,1,F,27.0,secondary PTB  in the bilateral upper field,2947,2990,True,0.225307,2,train
+Shenzhen,CHNCXR_0430_1,CHNCXR_0430,Lung Segmentation/CXR_png/CHNCXR_0430_1.png,Lung Segmentation/masks/CHNCXR_0430_1_mask.png,True,1,F,48.0,PTB in the right upper field,2944,2995,True,0.167186,2,train
+Shenzhen,CHNCXR_0431_1,CHNCXR_0431,Lung Segmentation/CXR_png/CHNCXR_0431_1.png,Lung Segmentation/masks/CHNCXR_0431_1_mask.png,True,1,M,24.0,bilateral PTB,2952,2993,True,0.322159,0,train
+Shenzhen,CHNCXR_0432_1,CHNCXR_0432,Lung Segmentation/CXR_png/CHNCXR_0432_1.png,Lung Segmentation/masks/CHNCXR_0432_1_mask.png,True,1,M,30.0,Bilateral secondary PTB,2940,2980,True,0.242574,2,train
+Shenzhen,CHNCXR_0433_1,CHNCXR_0433,Lung Segmentation/CXR_png/CHNCXR_0433_1.png,Lung Segmentation/masks/CHNCXR_0433_1_mask.png,True,1,M,26.0,Right PTB,2942,3001,True,0.276367,2,train
+Shenzhen,CHNCXR_0434_1,CHNCXR_0434,Lung Segmentation/CXR_png/CHNCXR_0434_1.png,Lung Segmentation/masks/CHNCXR_0434_1_mask.png,True,1,M,28.0,secondary PTB  in the left upper field,2943,2972,True,0.245597,1,train
+Shenzhen,CHNCXR_0435_1,CHNCXR_0435,Lung Segmentation/CXR_png/CHNCXR_0435_1.png,Lung Segmentation/masks/CHNCXR_0435_1_mask.png,True,1,M,22.0,"left upper PTB, left pleurisy",2416,2533,True,0.290734,4,train
+Shenzhen,CHNCXR_0436_1,CHNCXR_0436,Lung Segmentation/CXR_png/CHNCXR_0436_1.png,Lung Segmentation/masks/CHNCXR_0436_1_mask.png,True,1,M,21.0,right upper PTB,2954,2851,True,0.244039,4,train
+Shenzhen,CHNCXR_0437_1,CHNCXR_0437,Lung Segmentation/CXR_png/CHNCXR_0437_1.png,Lung Segmentation/masks/CHNCXR_0437_1_mask.png,True,1,F,39.0,PTB in the left upper field,2308,2184,True,0.301737,2,train
+Shenzhen,CHNCXR_0438_1,CHNCXR_0438,Lung Segmentation/CXR_png/CHNCXR_0438_1.png,Lung Segmentation/masks/CHNCXR_0438_1_mask.png,True,1,M,31.0,left PTB,2417,2618,True,0.259251,0,train
+Shenzhen,CHNCXR_0439_1,CHNCXR_0439,Lung Segmentation/CXR_png/CHNCXR_0439_1.png,Lung Segmentation/masks/CHNCXR_0439_1_mask.png,True,1,M,34.0,bilateral PTB,2949,2989,True,0.246869,4,train
+Shenzhen,CHNCXR_0440_1,CHNCXR_0440,Lung Segmentation/CXR_png/CHNCXR_0440_1.png,Lung Segmentation/masks/CHNCXR_0440_1_mask.png,True,1,F,31.0,right upper PTB,2620,2435,True,0.244914,3,train
+Shenzhen,CHNCXR_0441_1,CHNCXR_0441,Lung Segmentation/CXR_png/CHNCXR_0441_1.png,Lung Segmentation/masks/CHNCXR_0441_1_mask.png,True,1,M,63.0,"right PTB,right pneumothorax",2974,2631,True,0.213815,0,train
+Shenzhen,CHNCXR_0442_1,CHNCXR_0442,Lung Segmentation/CXR_png/CHNCXR_0442_1.png,Lung Segmentation/masks/CHNCXR_0442_1_mask.png,True,1,M,27.0,right upper PTB,2951,2879,True,0.190936,3,train
+Shenzhen,CHNCXR_0443_1,CHNCXR_0443,Lung Segmentation/CXR_png/CHNCXR_0443_1.png,Lung Segmentation/masks/CHNCXR_0443_1_mask.png,True,1,M,36.0,right upper PTB,2990,2997,True,0.214102,1,train
+Shenzhen,CHNCXR_0444_1,CHNCXR_0444,Lung Segmentation/CXR_png/CHNCXR_0444_1.png,Lung Segmentation/masks/CHNCXR_0444_1_mask.png,True,1,M,15.0,left PTB,2987,2980,True,0.250229,4,train
+Shenzhen,CHNCXR_0445_1,CHNCXR_0445,Lung Segmentation/CXR_png/CHNCXR_0445_1.png,Lung Segmentation/masks/CHNCXR_0445_1_mask.png,True,1,M,31.0,Right PTB,2989,2996,True,0.272327,0,train
+Shenzhen,CHNCXR_0446_1,CHNCXR_0446,Lung Segmentation/CXR_png/CHNCXR_0446_1.png,Lung Segmentation/masks/CHNCXR_0446_1_mask.png,True,1,F,26.0,Bilateral secondary PTB,2925,3000,True,0.234923,3,train
+Shenzhen,CHNCXR_0447_1,CHNCXR_0447,Lung Segmentation/CXR_png/CHNCXR_0447_1.png,Lung Segmentation/masks/CHNCXR_0447_1_mask.png,True,1,M,56.0,Bilateral secondary PTB,2958,2630,True,0.197522,4,train
+Shenzhen,CHNCXR_0448_1,CHNCXR_0448,Lung Segmentation/CXR_png/CHNCXR_0448_1.png,Lung Segmentation/masks/CHNCXR_0448_1_mask.png,True,1,F,78.0,Bilateral secondary PTB,2521,2107,True,0.299565,4,train
+Shenzhen,CHNCXR_0449_1,CHNCXR_0449,Lung Segmentation/CXR_png/CHNCXR_0449_1.png,Lung Segmentation/masks/CHNCXR_0449_1_mask.png,True,1,M,35.0,Bilateral secondary PTB,2999,2996,True,0.246616,2,train
+Shenzhen,CHNCXR_0450_1,CHNCXR_0450,Lung Segmentation/CXR_png/CHNCXR_0450_1.png,Lung Segmentation/masks/CHNCXR_0450_1_mask.png,True,1,F,22.0,right secondary PTB,2945,2992,True,0.226736,3,train
+Shenzhen,CHNCXR_0451_1,CHNCXR_0451,Lung Segmentation/CXR_png/CHNCXR_0451_1.png,Lung Segmentation/masks/CHNCXR_0451_1_mask.png,True,1,M,32.0,right secondary PTB,2951,2831,True,0.231882,1,train
+Shenzhen,CHNCXR_0452_1,CHNCXR_0452,Lung Segmentation/CXR_png/CHNCXR_0452_1.png,Lung Segmentation/masks/CHNCXR_0452_1_mask.png,True,1,F,21.0,Bilateral secondary PTB,2804,2423,True,0.332234,1,train
+Shenzhen,CHNCXR_0453_1,CHNCXR_0453,Lung Segmentation/CXR_png/CHNCXR_0453_1.png,Lung Segmentation/masks/CHNCXR_0453_1_mask.png,True,1,F,33.0,right secondary PTB,2958,2992,True,0.167115,0,train
+Shenzhen,CHNCXR_0454_1,CHNCXR_0454,Lung Segmentation/CXR_png/CHNCXR_0454_1.png,Lung Segmentation/masks/CHNCXR_0454_1_mask.png,True,1,M,44.0,right upper field PTB,2896,2599,True,0.298827,4,train
+Shenzhen,CHNCXR_0455_1,CHNCXR_0455,Lung Segmentation/CXR_png/CHNCXR_0455_1.png,Lung Segmentation/masks/CHNCXR_0455_1_mask.png,True,1,F,78.0,right secondary PTB  with bilateral  pleurisy,2960,2986,True,0.083505,2,train
+Shenzhen,CHNCXR_0456_1,CHNCXR_0456,Lung Segmentation/CXR_png/CHNCXR_0456_1.png,Lung Segmentation/masks/CHNCXR_0456_1_mask.png,True,1,F,28.0,bilateral PTB,2599,2400,True,0.327534,3,train
+Shenzhen,CHNCXR_0457_1,CHNCXR_0457,Lung Segmentation/CXR_png/CHNCXR_0457_1.png,Lung Segmentation/masks/CHNCXR_0457_1_mask.png,True,1,F,31.0,Bilateral secondary PTB,2795,2598,True,0.296957,4,train
+Shenzhen,CHNCXR_0458_1,CHNCXR_0458,Lung Segmentation/CXR_png/CHNCXR_0458_1.png,Lung Segmentation/masks/CHNCXR_0458_1_mask.png,True,1,M,36.0,Bilateral secondary PTB,2955,2744,True,0.301803,1,train
+Shenzhen,CHNCXR_0459_1,CHNCXR_0459,Lung Segmentation/CXR_png/CHNCXR_0459_1.png,Lung Segmentation/masks/CHNCXR_0459_1_mask.png,True,1,F,59.0,bilateral PTB,2867,2408,True,0.24347,1,train
+Shenzhen,CHNCXR_0460_1,CHNCXR_0460,Lung Segmentation/CXR_png/CHNCXR_0460_1.png,Lung Segmentation/masks/CHNCXR_0460_1_mask.png,True,1,M,41.0,left PTB,2930,2773,True,0.271865,0,train
+Shenzhen,CHNCXR_0461_1,CHNCXR_0461,Lung Segmentation/CXR_png/CHNCXR_0461_1.png,Lung Segmentation/masks/CHNCXR_0461_1_mask.png,True,1,M,34.0,right secondary PTB,2939,3000,True,0.235024,3,train
+Shenzhen,CHNCXR_0462_1,CHNCXR_0462,Lung Segmentation/CXR_png/CHNCXR_0462_1.png,Lung Segmentation/masks/CHNCXR_0462_1_mask.png,True,1,M,29.0,secondary PTB  in the left upper field,2978,2542,True,0.321921,0,train
+Shenzhen,CHNCXR_0463_1,CHNCXR_0463,Lung Segmentation/CXR_png/CHNCXR_0463_1.png,Lung Segmentation/masks/CHNCXR_0463_1_mask.png,True,1,M,29.0,left secondary PTB,2914,2571,True,0.266891,0,train
+Shenzhen,CHNCXR_0464_1,CHNCXR_0464,Lung Segmentation/CXR_png/CHNCXR_0464_1.png,Lung Segmentation/masks/CHNCXR_0464_1_mask.png,True,1,M,45.0,Right PTB,2990,2797,True,0.244077,3,train
+Shenzhen,CHNCXR_0465_1,CHNCXR_0465,Lung Segmentation/CXR_png/CHNCXR_0465_1.png,Lung Segmentation/masks/CHNCXR_0465_1_mask.png,True,1,M,24.0,Bilateral secondary PTB,2792,2713,True,0.236004,3,train
+Shenzhen,CHNCXR_0466_1,CHNCXR_0466,Lung Segmentation/CXR_png/CHNCXR_0466_1.png,Lung Segmentation/masks/CHNCXR_0466_1_mask.png,True,1,F,32.0,secondary PTB  in the left upper field,2684,2493,True,0.32757,0,train
+Shenzhen,CHNCXR_0467_1,CHNCXR_0467,Lung Segmentation/CXR_png/CHNCXR_0467_1.png,Lung Segmentation/masks/CHNCXR_0467_1_mask.png,True,1,F,39.0,secondary PTB  in the left upper field,2581,2281,True,0.28437,3,train
+Shenzhen,CHNCXR_0468_1,CHNCXR_0468,Lung Segmentation/CXR_png/CHNCXR_0468_1.png,Lung Segmentation/masks/CHNCXR_0468_1_mask.png,True,1,F,29.0,Right PTB,2690,2441,True,0.324378,1,train
+Shenzhen,CHNCXR_0469_1,CHNCXR_0469,Lung Segmentation/CXR_png/CHNCXR_0469_1.png,Lung Segmentation/masks/CHNCXR_0469_1_mask.png,True,1,F,22.0,bilateral PTB,2629,2163,True,0.321084,3,train
+Shenzhen,CHNCXR_0470_1,CHNCXR_0470,Lung Segmentation/CXR_png/CHNCXR_0470_1.png,Lung Segmentation/masks/CHNCXR_0470_1_mask.png,True,1,F,38.0,right secondary PTB,2549,2096,True,0.32998,0,train
+Shenzhen,CHNCXR_0471_1,CHNCXR_0471,Lung Segmentation/CXR_png/CHNCXR_0471_1.png,Lung Segmentation/masks/CHNCXR_0471_1_mask.png,True,1,F,31.0,right secondary PTB,2622,2276,True,0.214411,2,train
+Shenzhen,CHNCXR_0472_1,CHNCXR_0472,Lung Segmentation/CXR_png/CHNCXR_0472_1.png,Lung Segmentation/masks/CHNCXR_0472_1_mask.png,True,1,M,40.0,Right PTB,2818,2488,True,0.291947,0,train
+Shenzhen,CHNCXR_0473_1,CHNCXR_0473,Lung Segmentation/CXR_png/CHNCXR_0473_1.png,Lung Segmentation/masks/CHNCXR_0473_1_mask.png,True,1,M,32.0,right secondary PTB,2989,2743,True,0.256568,0,train
+Shenzhen,CHNCXR_0474_1,CHNCXR_0474,Lung Segmentation/CXR_png/CHNCXR_0474_1.png,Lung Segmentation/masks/CHNCXR_0474_1_mask.png,True,1,M,48.0,bilateral PTB,2559,2599,True,0.239991,4,train
+Shenzhen,CHNCXR_0475_1,CHNCXR_0475,Lung Segmentation/CXR_png/CHNCXR_0475_1.png,Lung Segmentation/masks/CHNCXR_0475_1_mask.png,True,1,M,36.0,bilateral PTB,2947,2576,True,0.330285,2,train
+Shenzhen,CHNCXR_0476_1,CHNCXR_0476,Lung Segmentation/CXR_png/CHNCXR_0476_1.png,Lung Segmentation/masks/CHNCXR_0476_1_mask.png,True,1,M,56.0,"left secondary PTB,right pleural effusion",2581,2331,True,0.324276,3,train
+Shenzhen,CHNCXR_0477_1,CHNCXR_0477,Lung Segmentation/CXR_png/CHNCXR_0477_1.png,Lung Segmentation/masks/CHNCXR_0477_1_mask.png,True,1,M,23.0,left PTB,2873,2500,True,0.295372,4,train
+Shenzhen,CHNCXR_0478_1,CHNCXR_0478,Lung Segmentation/CXR_png/CHNCXR_0478_1.png,Lung Segmentation/masks/CHNCXR_0478_1_mask.png,True,1,F,26.0,Right PTB,2365,2556,True,0.300733,1,train
+Shenzhen,CHNCXR_0479_1,CHNCXR_0479,Lung Segmentation/CXR_png/CHNCXR_0479_1.png,Lung Segmentation/masks/CHNCXR_0479_1_mask.png,True,1,M,56.0,PTB in the left upper field,2986,2739,True,0.27416,2,train
+Shenzhen,CHNCXR_0480_1,CHNCXR_0480,Lung Segmentation/CXR_png/CHNCXR_0480_1.png,Lung Segmentation/masks/CHNCXR_0480_1_mask.png,True,1,F,41.0,PTB in the bilateral upper field,2688,2581,True,0.248439,0,train
+Shenzhen,CHNCXR_0481_1,CHNCXR_0481,Lung Segmentation/CXR_png/CHNCXR_0481_1.png,,False,1,M,26.0,bilateral secondary PTB,2943,3000,,,4,train
+Shenzhen,CHNCXR_0482_1,CHNCXR_0482,Lung Segmentation/CXR_png/CHNCXR_0482_1.png,,False,1,F,30.0,PTB in the right lower field,2363,2146,,,3,train
+Shenzhen,CHNCXR_0483_1,CHNCXR_0483,Lung Segmentation/CXR_png/CHNCXR_0483_1.png,,False,1,M,36.0,"PTB in the bilateral upper fields, left pleurisy",2943,3000,,,4,train
+Shenzhen,CHNCXR_0484_1,CHNCXR_0484,Lung Segmentation/CXR_png/CHNCXR_0484_1.png,,False,1,F,29.0,right secondary PTB,2999,2793,,,4,train
+Shenzhen,CHNCXR_0485_1,CHNCXR_0485,Lung Segmentation/CXR_png/CHNCXR_0485_1.png,,False,1,M,34.0,right secondary PTB,2945,3000,,,1,train
+Shenzhen,CHNCXR_0486_1,CHNCXR_0486,Lung Segmentation/CXR_png/CHNCXR_0486_1.png,,False,1,M,22.0,PTB in the bilateral upper field,2889,2716,,,3,train
+Shenzhen,CHNCXR_0487_1,CHNCXR_0487,Lung Segmentation/CXR_png/CHNCXR_0487_1.png,,False,1,M,72.0,Bilateral secondary PTB,2947,2991,,,2,train
+Shenzhen,CHNCXR_0488_1,CHNCXR_0488,Lung Segmentation/CXR_png/CHNCXR_0488_1.png,,False,1,F,43.0,PTB in the left lower field,2660,2416,,,3,train
+Shenzhen,CHNCXR_0489_1,CHNCXR_0489,Lung Segmentation/CXR_png/CHNCXR_0489_1.png,,False,1,M,22.0,PTB in the left upper field,2608,2401,,,0,train
+Shenzhen,CHNCXR_0490_1,CHNCXR_0490,Lung Segmentation/CXR_png/CHNCXR_0490_1.png,,False,1,M,27.0,bilateral PTB,3001,3001,,,4,train
+Shenzhen,CHNCXR_0491_1,CHNCXR_0491,Lung Segmentation/CXR_png/CHNCXR_0491_1.png,,False,1,M,42.0,bilateral PTB,2989,2729,,,2,train
+Shenzhen,CHNCXR_0492_1,CHNCXR_0492,Lung Segmentation/CXR_png/CHNCXR_0492_1.png,,False,1,F,44.0,bilateral PTB,2651,2430,,,1,train
+Shenzhen,CHNCXR_0493_1,CHNCXR_0493,Lung Segmentation/CXR_png/CHNCXR_0493_1.png,,False,1,M,40.0,bilateral PTB,2805,2409,,,4,train
+Shenzhen,CHNCXR_0494_1,CHNCXR_0494,Lung Segmentation/CXR_png/CHNCXR_0494_1.png,,False,1,F,23.0,secondary PTB  in the right  middle field,2626,2252,,,3,train
+Shenzhen,CHNCXR_0495_1,CHNCXR_0495,Lung Segmentation/CXR_png/CHNCXR_0495_1.png,,False,1,F,24.0,Left PTB,2640,2503,,,1,train
+Shenzhen,CHNCXR_0496_1,CHNCXR_0496,Lung Segmentation/CXR_png/CHNCXR_0496_1.png,,False,1,M,72.0,bilateral PTB,2782,2422,,,1,train
+Shenzhen,CHNCXR_0497_1,CHNCXR_0497,Lung Segmentation/CXR_png/CHNCXR_0497_1.png,,False,1,M,45.0,bilateral PTB,2826,2504,,,1,train
+Shenzhen,CHNCXR_0498_1,CHNCXR_0498,Lung Segmentation/CXR_png/CHNCXR_0498_1.png,,False,1,M,33.0,PTB in the middle lower field,2854,2495,,,2,train
+Shenzhen,CHNCXR_0499_1,CHNCXR_0499,Lung Segmentation/CXR_png/CHNCXR_0499_1.png,,False,1,M,25.0,Right PTB,2475,2442,,,2,train
+Shenzhen,CHNCXR_0500_1,CHNCXR_0500,Lung Segmentation/CXR_png/CHNCXR_0500_1.png,,False,1,F,22.0,bilateral PTB,2751,2346,,,3,train
+Shenzhen,CHNCXR_0501_1,CHNCXR_0501,Lung Segmentation/CXR_png/CHNCXR_0501_1.png,Lung Segmentation/masks/CHNCXR_0501_1_mask.png,True,1,M,36.0,PTB in the left upper field,2906,2408,True,0.32518,3,train
+Shenzhen,CHNCXR_0502_1,CHNCXR_0502,Lung Segmentation/CXR_png/CHNCXR_0502_1.png,,False,1,M,48.0,bilateral PTB,2752,2328,,,0,train
+Shenzhen,CHNCXR_0503_1,CHNCXR_0503,Lung Segmentation/CXR_png/CHNCXR_0503_1.png,Lung Segmentation/masks/CHNCXR_0503_1_mask.png,True,1,M,25.0,Right PTB,2987,2779,True,0.305585,1,train
+Shenzhen,CHNCXR_0504_1,CHNCXR_0504,Lung Segmentation/CXR_png/CHNCXR_0504_1.png,Lung Segmentation/masks/CHNCXR_0504_1_mask.png,True,1,M,19.0,PTB in the left lower field,2965,3000,True,0.270652,1,train
+Shenzhen,CHNCXR_0505_1,CHNCXR_0505,Lung Segmentation/CXR_png/CHNCXR_0505_1.png,,False,1,M,26.0,Right PTB,2903,2599,,,0,train
+Shenzhen,CHNCXR_0506_1,CHNCXR_0506,Lung Segmentation/CXR_png/CHNCXR_0506_1.png,Lung Segmentation/masks/CHNCXR_0506_1_mask.png,True,1,M,89.0,bilateral PTB,2945,2621,True,0.256389,1,train
+Shenzhen,CHNCXR_0507_1,CHNCXR_0507,Lung Segmentation/CXR_png/CHNCXR_0507_1.png,Lung Segmentation/masks/CHNCXR_0507_1_mask.png,True,1,F,32.0,bilateral PTB,2711,2248,True,0.344119,0,train
+Shenzhen,CHNCXR_0508_1,CHNCXR_0508,Lung Segmentation/CXR_png/CHNCXR_0508_1.png,Lung Segmentation/masks/CHNCXR_0508_1_mask.png,True,1,M,51.0,bilateral PTB,2959,2985,True,0.249159,1,train
+Shenzhen,CHNCXR_0509_1,CHNCXR_0509,Lung Segmentation/CXR_png/CHNCXR_0509_1.png,Lung Segmentation/masks/CHNCXR_0509_1_mask.png,True,1,M,25.0,Right PTB,2854,2536,True,0.357263,2,train
+Shenzhen,CHNCXR_0510_1,CHNCXR_0510,Lung Segmentation/CXR_png/CHNCXR_0510_1.png,Lung Segmentation/masks/CHNCXR_0510_1_mask.png,True,1,F,25.0,Right PTB,2677,2389,True,0.326603,2,train
+Shenzhen,CHNCXR_0511_1,CHNCXR_0511,Lung Segmentation/CXR_png/CHNCXR_0511_1.png,Lung Segmentation/masks/CHNCXR_0511_1_mask.png,True,1,M,51.0,bilateral PTB,2963,2987,True,0.269597,3,train
+Shenzhen,CHNCXR_0512_1,CHNCXR_0512,Lung Segmentation/CXR_png/CHNCXR_0512_1.png,Lung Segmentation/masks/CHNCXR_0512_1_mask.png,True,1,M,65.0,Right PTB,2990,2993,True,0.287562,0,train
+Shenzhen,CHNCXR_0513_1,CHNCXR_0513,Lung Segmentation/CXR_png/CHNCXR_0513_1.png,Lung Segmentation/masks/CHNCXR_0513_1_mask.png,True,1,M,74.0,Right PTB,2793,2387,True,0.392394,0,train
+Shenzhen,CHNCXR_0514_1,CHNCXR_0514,Lung Segmentation/CXR_png/CHNCXR_0514_1.png,Lung Segmentation/masks/CHNCXR_0514_1_mask.png,True,1,F,28.0,bilateral PTB,2466,2358,True,0.302302,1,train
+Shenzhen,CHNCXR_0515_1,CHNCXR_0515,Lung Segmentation/CXR_png/CHNCXR_0515_1.png,Lung Segmentation/masks/CHNCXR_0515_1_mask.png,True,1,M,23.0,PTB in the left upper field,2945,2450,True,0.302877,2,train
+Shenzhen,CHNCXR_0516_1,CHNCXR_0516,Lung Segmentation/CXR_png/CHNCXR_0516_1.png,Lung Segmentation/masks/CHNCXR_0516_1_mask.png,True,1,M,37.0,PTB in the right upper field,2987,2628,True,0.215018,2,train
+Shenzhen,CHNCXR_0517_1,CHNCXR_0517,Lung Segmentation/CXR_png/CHNCXR_0517_1.png,Lung Segmentation/masks/CHNCXR_0517_1_mask.png,True,1,F,29.0,PTB in the right upper field,2694,2452,True,0.267438,0,train
+Shenzhen,CHNCXR_0518_1,CHNCXR_0518,Lung Segmentation/CXR_png/CHNCXR_0518_1.png,Lung Segmentation/masks/CHNCXR_0518_1_mask.png,True,1,M,39.0,PTB in the left upper field,2931,2594,True,0.356739,0,train
+Shenzhen,CHNCXR_0519_1,CHNCXR_0519,Lung Segmentation/CXR_png/CHNCXR_0519_1.png,Lung Segmentation/masks/CHNCXR_0519_1_mask.png,True,1,M,35.0,Right PTB,2732,2411,True,0.319912,0,train
+Shenzhen,CHNCXR_0520_1,CHNCXR_0520,Lung Segmentation/CXR_png/CHNCXR_0520_1.png,Lung Segmentation/masks/CHNCXR_0520_1_mask.png,True,1,M,24.0,PTB in the right upper field,2981,2997,True,0.26666,3,train
+Shenzhen,CHNCXR_0521_1,CHNCXR_0521,Lung Segmentation/CXR_png/CHNCXR_0521_1.png,Lung Segmentation/masks/CHNCXR_0521_1_mask.png,True,1,M,34.0,PTB in the right upper field,2954,2678,True,0.337123,2,train
+Shenzhen,CHNCXR_0522_1,CHNCXR_0522,Lung Segmentation/CXR_png/CHNCXR_0522_1.png,Lung Segmentation/masks/CHNCXR_0522_1_mask.png,True,1,M,33.0,bilateral PTB,2988,2659,True,0.240704,3,train
+Shenzhen,CHNCXR_0523_1,CHNCXR_0523,Lung Segmentation/CXR_png/CHNCXR_0523_1.png,Lung Segmentation/masks/CHNCXR_0523_1_mask.png,True,1,M,63.0,bilateral PTB,2834,2653,True,0.273459,3,train
+Shenzhen,CHNCXR_0524_1,CHNCXR_0524,Lung Segmentation/CXR_png/CHNCXR_0524_1.png,Lung Segmentation/masks/CHNCXR_0524_1_mask.png,True,1,M,63.0,Right PTB,2989,2786,True,0.27129,2,train
+Shenzhen,CHNCXR_0525_1,CHNCXR_0525,Lung Segmentation/CXR_png/CHNCXR_0525_1.png,Lung Segmentation/masks/CHNCXR_0525_1_mask.png,True,1,M,39.0,bilateral PTB,2815,2464,True,0.334316,3,train
+Shenzhen,CHNCXR_0526_1,CHNCXR_0526,Lung Segmentation/CXR_png/CHNCXR_0526_1.png,Lung Segmentation/masks/CHNCXR_0526_1_mask.png,True,1,M,63.0,bilateral PTB,2942,2427,True,0.232819,4,train
+Shenzhen,CHNCXR_0527_1,CHNCXR_0527,Lung Segmentation/CXR_png/CHNCXR_0527_1.png,Lung Segmentation/masks/CHNCXR_0527_1_mask.png,True,1,M,56.0,bilateral PTB,2666,2511,True,0.315437,2,train
+Shenzhen,CHNCXR_0528_1,CHNCXR_0528,Lung Segmentation/CXR_png/CHNCXR_0528_1.png,Lung Segmentation/masks/CHNCXR_0528_1_mask.png,True,1,F,25.0,Right PTB,2324,2266,True,0.337466,2,train
+Shenzhen,CHNCXR_0529_1,CHNCXR_0529,Lung Segmentation/CXR_png/CHNCXR_0529_1.png,Lung Segmentation/masks/CHNCXR_0529_1_mask.png,True,1,F,24.0,bilateral PTB,2631,2537,True,0.324865,2,train
+Shenzhen,CHNCXR_0530_1,CHNCXR_0530,Lung Segmentation/CXR_png/CHNCXR_0530_1.png,Lung Segmentation/masks/CHNCXR_0530_1_mask.png,True,1,M,55.0,PTB in the bilateral upper fields,2614,2560,True,0.22842,2,train
+Shenzhen,CHNCXR_0531_1,CHNCXR_0531,Lung Segmentation/CXR_png/CHNCXR_0531_1.png,Lung Segmentation/masks/CHNCXR_0531_1_mask.png,True,1,F,23.0,bilateral PTB,2528,2515,True,0.339289,1,train
+Shenzhen,CHNCXR_0532_1,CHNCXR_0532,Lung Segmentation/CXR_png/CHNCXR_0532_1.png,Lung Segmentation/masks/CHNCXR_0532_1_mask.png,True,1,F,45.0,PTB in the right upper field,2304,2464,True,0.288279,2,train
+Shenzhen,CHNCXR_0533_1,CHNCXR_0533,Lung Segmentation/CXR_png/CHNCXR_0533_1.png,Lung Segmentation/masks/CHNCXR_0533_1_mask.png,True,1,M,57.0,PTB in the left upper field,2320,3001,True,0.28281,1,train
+Shenzhen,CHNCXR_0534_1,CHNCXR_0534,Lung Segmentation/CXR_png/CHNCXR_0534_1.png,Lung Segmentation/masks/CHNCXR_0534_1_mask.png,True,1,M,21.0,Right PTB,2937,2772,True,0.304554,0,train
+Shenzhen,CHNCXR_0535_1,CHNCXR_0535,Lung Segmentation/CXR_png/CHNCXR_0535_1.png,Lung Segmentation/masks/CHNCXR_0535_1_mask.png,True,1,M,21.0,PTB in the right lower field,2897,2671,True,0.266407,1,train
+Shenzhen,CHNCXR_0536_1,CHNCXR_0536,Lung Segmentation/CXR_png/CHNCXR_0536_1.png,Lung Segmentation/masks/CHNCXR_0536_1_mask.png,True,1,F,28.0,PTB in the right upper field,2533,2396,True,0.323909,0,train
+Shenzhen,CHNCXR_0537_1,CHNCXR_0537,Lung Segmentation/CXR_png/CHNCXR_0537_1.png,Lung Segmentation/masks/CHNCXR_0537_1_mask.png,True,1,M,33.0,PTB in the bilateral upper fields,2868,2632,True,0.326391,0,train
+Shenzhen,CHNCXR_0538_1,CHNCXR_0538,Lung Segmentation/CXR_png/CHNCXR_0538_1.png,Lung Segmentation/masks/CHNCXR_0538_1_mask.png,True,1,M,38.0,PTB in the bilateral upper fields,2937,2509,True,0.361367,0,train
+Shenzhen,CHNCXR_0539_1,CHNCXR_0539,Lung Segmentation/CXR_png/CHNCXR_0539_1.png,Lung Segmentation/masks/CHNCXR_0539_1_mask.png,True,1,M,38.0,PTB in the left upper field,2905,2520,True,0.334342,3,train
+Shenzhen,CHNCXR_0540_1,CHNCXR_0540,Lung Segmentation/CXR_png/CHNCXR_0540_1.png,Lung Segmentation/masks/CHNCXR_0540_1_mask.png,True,1,M,30.0,PTB in the left upper field,2726,2351,True,0.271476,3,train
+Shenzhen,CHNCXR_0541_1,CHNCXR_0541,Lung Segmentation/CXR_png/CHNCXR_0541_1.png,Lung Segmentation/masks/CHNCXR_0541_1_mask.png,True,1,M,23.0,PTB in the right upper field,2977,2658,True,0.335322,4,train
+Shenzhen,CHNCXR_0542_1,CHNCXR_0542,Lung Segmentation/CXR_png/CHNCXR_0542_1.png,Lung Segmentation/masks/CHNCXR_0542_1_mask.png,True,1,F,24.0,PTB in the right upper field,2406,2372,True,0.340734,4,train
+Shenzhen,CHNCXR_0543_1,CHNCXR_0543,Lung Segmentation/CXR_png/CHNCXR_0543_1.png,Lung Segmentation/masks/CHNCXR_0543_1_mask.png,True,1,M,28.0,PTB in the left upper field,2572,2607,True,0.293948,4,train
+Shenzhen,CHNCXR_0544_1,CHNCXR_0544,Lung Segmentation/CXR_png/CHNCXR_0544_1.png,Lung Segmentation/masks/CHNCXR_0544_1_mask.png,True,1,M,59.0,PTB,2953,2693,True,0.18206,2,train
+Shenzhen,CHNCXR_0545_1,CHNCXR_0545,Lung Segmentation/CXR_png/CHNCXR_0545_1.png,Lung Segmentation/masks/CHNCXR_0545_1_mask.png,True,1,M,53.0,Right PTB,3001,2674,True,0.23651,4,train
+Shenzhen,CHNCXR_0546_1,CHNCXR_0546,Lung Segmentation/CXR_png/CHNCXR_0546_1.png,Lung Segmentation/masks/CHNCXR_0546_1_mask.png,True,1,F,36.0,bilateral PTB,2743,2524,True,0.246903,0,train
+Shenzhen,CHNCXR_0547_1,CHNCXR_0547,Lung Segmentation/CXR_png/CHNCXR_0547_1.png,Lung Segmentation/masks/CHNCXR_0547_1_mask.png,True,1,M,24.0,Right PTB,2823,2610,True,0.292305,3,train
+Shenzhen,CHNCXR_0548_1,CHNCXR_0548,Lung Segmentation/CXR_png/CHNCXR_0548_1.png,Lung Segmentation/masks/CHNCXR_0548_1_mask.png,True,1,M,46.0,PTB,2947,3000,True,0.197606,3,train
+Shenzhen,CHNCXR_0549_1,CHNCXR_0549,Lung Segmentation/CXR_png/CHNCXR_0549_1.png,Lung Segmentation/masks/CHNCXR_0549_1_mask.png,True,1,F,63.0,bilateral PTB,2448,2371,True,0.245187,0,train
+Shenzhen,CHNCXR_0550_1,CHNCXR_0550,Lung Segmentation/CXR_png/CHNCXR_0550_1.png,Lung Segmentation/masks/CHNCXR_0550_1_mask.png,True,1,M,82.0,Right PTB,2751,2521,True,0.258081,0,train
+Shenzhen,CHNCXR_0551_1,CHNCXR_0551,Lung Segmentation/CXR_png/CHNCXR_0551_1.png,Lung Segmentation/masks/CHNCXR_0551_1_mask.png,True,1,M,25.0,Right PTB,2614,2481,True,0.293184,4,train
+Shenzhen,CHNCXR_0552_1,CHNCXR_0552,Lung Segmentation/CXR_png/CHNCXR_0552_1.png,Lung Segmentation/masks/CHNCXR_0552_1_mask.png,True,1,M,45.0,PTB in the right upper field,2988,2996,True,0.183684,3,train
+Shenzhen,CHNCXR_0553_1,CHNCXR_0553,Lung Segmentation/CXR_png/CHNCXR_0553_1.png,Lung Segmentation/masks/CHNCXR_0553_1_mask.png,True,1,M,22.0,bilateral PTB,2868,2491,True,0.35892,0,train
+Shenzhen,CHNCXR_0554_1,CHNCXR_0554,Lung Segmentation/CXR_png/CHNCXR_0554_1.png,Lung Segmentation/masks/CHNCXR_0554_1_mask.png,True,1,M,23.0,Left PTB,2771,2612,True,0.321578,1,train
+Shenzhen,CHNCXR_0555_1,CHNCXR_0555,Lung Segmentation/CXR_png/CHNCXR_0555_1.png,Lung Segmentation/masks/CHNCXR_0555_1_mask.png,True,1,M,22.0,bilateral hematogenous disseminated PTB,2606,2497,True,0.25917,4,train
+Shenzhen,CHNCXR_0556_1,CHNCXR_0556,Lung Segmentation/CXR_png/CHNCXR_0556_1.png,Lung Segmentation/masks/CHNCXR_0556_1_mask.png,True,1,M,26.0,bilateral PTB,2567,2599,True,0.30447,1,train
+Shenzhen,CHNCXR_0557_1,CHNCXR_0557,Lung Segmentation/CXR_png/CHNCXR_0557_1.png,Lung Segmentation/masks/CHNCXR_0557_1_mask.png,True,1,M,27.0,Right PTB,2955,2792,True,0.329585,4,train
+Shenzhen,CHNCXR_0558_1,CHNCXR_0558,Lung Segmentation/CXR_png/CHNCXR_0558_1.png,Lung Segmentation/masks/CHNCXR_0558_1_mask.png,True,1,M,40.0,bilateral PTB,2986,2537,True,0.21392,3,train
+Shenzhen,CHNCXR_0559_1,CHNCXR_0559,Lung Segmentation/CXR_png/CHNCXR_0559_1.png,Lung Segmentation/masks/CHNCXR_0559_1_mask.png,True,1,M,40.0,Right PTB,2883,2735,True,0.328116,3,train
+Shenzhen,CHNCXR_0560_1,CHNCXR_0560,Lung Segmentation/CXR_png/CHNCXR_0560_1.png,,False,1,M,32.0,bilateral PTB,2898,2662,,,3,train
+Shenzhen,CHNCXR_0561_1,CHNCXR_0561,Lung Segmentation/CXR_png/CHNCXR_0561_1.png,,False,1,M,51.0,bilateral PTB,2967,2679,,,3,train
+Shenzhen,CHNCXR_0562_1,CHNCXR_0562,Lung Segmentation/CXR_png/CHNCXR_0562_1.png,,False,1,M,33.0,left PTB,2590,2516,,,2,train
+Shenzhen,CHNCXR_0563_1,CHNCXR_0563,Lung Segmentation/CXR_png/CHNCXR_0563_1.png,,False,1,M,69.0,left PTB,2639,2615,,,4,train
+Shenzhen,CHNCXR_0564_1,CHNCXR_0564,Lung Segmentation/CXR_png/CHNCXR_0564_1.png,,False,1,F,38.0,Right PTB,2935,3000,,,1,train
+Shenzhen,CHNCXR_0565_1,CHNCXR_0565,Lung Segmentation/CXR_png/CHNCXR_0565_1.png,,False,1,M,79.0,bilateral PTB,2228,2532,,,4,train
+Shenzhen,CHNCXR_0566_1,CHNCXR_0566,Lung Segmentation/CXR_png/CHNCXR_0566_1.png,Lung Segmentation/masks/CHNCXR_0566_1_mask.png,True,1,M,38.0,Right PTB,2998,2573,True,0.318077,3,train
+Shenzhen,CHNCXR_0567_1,CHNCXR_0567,Lung Segmentation/CXR_png/CHNCXR_0567_1.png,Lung Segmentation/masks/CHNCXR_0567_1_mask.png,True,1,M,61.0,bilateral PTB,2986,2995,True,0.180632,3,train
+Shenzhen,CHNCXR_0568_1,CHNCXR_0568,Lung Segmentation/CXR_png/CHNCXR_0568_1.png,Lung Segmentation/masks/CHNCXR_0568_1_mask.png,True,1,M,50.0,bilateral PTB,2992,2646,True,0.230177,3,train
+Shenzhen,CHNCXR_0569_1,CHNCXR_0569,Lung Segmentation/CXR_png/CHNCXR_0569_1.png,Lung Segmentation/masks/CHNCXR_0569_1_mask.png,True,1,M,51.0,bilateral PTB,2988,2503,True,0.258551,0,train
+Shenzhen,CHNCXR_0570_1,CHNCXR_0570,Lung Segmentation/CXR_png/CHNCXR_0570_1.png,Lung Segmentation/masks/CHNCXR_0570_1_mask.png,True,1,M,28.0,bilateral PTB,2959,2524,True,0.278686,2,train
+Shenzhen,CHNCXR_0571_1,CHNCXR_0571,Lung Segmentation/CXR_png/CHNCXR_0571_1.png,Lung Segmentation/masks/CHNCXR_0571_1_mask.png,True,1,F,36.0,Right PTB,2987,2725,True,0.253948,1,train
+Shenzhen,CHNCXR_0572_1,CHNCXR_0572,Lung Segmentation/CXR_png/CHNCXR_0572_1.png,Lung Segmentation/masks/CHNCXR_0572_1_mask.png,True,1,F,57.0,bilateral PTB,2289,2400,True,0.193079,4,train
+Shenzhen,CHNCXR_0573_1,CHNCXR_0573,Lung Segmentation/CXR_png/CHNCXR_0573_1.png,Lung Segmentation/masks/CHNCXR_0573_1_mask.png,True,1,M,32.0,bilateral PTB,2988,2519,True,0.28037,2,train
+Shenzhen,CHNCXR_0574_1,CHNCXR_0574,Lung Segmentation/CXR_png/CHNCXR_0574_1.png,Lung Segmentation/masks/CHNCXR_0574_1_mask.png,True,1,F,35.0,Right PTB,2991,2609,True,0.295485,4,train
+Shenzhen,CHNCXR_0575_1,CHNCXR_0575,Lung Segmentation/CXR_png/CHNCXR_0575_1.png,Lung Segmentation/masks/CHNCXR_0575_1_mask.png,True,1,F,33.0,bilateral PTB,2453,2443,True,0.272214,2,train
+Shenzhen,CHNCXR_0576_1,CHNCXR_0576,Lung Segmentation/CXR_png/CHNCXR_0576_1.png,Lung Segmentation/masks/CHNCXR_0576_1_mask.png,True,1,M,63.0,Right PTB,2806,2437,True,0.297583,1,train
+Shenzhen,CHNCXR_0577_1,CHNCXR_0577,Lung Segmentation/CXR_png/CHNCXR_0577_1.png,Lung Segmentation/masks/CHNCXR_0577_1_mask.png,True,1,F,74.0,Right PTB,2319,2384,True,0.272597,2,train
+Shenzhen,CHNCXR_0578_1,CHNCXR_0578,Lung Segmentation/CXR_png/CHNCXR_0578_1.png,Lung Segmentation/masks/CHNCXR_0578_1_mask.png,True,1,M,29.0,Right PTB,2990,2903,True,0.291936,4,train
+Shenzhen,CHNCXR_0579_1,CHNCXR_0579,Lung Segmentation/CXR_png/CHNCXR_0579_1.png,Lung Segmentation/masks/CHNCXR_0579_1_mask.png,True,1,M,24.0,left PTB,2743,2312,True,0.311608,1,train
+Shenzhen,CHNCXR_0580_1,CHNCXR_0580,Lung Segmentation/CXR_png/CHNCXR_0580_1.png,Lung Segmentation/masks/CHNCXR_0580_1_mask.png,True,1,M,25.0,left PTB,2976,2628,True,0.281567,0,train
+Shenzhen,CHNCXR_0581_1,CHNCXR_0581,Lung Segmentation/CXR_png/CHNCXR_0581_1.png,Lung Segmentation/masks/CHNCXR_0581_1_mask.png,True,1,M,25.0,left PTB,2829,2550,True,0.284269,1,train
+Shenzhen,CHNCXR_0582_1,CHNCXR_0582,Lung Segmentation/CXR_png/CHNCXR_0582_1.png,Lung Segmentation/masks/CHNCXR_0582_1_mask.png,True,1,M,44.0,bilateral PTB,2894,2761,True,0.247126,2,train
+Shenzhen,CHNCXR_0583_1,CHNCXR_0583,Lung Segmentation/CXR_png/CHNCXR_0583_1.png,Lung Segmentation/masks/CHNCXR_0583_1_mask.png,True,1,M,29.0,Right PTB,2977,2996,True,0.259676,2,train
+Shenzhen,CHNCXR_0584_1,CHNCXR_0584,Lung Segmentation/CXR_png/CHNCXR_0584_1.png,Lung Segmentation/masks/CHNCXR_0584_1_mask.png,True,1,F,22.0,left PTB,2735,2643,True,0.232382,2,train
+Shenzhen,CHNCXR_0585_1,CHNCXR_0585,Lung Segmentation/CXR_png/CHNCXR_0585_1.png,Lung Segmentation/masks/CHNCXR_0585_1_mask.png,True,1,M,18.0,left PTB,2988,3001,True,0.243138,3,train
+Shenzhen,CHNCXR_0586_1,CHNCXR_0586,Lung Segmentation/CXR_png/CHNCXR_0586_1.png,Lung Segmentation/masks/CHNCXR_0586_1_mask.png,True,1,F,38.0,bilateral PTB,2609,2419,True,0.16797,1,train
+Shenzhen,CHNCXR_0587_1,CHNCXR_0587,Lung Segmentation/CXR_png/CHNCXR_0587_1.png,Lung Segmentation/masks/CHNCXR_0587_1_mask.png,True,1,M,34.0,left PTB,2989,2996,True,0.237768,0,train
+Shenzhen,CHNCXR_0588_1,CHNCXR_0588,Lung Segmentation/CXR_png/CHNCXR_0588_1.png,Lung Segmentation/masks/CHNCXR_0588_1_mask.png,True,1,M,25.0,secondary PTB  in the left upper field,2789,2554,True,0.328033,1,train
+Shenzhen,CHNCXR_0589_1,CHNCXR_0589,Lung Segmentation/CXR_png/CHNCXR_0589_1.png,Lung Segmentation/masks/CHNCXR_0589_1_mask.png,True,1,M,54.0,bilateral secondary PTB,2645,2421,True,0.272424,1,train
+Shenzhen,CHNCXR_0590_1,CHNCXR_0590,Lung Segmentation/CXR_png/CHNCXR_0590_1.png,Lung Segmentation/masks/CHNCXR_0590_1_mask.png,True,1,M,21.0,secondary PTB  in the bilateral upper fields,2698,2427,True,0.333336,1,train
+Shenzhen,CHNCXR_0591_1,CHNCXR_0591,Lung Segmentation/CXR_png/CHNCXR_0591_1.png,Lung Segmentation/masks/CHNCXR_0591_1_mask.png,True,1,M,46.0,right lower field PTB,2977,3001,True,0.268916,3,train
+Shenzhen,CHNCXR_0592_1,CHNCXR_0592,Lung Segmentation/CXR_png/CHNCXR_0592_1.png,Lung Segmentation/masks/CHNCXR_0592_1_mask.png,True,1,M,55.0,left PTB,2701,2629,True,0.241561,0,train
+Shenzhen,CHNCXR_0593_1,CHNCXR_0593,Lung Segmentation/CXR_png/CHNCXR_0593_1.png,Lung Segmentation/masks/CHNCXR_0593_1_mask.png,True,1,F,25.0,secondary PTB  in the left upper field,2418,2330,True,0.302923,1,train
+Shenzhen,CHNCXR_0594_1,CHNCXR_0594,Lung Segmentation/CXR_png/CHNCXR_0594_1.png,Lung Segmentation/masks/CHNCXR_0594_1_mask.png,True,1,F,29.0,bilateral PTB,2506,2356,True,0.325143,4,train
+Shenzhen,CHNCXR_0595_1,CHNCXR_0595,Lung Segmentation/CXR_png/CHNCXR_0595_1.png,Lung Segmentation/masks/CHNCXR_0595_1_mask.png,True,1,F,22.0,right lower field PTB,2525,2234,True,0.331157,1,train
+Shenzhen,CHNCXR_0596_1,CHNCXR_0596,Lung Segmentation/CXR_png/CHNCXR_0596_1.png,Lung Segmentation/masks/CHNCXR_0596_1_mask.png,True,1,M,46.0,bilateral PTB,2970,2406,True,0.263734,4,train
+Shenzhen,CHNCXR_0597_1,CHNCXR_0597,Lung Segmentation/CXR_png/CHNCXR_0597_1.png,Lung Segmentation/masks/CHNCXR_0597_1_mask.png,True,1,M,36.0,Right PTB,2991,2996,True,0.221671,1,train
+Shenzhen,CHNCXR_0598_1,CHNCXR_0598,Lung Segmentation/CXR_png/CHNCXR_0598_1.png,Lung Segmentation/masks/CHNCXR_0598_1_mask.png,True,1,F,15.0,"bilateral PTB, right pleurisy",2179,2221,True,0.297647,3,train
+Shenzhen,CHNCXR_0599_1,CHNCXR_0599,Lung Segmentation/CXR_png/CHNCXR_0599_1.png,Lung Segmentation/masks/CHNCXR_0599_1_mask.png,True,1,M,39.0,Right PTB,2975,3000,True,0.210637,4,train
+Shenzhen,CHNCXR_0600_1,CHNCXR_0600,Lung Segmentation/CXR_png/CHNCXR_0600_1.png,Lung Segmentation/masks/CHNCXR_0600_1_mask.png,True,1,M,23.0,bilateral subacute hematogenous disseminated PTB,2857,2998,True,0.291072,4,train
+Shenzhen,CHNCXR_0601_1,CHNCXR_0601,Lung Segmentation/CXR_png/CHNCXR_0601_1.png,Lung Segmentation/masks/CHNCXR_0601_1_mask.png,True,1,F,58.0,left PTB,2988,2698,True,0.205018,1,train
+Shenzhen,CHNCXR_0602_1,CHNCXR_0602,Lung Segmentation/CXR_png/CHNCXR_0602_1.png,Lung Segmentation/masks/CHNCXR_0602_1_mask.png,True,1,M,42.0,bilateral PTB,2539,2299,True,0.368985,2,train
+Shenzhen,CHNCXR_0603_1,CHNCXR_0603,Lung Segmentation/CXR_png/CHNCXR_0603_1.png,Lung Segmentation/masks/CHNCXR_0603_1_mask.png,True,1,M,60.0,bilateral PTB,2953,2324,True,0.1962,2,train
+Shenzhen,CHNCXR_0604_1,CHNCXR_0604,Lung Segmentation/CXR_png/CHNCXR_0604_1.png,Lung Segmentation/masks/CHNCXR_0604_1_mask.png,True,1,M,35.0,Right PTB,2967,3000,True,0.165826,2,train
+Shenzhen,CHNCXR_0605_1,CHNCXR_0605,Lung Segmentation/CXR_png/CHNCXR_0605_1.png,Lung Segmentation/masks/CHNCXR_0605_1_mask.png,True,1,M,23.0,left PTB,2962,2410,True,0.315189,1,train
+Shenzhen,CHNCXR_0606_1,CHNCXR_0606,Lung Segmentation/CXR_png/CHNCXR_0606_1.png,Lung Segmentation/masks/CHNCXR_0606_1_mask.png,True,1,F,78.0,bilateral PTB,2641,2619,True,0.196281,1,train
+Shenzhen,CHNCXR_0607_1,CHNCXR_0607,Lung Segmentation/CXR_png/CHNCXR_0607_1.png,Lung Segmentation/masks/CHNCXR_0607_1_mask.png,True,1,M,17.0,left PTB,2987,2997,True,0.30962,3,train
+Shenzhen,CHNCXR_0608_1,CHNCXR_0608,Lung Segmentation/CXR_png/CHNCXR_0608_1.png,Lung Segmentation/masks/CHNCXR_0608_1_mask.png,True,1,M,37.0,left PTB,2986,2995,True,0.250213,2,train
+Shenzhen,CHNCXR_0609_1,CHNCXR_0609,Lung Segmentation/CXR_png/CHNCXR_0609_1.png,Lung Segmentation/masks/CHNCXR_0609_1_mask.png,True,1,M,26.0,PTB in the left upper field,2776,2725,True,0.299712,0,train
+Shenzhen,CHNCXR_0610_1,CHNCXR_0610,Lung Segmentation/CXR_png/CHNCXR_0610_1.png,Lung Segmentation/masks/CHNCXR_0610_1_mask.png,True,1,F,53.0,Bilateral secondary PTB,2493,2525,True,0.254851,3,train
+Shenzhen,CHNCXR_0611_1,CHNCXR_0611,Lung Segmentation/CXR_png/CHNCXR_0611_1.png,Lung Segmentation/masks/CHNCXR_0611_1_mask.png,True,1,F,20.0,PTB in the right upper field,2680,2479,True,0.277798,2,train
+Shenzhen,CHNCXR_0612_1,CHNCXR_0612,Lung Segmentation/CXR_png/CHNCXR_0612_1.png,Lung Segmentation/masks/CHNCXR_0612_1_mask.png,True,1,M,42.0,right secondary PTB,2929,2735,True,0.263232,1,train
+Shenzhen,CHNCXR_0613_1,CHNCXR_0613,Lung Segmentation/CXR_png/CHNCXR_0613_1.png,Lung Segmentation/masks/CHNCXR_0613_1_mask.png,True,1,F,30.0,Old PTB in the right upper field,2672,2546,True,0.286513,0,train
+Shenzhen,CHNCXR_0614_1,CHNCXR_0614,Lung Segmentation/CXR_png/CHNCXR_0614_1.png,Lung Segmentation/masks/CHNCXR_0614_1_mask.png,True,1,F,32.0,PTB in the right upper field,2334,2401,True,0.328111,1,train
+Shenzhen,CHNCXR_0615_1,CHNCXR_0615,Lung Segmentation/CXR_png/CHNCXR_0615_1.png,Lung Segmentation/masks/CHNCXR_0615_1_mask.png,True,1,F,40.0,PTB in the right upper field,2730,2387,True,0.264655,0,train
+Shenzhen,CHNCXR_0616_1,CHNCXR_0616,Lung Segmentation/CXR_png/CHNCXR_0616_1.png,Lung Segmentation/masks/CHNCXR_0616_1_mask.png,True,1,M,54.0,PTB in the right upper field,2465,2235,True,0.265761,0,train
+Shenzhen,CHNCXR_0617_1,CHNCXR_0617,Lung Segmentation/CXR_png/CHNCXR_0617_1.png,Lung Segmentation/masks/CHNCXR_0617_1_mask.png,True,1,M,49.0,Right PTB,2843,2679,True,0.277348,4,train
+Shenzhen,CHNCXR_0618_1,CHNCXR_0618,Lung Segmentation/CXR_png/CHNCXR_0618_1.png,Lung Segmentation/masks/CHNCXR_0618_1_mask.png,True,1,M,25.0,bilateral PTB,2427,2268,True,0.328356,1,train
+Shenzhen,CHNCXR_0619_1,CHNCXR_0619,Lung Segmentation/CXR_png/CHNCXR_0619_1.png,Lung Segmentation/masks/CHNCXR_0619_1_mask.png,True,1,F,38.0,PTB in the left upper field,2398,2254,True,0.351497,4,train
+Shenzhen,CHNCXR_0620_1,CHNCXR_0620,Lung Segmentation/CXR_png/CHNCXR_0620_1.png,Lung Segmentation/masks/CHNCXR_0620_1_mask.png,True,1,M,37.0,PTB in the right upper field,2511,2339,True,0.308093,4,train
+Shenzhen,CHNCXR_0621_1,CHNCXR_0621,Lung Segmentation/CXR_png/CHNCXR_0621_1.png,Lung Segmentation/masks/CHNCXR_0621_1_mask.png,True,1,M,42.0,Right PTB,2630,2584,True,0.207622,4,train
+Shenzhen,CHNCXR_0622_1,CHNCXR_0622,Lung Segmentation/CXR_png/CHNCXR_0622_1.png,Lung Segmentation/masks/CHNCXR_0622_1_mask.png,True,1,F,49.0,left PTB,2403,2420,True,0.317543,2,train
+Shenzhen,CHNCXR_0623_1,CHNCXR_0623,Lung Segmentation/CXR_png/CHNCXR_0623_1.png,Lung Segmentation/masks/CHNCXR_0623_1_mask.png,True,1,F,39.0,PTB in the right upper field,2554,2238,True,0.290116,4,train
+Shenzhen,CHNCXR_0624_1,CHNCXR_0624,Lung Segmentation/CXR_png/CHNCXR_0624_1.png,Lung Segmentation/masks/CHNCXR_0624_1_mask.png,True,1,F,76.0,PTB in the left upper field,2670,2623,True,0.133007,2,train
+Shenzhen,CHNCXR_0625_1,CHNCXR_0625,Lung Segmentation/CXR_png/CHNCXR_0625_1.png,Lung Segmentation/masks/CHNCXR_0625_1_mask.png,True,1,M,30.0,PTB in the right upper field,2841,2350,True,0.379248,1,train
+Shenzhen,CHNCXR_0626_1,CHNCXR_0626,Lung Segmentation/CXR_png/CHNCXR_0626_1.png,Lung Segmentation/masks/CHNCXR_0626_1_mask.png,True,1,M,49.0,PTB in the right lower field,2989,3001,True,0.233691,2,train
+Shenzhen,CHNCXR_0627_1,CHNCXR_0627,Lung Segmentation/CXR_png/CHNCXR_0627_1.png,Lung Segmentation/masks/CHNCXR_0627_1_mask.png,True,1,F,26.0,secondary PTB  in the right upper field,2871,2607,True,0.251726,0,train
+Shenzhen,CHNCXR_0628_1,CHNCXR_0628,Lung Segmentation/CXR_png/CHNCXR_0628_1.png,Lung Segmentation/masks/CHNCXR_0628_1_mask.png,True,1,M,27.0,secondary PTB  in the right upper field,2987,3001,True,0.276077,2,train
+Shenzhen,CHNCXR_0629_1,CHNCXR_0629,Lung Segmentation/CXR_png/CHNCXR_0629_1.png,Lung Segmentation/masks/CHNCXR_0629_1_mask.png,True,1,M,62.0,Bilateral secondary PTB,2501,2457,True,0.260067,2,train
+Shenzhen,CHNCXR_0630_1,CHNCXR_0630,Lung Segmentation/CXR_png/CHNCXR_0630_1.png,Lung Segmentation/masks/CHNCXR_0630_1_mask.png,True,1,M,2.0,secondary PTB  in the bilateral upper field,2985,2997,True,0.225718,0,train
+Shenzhen,CHNCXR_0631_1,CHNCXR_0631,Lung Segmentation/CXR_png/CHNCXR_0631_1.png,Lung Segmentation/masks/CHNCXR_0631_1_mask.png,True,1,F,28.0,secondary PTB  in the right upper field,2705,2406,True,0.233448,3,train
+Shenzhen,CHNCXR_0632_1,CHNCXR_0632,Lung Segmentation/CXR_png/CHNCXR_0632_1.png,Lung Segmentation/masks/CHNCXR_0632_1_mask.png,True,1,F,30.0,PTB in the left upper field,2588,2497,True,0.199964,4,train
+Shenzhen,CHNCXR_0633_1,CHNCXR_0633,Lung Segmentation/CXR_png/CHNCXR_0633_1.png,Lung Segmentation/masks/CHNCXR_0633_1_mask.png,True,1,,35.0,PTB in the left upper field,2533,2610,True,0.217622,1,train
+Shenzhen,CHNCXR_0634_1,CHNCXR_0634,Lung Segmentation/CXR_png/CHNCXR_0634_1.png,Lung Segmentation/masks/CHNCXR_0634_1_mask.png,True,1,M,28.0,secondary PTB  in the bilateral upper field,2917,2573,True,0.322372,2,train
+Shenzhen,CHNCXR_0635_1,CHNCXR_0635,Lung Segmentation/CXR_png/CHNCXR_0635_1.png,Lung Segmentation/masks/CHNCXR_0635_1_mask.png,True,1,M,65.0,bilateral PTB,2952,2399,True,0.337358,2,train
+Shenzhen,CHNCXR_0636_1,CHNCXR_0636,Lung Segmentation/CXR_png/CHNCXR_0636_1.png,Lung Segmentation/masks/CHNCXR_0636_1_mask.png,True,1,,35.0,Bilateral secondary PTB,2929,2896,True,0.250259,3,train
+Shenzhen,CHNCXR_0637_1,CHNCXR_0637,Lung Segmentation/CXR_png/CHNCXR_0637_1.png,Lung Segmentation/masks/CHNCXR_0637_1_mask.png,True,1,M,44.0,bilateral PTB,2931,2511,True,0.224998,0,train
+Shenzhen,CHNCXR_0638_1,CHNCXR_0638,Lung Segmentation/CXR_png/CHNCXR_0638_1.png,Lung Segmentation/masks/CHNCXR_0638_1_mask.png,True,1,F,36.0,Bilateral secondary PTB with left lower field pneumonia,2503,2400,True,0.270967,2,train
+Shenzhen,CHNCXR_0639_1,CHNCXR_0639,Lung Segmentation/CXR_png/CHNCXR_0639_1.png,Lung Segmentation/masks/CHNCXR_0639_1_mask.png,True,1,F,28.0,bilateral acute hematogenous disseminated PTB,2460,2202,True,0.298585,0,train
+Shenzhen,CHNCXR_0640_1,CHNCXR_0640,Lung Segmentation/CXR_png/CHNCXR_0640_1.png,Lung Segmentation/masks/CHNCXR_0640_1_mask.png,True,1,M,38.0,Bilateral secondary PTB  with most lesions calcified,2937,3000,True,0.260771,4,train
+Shenzhen,CHNCXR_0641_1,CHNCXR_0641,Lung Segmentation/CXR_png/CHNCXR_0641_1.png,Lung Segmentation/masks/CHNCXR_0641_1_mask.png,True,1,F,28.0,left secondary PTB,2977,2450,True,0.331365,0,train
+Shenzhen,CHNCXR_0642_1,CHNCXR_0642,Lung Segmentation/CXR_png/CHNCXR_0642_1.png,Lung Segmentation/masks/CHNCXR_0642_1_mask.png,True,1,F,43.0,secondary PTB  in the right upper field,2568,2110,True,0.345694,4,train
+Shenzhen,CHNCXR_0643_1,CHNCXR_0643,Lung Segmentation/CXR_png/CHNCXR_0643_1.png,Lung Segmentation/masks/CHNCXR_0643_1_mask.png,True,1,M,43.0,secondary PTB  in the bilateral upper field,2804,2368,True,0.354696,0,train
+Shenzhen,CHNCXR_0644_1,CHNCXR_0644,Lung Segmentation/CXR_png/CHNCXR_0644_1.png,Lung Segmentation/masks/CHNCXR_0644_1_mask.png,True,1,F,44.0,1.secondary PTB  in the right upper field; 2.small tuberculoma; 3.right pleural thickening and adhesions,2248,2300,True,0.291229,3,train
+Shenzhen,CHNCXR_0645_1,CHNCXR_0645,Lung Segmentation/CXR_png/CHNCXR_0645_1.png,Lung Segmentation/masks/CHNCXR_0645_1_mask.png,True,1,M,27.0,"Left secondary PTB in the upper and middle fields, mainly  fibrous  lesions",2735,2421,True,0.288153,2,train
+Shenzhen,CHNCXR_0646_1,CHNCXR_0646,Lung Segmentation/CXR_png/CHNCXR_0646_1.png,Lung Segmentation/masks/CHNCXR_0646_1_mask.png,True,1,M,31.0,secondary PTB  in the left lower field,2929,3001,True,0.184828,0,train
+Shenzhen,CHNCXR_0647_1,CHNCXR_0647,Lung Segmentation/CXR_png/CHNCXR_0647_1.png,Lung Segmentation/masks/CHNCXR_0647_1_mask.png,True,1,M,38.0,"secondary PTB in the bilateral upper and middle fields, mainly fibrous  lesions",2935,3001,True,0.213735,2,train
+Shenzhen,CHNCXR_0648_1,CHNCXR_0648,Lung Segmentation/CXR_png/CHNCXR_0648_1.png,Lung Segmentation/masks/CHNCXR_0648_1_mask.png,True,1,M,26.0,bilateral secondary PTB with multiple cavitations,2917,2580,True,0.271495,3,train
+Shenzhen,CHNCXR_0649_1,CHNCXR_0649,Lung Segmentation/CXR_png/CHNCXR_0649_1.png,Lung Segmentation/masks/CHNCXR_0649_1_mask.png,True,1,M,29.0,"bilateral secondary PTB,mainly hyperplastic lesions",2965,3000,True,0.236079,4,train
+Shenzhen,CHNCXR_0650_1,CHNCXR_0650,Lung Segmentation/CXR_png/CHNCXR_0650_1.png,Lung Segmentation/masks/CHNCXR_0650_1_mask.png,True,1,M,50.0,secondary PTB  in the right upper field,2988,2676,True,0.270571,1,train
+Shenzhen,CHNCXR_0651_1,CHNCXR_0651,Lung Segmentation/CXR_png/CHNCXR_0651_1.png,Lung Segmentation/masks/CHNCXR_0651_1_mask.png,True,1,F,49.0,"Right secondary PTB,mainly hyperplastic lesions",2635,2459,True,0.315992,4,train
+Shenzhen,CHNCXR_0652_1,CHNCXR_0652,Lung Segmentation/CXR_png/CHNCXR_0652_1.png,Lung Segmentation/masks/CHNCXR_0652_1_mask.png,True,1,M,51.0,secondary PTB  in thel left upper field,2750,2707,True,0.203498,2,train
+Shenzhen,CHNCXR_0653_1,CHNCXR_0653,Lung Segmentation/CXR_png/CHNCXR_0653_1.png,Lung Segmentation/masks/CHNCXR_0653_1_mask.png,True,1,M,69.0,bilateral secondary PTB  with pleural thickening,2550,2336,True,0.293658,1,train
+Shenzhen,CHNCXR_0654_1,CHNCXR_0654,Lung Segmentation/CXR_png/CHNCXR_0654_1.png,Lung Segmentation/masks/CHNCXR_0654_1_mask.png,True,1,M,28.0,Right secondary PTB,2283,2057,True,0.406537,2,train
+Shenzhen,CHNCXR_0655_1,CHNCXR_0655,Lung Segmentation/CXR_png/CHNCXR_0655_1.png,Lung Segmentation/masks/CHNCXR_0655_1_mask.png,True,1,M,33.0,"secondary PTB in the right upper field,mainly hyperplastic lesions",2933,2734,True,0.317748,4,train
+Shenzhen,CHNCXR_0656_1,CHNCXR_0656,Lung Segmentation/CXR_png/CHNCXR_0656_1.png,Lung Segmentation/masks/CHNCXR_0656_1_mask.png,True,1,F,35.0,secondary PTB  in the right upper field,2988,3001,True,0.172941,1,train
+Shenzhen,CHNCXR_0657_1,CHNCXR_0657,Lung Segmentation/CXR_png/CHNCXR_0657_1.png,Lung Segmentation/masks/CHNCXR_0657_1_mask.png,True,1,M,31.0,Right secondary PTB in the upper and middle fields,2977,2738,True,0.317279,4,train
+Shenzhen,CHNCXR_0658_1,CHNCXR_0658,Lung Segmentation/CXR_png/CHNCXR_0658_1.png,Lung Segmentation/masks/CHNCXR_0658_1_mask.png,True,1,M,41.0,bilateral secondary PTB  with right pneumothorax,2955,2611,True,0.282491,2,train
+Shenzhen,CHNCXR_0659_1,CHNCXR_0659,Lung Segmentation/CXR_png/CHNCXR_0659_1.png,Lung Segmentation/masks/CHNCXR_0659_1_mask.png,True,1,M,33.0,secondary PTB  in the left upper field,2989,3001,True,0.237426,4,train
+Shenzhen,CHNCXR_0660_1,CHNCXR_0660,Lung Segmentation/CXR_png/CHNCXR_0660_1.png,Lung Segmentation/masks/CHNCXR_0660_1_mask.png,True,1,M,50.0,1.bilateral secondary PTB  with right upper atelectasis;2.right pleural adhesions;3.left compensatory emphysema,2933,2997,True,0.211281,0,train
+Shenzhen,CHNCXR_0661_1,CHNCXR_0661,Lung Segmentation/CXR_png/CHNCXR_0661_1.png,Lung Segmentation/masks/CHNCXR_0661_1_mask.png,True,1,M,26.0,bilateral secondary PTB  with right pleural thickening,2608,2495,True,0.347782,0,train
+Shenzhen,CHNCXR_0662_1,CHNCXR_0662,Lung Segmentation/CXR_png/CHNCXR_0662_1.png,Lung Segmentation/masks/CHNCXR_0662_1_mask.png,True,1,M,32.0,secondary PTB  in the right upper field,2988,2619,True,0.377813,3,train
+Montgomery,MCUCXR_0001_0,MCUCXR_0001,Lung Segmentation/CXR_png/MCUCXR_0001_0.png,Lung Segmentation/masks/MCUCXR_0001_0.png,True,0,F,27.0,normal,4020,4892,True,0.241713,0,test
+Montgomery,MCUCXR_0002_0,MCUCXR_0002,Lung Segmentation/CXR_png/MCUCXR_0002_0.png,Lung Segmentation/masks/MCUCXR_0002_0.png,True,0,F,40.0,normal,4020,4892,True,0.203719,1,test
+Montgomery,MCUCXR_0003_0,MCUCXR_0003,Lung Segmentation/CXR_png/MCUCXR_0003_0.png,Lung Segmentation/masks/MCUCXR_0003_0.png,True,0,F,21.0,normal,4892,4020,True,0.254161,3,test
+Montgomery,MCUCXR_0004_0,MCUCXR_0004,Lung Segmentation/CXR_png/MCUCXR_0004_0.png,Lung Segmentation/masks/MCUCXR_0004_0.png,True,0,F,11.0,normal,4892,4020,True,0.176922,4,test
+Montgomery,MCUCXR_0005_0,MCUCXR_0005,Lung Segmentation/CXR_png/MCUCXR_0005_0.png,Lung Segmentation/masks/MCUCXR_0005_0.png,True,0,M,33.0,normal,4892,4020,True,0.308388,3,test
+Montgomery,MCUCXR_0006_0,MCUCXR_0006,Lung Segmentation/CXR_png/MCUCXR_0006_0.png,Lung Segmentation/masks/MCUCXR_0006_0.png,True,0,F,70.0,normal,4020,4892,True,0.213029,4,test
+Montgomery,MCUCXR_0008_0,MCUCXR_0008,Lung Segmentation/CXR_png/MCUCXR_0008_0.png,Lung Segmentation/masks/MCUCXR_0008_0.png,True,0,F,53.0,normal,4892,4020,True,0.275692,3,test
+Montgomery,MCUCXR_0011_0,MCUCXR_0011,Lung Segmentation/CXR_png/MCUCXR_0011_0.png,Lung Segmentation/masks/MCUCXR_0011_0.png,True,0,F,29.0,normal,4892,4020,True,0.261836,3,test
+Montgomery,MCUCXR_0013_0,MCUCXR_0013,Lung Segmentation/CXR_png/MCUCXR_0013_0.png,Lung Segmentation/masks/MCUCXR_0013_0.png,True,0,F,47.0,normal,4020,4892,True,0.21978,3,test
+Montgomery,MCUCXR_0015_0,MCUCXR_0015,Lung Segmentation/CXR_png/MCUCXR_0015_0.png,Lung Segmentation/masks/MCUCXR_0015_0.png,True,0,M,48.0,normal,4020,4892,True,0.2981,0,test
+Montgomery,MCUCXR_0016_0,MCUCXR_0016,Lung Segmentation/CXR_png/MCUCXR_0016_0.png,Lung Segmentation/masks/MCUCXR_0016_0.png,True,0,F,52.0,normal,4020,4892,True,0.233552,2,test
+Montgomery,MCUCXR_0017_0,MCUCXR_0017,Lung Segmentation/CXR_png/MCUCXR_0017_0.png,Lung Segmentation/masks/MCUCXR_0017_0.png,True,0,M,8.0,normal,4020,4892,True,0.155655,4,test
+Montgomery,MCUCXR_0019_0,MCUCXR_0019,Lung Segmentation/CXR_png/MCUCXR_0019_0.png,Lung Segmentation/masks/MCUCXR_0019_0.png,True,0,M,33.0,normal,4892,4020,True,0.288016,3,test
+Montgomery,MCUCXR_0020_0,MCUCXR_0020,Lung Segmentation/CXR_png/MCUCXR_0020_0.png,Lung Segmentation/masks/MCUCXR_0020_0.png,True,0,M,24.0,normal,4020,4892,True,0.2734,2,test
+Montgomery,MCUCXR_0021_0,MCUCXR_0021,Lung Segmentation/CXR_png/MCUCXR_0021_0.png,Lung Segmentation/masks/MCUCXR_0021_0.png,True,0,F,41.0,normal,4892,4020,True,0.238916,0,test
+Montgomery,MCUCXR_0022_0,MCUCXR_0022,Lung Segmentation/CXR_png/MCUCXR_0022_0.png,Lung Segmentation/masks/MCUCXR_0022_0.png,True,0,M,54.0,normal,4020,4892,True,0.397658,4,test
+Montgomery,MCUCXR_0023_0,MCUCXR_0023,Lung Segmentation/CXR_png/MCUCXR_0023_0.png,Lung Segmentation/masks/MCUCXR_0023_0.png,True,0,M,54.0,normal,4020,4892,True,0.386911,1,test
+Montgomery,MCUCXR_0024_0,MCUCXR_0024,Lung Segmentation/CXR_png/MCUCXR_0024_0.png,Lung Segmentation/masks/MCUCXR_0024_0.png,True,0,F,37.0,normal,4892,4020,True,0.179764,0,test
+Montgomery,MCUCXR_0026_0,MCUCXR_0026,Lung Segmentation/CXR_png/MCUCXR_0026_0.png,Lung Segmentation/masks/MCUCXR_0026_0.png,True,0,F,10.0,normal,4892,4020,True,0.176402,3,test
+Montgomery,MCUCXR_0027_0,MCUCXR_0027,Lung Segmentation/CXR_png/MCUCXR_0027_0.png,Lung Segmentation/masks/MCUCXR_0027_0.png,True,0,F,38.0,normal,4892,4020,True,0.220447,0,test
+Montgomery,MCUCXR_0028_0,MCUCXR_0028,Lung Segmentation/CXR_png/MCUCXR_0028_0.png,Lung Segmentation/masks/MCUCXR_0028_0.png,True,0,F,31.0,normal,4892,4020,True,0.183974,0,test
+Montgomery,MCUCXR_0029_0,MCUCXR_0029,Lung Segmentation/CXR_png/MCUCXR_0029_0.png,Lung Segmentation/masks/MCUCXR_0029_0.png,True,0,F,19.0,normal,4892,4020,True,0.246491,3,test
+Montgomery,MCUCXR_0030_0,MCUCXR_0030,Lung Segmentation/CXR_png/MCUCXR_0030_0.png,Lung Segmentation/masks/MCUCXR_0030_0.png,True,0,M,53.0,normal,4020,4892,True,0.355322,2,test
+Montgomery,MCUCXR_0031_0,MCUCXR_0031,Lung Segmentation/CXR_png/MCUCXR_0031_0.png,Lung Segmentation/masks/MCUCXR_0031_0.png,True,0,M,53.0,normal,4020,4892,True,0.355563,0,test
+Montgomery,MCUCXR_0035_0,MCUCXR_0035,Lung Segmentation/CXR_png/MCUCXR_0035_0.png,Lung Segmentation/masks/MCUCXR_0035_0.png,True,0,F,20.0,normal,4892,4020,True,0.268934,3,test
+Montgomery,MCUCXR_0038_0,MCUCXR_0038,Lung Segmentation/CXR_png/MCUCXR_0038_0.png,Lung Segmentation/masks/MCUCXR_0038_0.png,True,0,F,31.0,normal,4892,4020,True,0.274371,3,test
+Montgomery,MCUCXR_0040_0,MCUCXR_0040,Lung Segmentation/CXR_png/MCUCXR_0040_0.png,Lung Segmentation/masks/MCUCXR_0040_0.png,True,0,F,50.0,normal,4892,4020,True,0.277257,3,test
+Montgomery,MCUCXR_0041_0,MCUCXR_0041,Lung Segmentation/CXR_png/MCUCXR_0041_0.png,Lung Segmentation/masks/MCUCXR_0041_0.png,True,0,F,11.0,normal,4020,4892,True,0.173465,2,test
+Montgomery,MCUCXR_0042_0,MCUCXR_0042,Lung Segmentation/CXR_png/MCUCXR_0042_0.png,Lung Segmentation/masks/MCUCXR_0042_0.png,True,0,M,9.0,normal,4020,4892,True,0.146386,2,test
+Montgomery,MCUCXR_0043_0,MCUCXR_0043,Lung Segmentation/CXR_png/MCUCXR_0043_0.png,Lung Segmentation/masks/MCUCXR_0043_0.png,True,0,M,48.0,normal,4020,4892,True,0.199908,0,test
+Montgomery,MCUCXR_0044_0,MCUCXR_0044,Lung Segmentation/CXR_png/MCUCXR_0044_0.png,Lung Segmentation/masks/MCUCXR_0044_0.png,True,0,F,34.0,normal,4892,4020,True,0.269671,0,test
+Montgomery,MCUCXR_0045_0,MCUCXR_0045,Lung Segmentation/CXR_png/MCUCXR_0045_0.png,Lung Segmentation/masks/MCUCXR_0045_0.png,True,0,M,52.0,normal,4020,4892,True,0.271729,3,test
+Montgomery,MCUCXR_0046_0,MCUCXR_0046,Lung Segmentation/CXR_png/MCUCXR_0046_0.png,Lung Segmentation/masks/MCUCXR_0046_0.png,True,0,F,16.0,normal,4892,4020,True,0.277157,2,test
+Montgomery,MCUCXR_0047_0,MCUCXR_0047,Lung Segmentation/CXR_png/MCUCXR_0047_0.png,Lung Segmentation/masks/MCUCXR_0047_0.png,True,0,F,35.0,normal,4892,4020,True,0.253473,1,test
+Montgomery,MCUCXR_0048_0,MCUCXR_0048,Lung Segmentation/CXR_png/MCUCXR_0048_0.png,Lung Segmentation/masks/MCUCXR_0048_0.png,True,0,F,26.0,normal,4892,4020,True,0.195085,2,test
+Montgomery,MCUCXR_0049_0,MCUCXR_0049,Lung Segmentation/CXR_png/MCUCXR_0049_0.png,Lung Segmentation/masks/MCUCXR_0049_0.png,True,0,F,28.0,normal,4892,4020,True,0.233136,4,test
+Montgomery,MCUCXR_0051_0,MCUCXR_0051,Lung Segmentation/CXR_png/MCUCXR_0051_0.png,Lung Segmentation/masks/MCUCXR_0051_0.png,True,0,M,21.0,normal,4892,4020,True,0.343984,2,test
+Montgomery,MCUCXR_0052_0,MCUCXR_0052,Lung Segmentation/CXR_png/MCUCXR_0052_0.png,Lung Segmentation/masks/MCUCXR_0052_0.png,True,0,F,30.0,normal,4892,4020,True,0.1458,1,test
+Montgomery,MCUCXR_0053_0,MCUCXR_0053,Lung Segmentation/CXR_png/MCUCXR_0053_0.png,Lung Segmentation/masks/MCUCXR_0053_0.png,True,0,F,30.0,normal,4892,4020,True,0.16494,0,test
+Montgomery,MCUCXR_0054_0,MCUCXR_0054,Lung Segmentation/CXR_png/MCUCXR_0054_0.png,Lung Segmentation/masks/MCUCXR_0054_0.png,True,0,F,25.0,normal,4892,4020,True,0.238122,2,test
+Montgomery,MCUCXR_0055_0,MCUCXR_0055,Lung Segmentation/CXR_png/MCUCXR_0055_0.png,Lung Segmentation/masks/MCUCXR_0055_0.png,True,0,M,20.0,normal,4892,4020,True,0.254083,2,test
+Montgomery,MCUCXR_0056_0,MCUCXR_0056,Lung Segmentation/CXR_png/MCUCXR_0056_0.png,Lung Segmentation/masks/MCUCXR_0056_0.png,True,0,F,32.0,normal,4892,4020,True,0.220274,1,test
+Montgomery,MCUCXR_0057_0,MCUCXR_0057,Lung Segmentation/CXR_png/MCUCXR_0057_0.png,Lung Segmentation/masks/MCUCXR_0057_0.png,True,0,F,32.0,normal,4892,4020,True,0.242053,4,test
+Montgomery,MCUCXR_0058_0,MCUCXR_0058,Lung Segmentation/CXR_png/MCUCXR_0058_0.png,Lung Segmentation/masks/MCUCXR_0058_0.png,True,0,F,44.0,normal,4892,4020,True,0.203492,1,test
+Montgomery,MCUCXR_0059_0,MCUCXR_0059,Lung Segmentation/CXR_png/MCUCXR_0059_0.png,Lung Segmentation/masks/MCUCXR_0059_0.png,True,0,F,35.0,normal,4892,4020,True,0.273164,1,test
+Montgomery,MCUCXR_0060_0,MCUCXR_0060,Lung Segmentation/CXR_png/MCUCXR_0060_0.png,Lung Segmentation/masks/MCUCXR_0060_0.png,True,0,M,4.0,normal,4020,4892,True,0.098787,4,test
+Montgomery,MCUCXR_0061_0,MCUCXR_0061,Lung Segmentation/CXR_png/MCUCXR_0061_0.png,Lung Segmentation/masks/MCUCXR_0061_0.png,True,0,F,8.0,normal,4020,4892,True,0.122626,3,test
+Montgomery,MCUCXR_0062_0,MCUCXR_0062,Lung Segmentation/CXR_png/MCUCXR_0062_0.png,Lung Segmentation/masks/MCUCXR_0062_0.png,True,0,F,25.0,normal,4892,4020,True,0.201719,0,test
+Montgomery,MCUCXR_0063_0,MCUCXR_0063,Lung Segmentation/CXR_png/MCUCXR_0063_0.png,Lung Segmentation/masks/MCUCXR_0063_0.png,True,0,F,34.0,normal,4892,4020,True,0.258629,4,test
+Montgomery,MCUCXR_0064_0,MCUCXR_0064,Lung Segmentation/CXR_png/MCUCXR_0064_0.png,Lung Segmentation/masks/MCUCXR_0064_0.png,True,0,F,47.0,normal,4892,4020,True,0.227213,2,test
+Montgomery,MCUCXR_0068_0,MCUCXR_0068,Lung Segmentation/CXR_png/MCUCXR_0068_0.png,Lung Segmentation/masks/MCUCXR_0068_0.png,True,0,F,56.0,normal,4892,4020,True,0.225295,2,test
+Montgomery,MCUCXR_0069_0,MCUCXR_0069,Lung Segmentation/CXR_png/MCUCXR_0069_0.png,Lung Segmentation/masks/MCUCXR_0069_0.png,True,0,M,50.0,normal,4892,4020,True,0.28942,4,test
+Montgomery,MCUCXR_0070_0,MCUCXR_0070,Lung Segmentation/CXR_png/MCUCXR_0070_0.png,Lung Segmentation/masks/MCUCXR_0070_0.png,True,0,F,45.0,normal,4892,4020,True,0.182422,4,test
+Montgomery,MCUCXR_0071_0,MCUCXR_0071,Lung Segmentation/CXR_png/MCUCXR_0071_0.png,Lung Segmentation/masks/MCUCXR_0071_0.png,True,0,F,33.0,normal,4892,4020,True,0.26068,3,test
+Montgomery,MCUCXR_0072_0,MCUCXR_0072,Lung Segmentation/CXR_png/MCUCXR_0072_0.png,Lung Segmentation/masks/MCUCXR_0072_0.png,True,0,F,43.0,normal,4892,4020,True,0.256555,1,test
+Montgomery,MCUCXR_0074_0,MCUCXR_0074,Lung Segmentation/CXR_png/MCUCXR_0074_0.png,Lung Segmentation/masks/MCUCXR_0074_0.png,True,0,F,56.0,normal,4892,4020,True,0.18157,1,test
+Montgomery,MCUCXR_0075_0,MCUCXR_0075,Lung Segmentation/CXR_png/MCUCXR_0075_0.png,Lung Segmentation/masks/MCUCXR_0075_0.png,True,0,M,14.0,normal,4892,4020,True,0.233605,4,test
+Montgomery,MCUCXR_0077_0,MCUCXR_0077,Lung Segmentation/CXR_png/MCUCXR_0077_0.png,Lung Segmentation/masks/MCUCXR_0077_0.png,True,0,F,8.0,normal,4020,4892,True,0.134556,1,test
+Montgomery,MCUCXR_0079_0,MCUCXR_0079,Lung Segmentation/CXR_png/MCUCXR_0079_0.png,Lung Segmentation/masks/MCUCXR_0079_0.png,True,0,M,44.0,normal,4020,4892,True,0.348626,1,test
+Montgomery,MCUCXR_0080_0,MCUCXR_0080,Lung Segmentation/CXR_png/MCUCXR_0080_0.png,Lung Segmentation/masks/MCUCXR_0080_0.png,True,0,O,5.0,normal,4020,4892,True,0.111458,0,test
+Montgomery,MCUCXR_0081_0,MCUCXR_0081,Lung Segmentation/CXR_png/MCUCXR_0081_0.png,Lung Segmentation/masks/MCUCXR_0081_0.png,True,0,F,18.0,normal,4892,4020,True,0.261586,3,test
+Montgomery,MCUCXR_0082_0,MCUCXR_0082,Lung Segmentation/CXR_png/MCUCXR_0082_0.png,Lung Segmentation/masks/MCUCXR_0082_0.png,True,0,F,20.0,normal,4892,4020,True,0.252895,4,test
+Montgomery,MCUCXR_0083_0,MCUCXR_0083,Lung Segmentation/CXR_png/MCUCXR_0083_0.png,Lung Segmentation/masks/MCUCXR_0083_0.png,True,0,M,52.0,normal,4020,4892,True,0.326576,1,test
+Montgomery,MCUCXR_0084_0,MCUCXR_0084,Lung Segmentation/CXR_png/MCUCXR_0084_0.png,Lung Segmentation/masks/MCUCXR_0084_0.png,True,0,F,43.0,normal,4020,4892,True,0.199895,1,test
+Montgomery,MCUCXR_0085_0,MCUCXR_0085,Lung Segmentation/CXR_png/MCUCXR_0085_0.png,Lung Segmentation/masks/MCUCXR_0085_0.png,True,0,F,56.0,normal,4892,4020,True,0.238277,4,test
+Montgomery,MCUCXR_0086_0,MCUCXR_0086,Lung Segmentation/CXR_png/MCUCXR_0086_0.png,Lung Segmentation/masks/MCUCXR_0086_0.png,True,0,F,28.0,normal,4892,4020,True,0.183204,2,test
+Montgomery,MCUCXR_0087_0,MCUCXR_0087,Lung Segmentation/CXR_png/MCUCXR_0087_0.png,Lung Segmentation/masks/MCUCXR_0087_0.png,True,0,F,44.0,normal,4892,4020,True,0.262055,0,test
+Montgomery,MCUCXR_0089_0,MCUCXR_0089,Lung Segmentation/CXR_png/MCUCXR_0089_0.png,Lung Segmentation/masks/MCUCXR_0089_0.png,True,0,M,44.0,normal,4020,4892,True,0.371324,1,test
+Montgomery,MCUCXR_0090_0,MCUCXR_0090,Lung Segmentation/CXR_png/MCUCXR_0090_0.png,Lung Segmentation/masks/MCUCXR_0090_0.png,True,0,M,44.0,normal,4020,4892,True,0.386245,3,test
+Montgomery,MCUCXR_0091_0,MCUCXR_0091,Lung Segmentation/CXR_png/MCUCXR_0091_0.png,Lung Segmentation/masks/MCUCXR_0091_0.png,True,0,M,23.0,normal,4892,4020,True,0.274989,0,test
+Montgomery,MCUCXR_0092_0,MCUCXR_0092,Lung Segmentation/CXR_png/MCUCXR_0092_0.png,Lung Segmentation/masks/MCUCXR_0092_0.png,True,0,M,44.0,normal,4020,4892,True,0.244446,4,test
+Montgomery,MCUCXR_0094_0,MCUCXR_0094,Lung Segmentation/CXR_png/MCUCXR_0094_0.png,Lung Segmentation/masks/MCUCXR_0094_0.png,True,0,F,65.0,normal,4892,4020,True,0.229108,1,test
+Montgomery,MCUCXR_0095_0,MCUCXR_0095,Lung Segmentation/CXR_png/MCUCXR_0095_0.png,Lung Segmentation/masks/MCUCXR_0095_0.png,True,0,M,53.0,normal,4020,4892,True,0.334923,2,test
+Montgomery,MCUCXR_0096_0,MCUCXR_0096,Lung Segmentation/CXR_png/MCUCXR_0096_0.png,Lung Segmentation/masks/MCUCXR_0096_0.png,True,0,F,43.0,normal,4892,4020,True,0.271781,4,test
+Montgomery,MCUCXR_0097_0,MCUCXR_0097,Lung Segmentation/CXR_png/MCUCXR_0097_0.png,Lung Segmentation/masks/MCUCXR_0097_0.png,True,0,F,16.0,normal,4892,4020,True,0.246326,0,test
+Montgomery,MCUCXR_0099_0,MCUCXR_0099,Lung Segmentation/CXR_png/MCUCXR_0099_0.png,Lung Segmentation/masks/MCUCXR_0099_0.png,True,0,F,30.0,normal,4892,4020,True,0.334815,2,test
+Montgomery,MCUCXR_0100_0,MCUCXR_0100,Lung Segmentation/CXR_png/MCUCXR_0100_0.png,Lung Segmentation/masks/MCUCXR_0100_0.png,True,0,F,39.0,normal,4892,4020,True,0.263662,2,test
+Montgomery,MCUCXR_0101_0,MCUCXR_0101,Lung Segmentation/CXR_png/MCUCXR_0101_0.png,Lung Segmentation/masks/MCUCXR_0101_0.png,True,0,F,17.0,normal,4892,4020,True,0.231897,0,test
+Montgomery,MCUCXR_0102_0,MCUCXR_0102,Lung Segmentation/CXR_png/MCUCXR_0102_0.png,Lung Segmentation/masks/MCUCXR_0102_0.png,True,0,M,45.0,normal,4020,4892,True,0.343302,1,test
+Montgomery,MCUCXR_0103_0,MCUCXR_0103,Lung Segmentation/CXR_png/MCUCXR_0103_0.png,Lung Segmentation/masks/MCUCXR_0103_0.png,True,0,M,32.0,normal,4020,4892,True,0.291283,4,test
+Montgomery,MCUCXR_0104_1,MCUCXR_0104,Lung Segmentation/CXR_png/MCUCXR_0104_1.png,Lung Segmentation/masks/MCUCXR_0104_1.png,True,1,M,59.0,"inactive TB scars LUL, unchanged for 2Y, pt previously treated DOT (17Y ago) for pan-sensitive disease",4892,4020,True,0.343763,2,test
+Montgomery,MCUCXR_0108_1,MCUCXR_0108,Lung Segmentation/CXR_png/MCUCXR_0108_1.png,Lung Segmentation/masks/MCUCXR_0108_1.png,True,1,M,40.0,extensive cavitary TB smear and culture positive involving LUL lungula and some areas in rt lung as well; pt had previously normal CXR (1Y ago) but positive TST and contact with active case,4892,4020,True,0.280429,2,test
+Montgomery,MCUCXR_0113_1,MCUCXR_0113,Lung Segmentation/CXR_png/MCUCXR_0113_1.png,Lung Segmentation/masks/MCUCXR_0113_1.png,True,1,F,84.0,bilateral miliary nodules diffusely with RML infiltrate and right pleural effusion; an old calcified granuloma is present behind heart in the LLL; all findings consistent with active TB,4892,4020,True,0.181171,2,test
+Montgomery,MCUCXR_0117_1,MCUCXR_0117,Lung Segmentation/CXR_png/MCUCXR_0117_1.png,Lung Segmentation/masks/MCUCXR_0117_1.png,True,1,F,85.0,stable CXR since 6M; off Rx since 6M (same pt as MCUCXR_0113_1),4892,4020,True,0.175263,4,test
+Montgomery,MCUCXR_0126_1,MCUCXR_0126,Lung Segmentation/CXR_png/MCUCXR_0126_1.png,Lung Segmentation/masks/MCUCXR_0126_1.png,True,1,M,46.0,"large right pleural effusion, positive TST, TB pleural effusion likely",4892,4020,True,0.251115,4,test
+Montgomery,MCUCXR_0140_1,MCUCXR_0140,Lung Segmentation/CXR_png/MCUCXR_0140_1.png,Lung Segmentation/masks/MCUCXR_0140_1.png,True,1,M,34.0,small LUL calcified granuloma; pt on rx for culture positive psoas abscess with abdominal lymphadenopathy since 6M,4020,4892,True,0.261316,0,test
+Montgomery,MCUCXR_0141_1,MCUCXR_0141,Lung Segmentation/CXR_png/MCUCXR_0141_1.png,Lung Segmentation/masks/MCUCXR_0141_1.png,True,1,M,27.0,"LUL infiltrate, ? small areas of cavitation, IMP: active TB",4892,4020,True,0.357516,1,test
+Montgomery,MCUCXR_0142_1,MCUCXR_0142,Lung Segmentation/CXR_png/MCUCXR_0142_1.png,Lung Segmentation/masks/MCUCXR_0142_1.png,True,1,F,43.0,cavitary infiltrate near left hilum consistent with TB in superior segment LLL,4892,4020,True,0.245898,2,test
+Montgomery,MCUCXR_0144_1,MCUCXR_0144,Lung Segmentation/CXR_png/MCUCXR_0144_1.png,Lung Segmentation/masks/MCUCXR_0144_1.png,True,1,M,67.0,"smear positive, active TB LUL apex",4892,4020,True,0.274782,0,test
+Montgomery,MCUCXR_0150_1,MCUCXR_0150,Lung Segmentation/CXR_png/MCUCXR_0150_1.png,Lung Segmentation/masks/MCUCXR_0150_1.png,True,1,M,32.0,"extensive infiltrates bilaterally with large cavity in RUL and a moderate pleural effusion on the left. AFB smears and RNA probes pos for MTB. Active TB, cavitary.",4892,4020,True,0.299856,1,test
+Montgomery,MCUCXR_0162_1,MCUCXR_0162,Lung Segmentation/CXR_png/MCUCXR_0162_1.png,Lung Segmentation/masks/MCUCXR_0162_1.png,True,1,M,49.0,"RUL apical fibrotic disease with some calcifications; extensive irregular infiltrates in left lung with a large area of cavitation/ findings consistent with old inactive disease in RL and new active TB in LL. On the lordotic view, in the rt apex a large thin walled cavity is visible, making active disease in the area likely as well.",4892,4020,True,0.37284,1,test
+Montgomery,MCUCXR_0166_1,MCUCXR_0166,Lung Segmentation/CXR_png/MCUCXR_0166_1.png,Lung Segmentation/masks/MCUCXR_0166_1.png,True,1,M,49.0,NO REPORT (same pt as MCUCXR_0162_1),4892,4020,True,0.347928,0,test
+Montgomery,MCUCXR_0170_1,MCUCXR_0170,Lung Segmentation/CXR_png/MCUCXR_0170_1.png,Lung Segmentation/masks/MCUCXR_0170_1.png,True,1,M,49.0,"CXR similar to prior views 1M and 2M ago with some slight improvement; on HRZ(E)x2 months, AFB smears neg now, will switch to HR only (same pt as MCUCXR_0166_1, MCUCXR_0162_1)",4892,4020,True,0.361217,0,test
+Montgomery,MCUCXR_0173_1,MCUCXR_0173,Lung Segmentation/CXR_png/MCUCXR_0173_1.png,Lung Segmentation/masks/MCUCXR_0173_1.png,True,1,M,54.0,"improved infiltrates in both lungs; a cavity is now visible in lingula compared with 1M ago. culture positive, pan-sensitive, on HRZ(E) since 1M",4020,4892,True,0.332658,0,test
+Montgomery,MCUCXR_0182_1,MCUCXR_0182,Lung Segmentation/CXR_png/MCUCXR_0182_1.png,Lung Segmentation/masks/MCUCXR_0182_1.png,True,1,M,30.0,"pleural TB, on treatment",4020,4892,True,0.268974,3,test
+Montgomery,MCUCXR_0188_1,MCUCXR_0188,Lung Segmentation/CXR_png/MCUCXR_0188_1.png,Lung Segmentation/masks/MCUCXR_0188_1.png,True,1,M,61.0,"cavitary disease RUL with possible small loculated pneumothorax adjacent; has multiuple coarse nodules in RLL as well as lesser amounts in LLL; pt has h/o prior treatment 1Y (6Y ago); no comparison films available; relapsed disease highly likely. pt grew NTM from several specimens, not MTB.",4892,4020,True,0.342199,1,test
+Montgomery,MCUCXR_0194_1,MCUCXR_0194,Lung Segmentation/CXR_png/MCUCXR_0194_1.png,Lung Segmentation/masks/MCUCXR_0194_1.png,True,1,M,73.0,"h/o TB rx in xxx 44Y ago with IN PAS SM; has rt apical dense fibrosis, calcification rt lower lung and pleural angle blunting; all compared with inactive disease and h/o treatment.",4892,4020,True,0.238606,3,test
+Montgomery,MCUCXR_0195_1,MCUCXR_0195,Lung Segmentation/CXR_png/MCUCXR_0195_1.png,Lung Segmentation/masks/MCUCXR_0195_1.png,True,1,F,44.0,has inactive appearing scars in LUL; h/o treatment in hospital 17Y ago for 6M in xxx. No comparison films. Recommend followup CXR in 6M. Findings consistent with inactive treated disease.,4892,4020,True,0.236933,4,test
+Montgomery,MCUCXR_0196_1,MCUCXR_0196,Lung Segmentation/CXR_png/MCUCXR_0196_1.png,Lung Segmentation/masks/MCUCXR_0196_1.png,True,1,F,26.0,"dense scarring in LUL with volume loss, lesser scarring in RUL; appears similar to old filmes from 3Y ago and 4Y ago. Treated 4Y ago for 6M for INH resistant TB",4892,4020,True,0.242165,1,test
+Montgomery,MCUCXR_0203_1,MCUCXR_0203,Lung Segmentation/CXR_png/MCUCXR_0203_1.png,Lung Segmentation/masks/MCUCXR_0203_1.png,True,1,M,68.0,"bilateral changes of cavitary TB in upper lobes, more extensive on the right; the RML appears to be involved as well.",4892,4020,True,0.261572,4,test
+Montgomery,MCUCXR_0213_1,MCUCXR_0213,Lung Segmentation/CXR_png/MCUCXR_0213_1.png,Lung Segmentation/masks/MCUCXR_0213_1.png,True,1,F,89.0,inactive scars RML. has completed treatment,4892,4020,True,0.254041,4,test
+Montgomery,MCUCXR_0218_1,MCUCXR_0218,Lung Segmentation/CXR_png/MCUCXR_0218_1.png,Lung Segmentation/masks/MCUCXR_0218_1.png,True,1,F,46.0,inactive and partly calcified scars and granulomas in RUL. pt completed 4HRZE 4HP DOT for neg culture smear (positive disease),4892,4020,True,0.303476,0,test
+Montgomery,MCUCXR_0223_1,MCUCXR_0223,Lung Segmentation/CXR_png/MCUCXR_0223_1.png,Lung Segmentation/masks/MCUCXR_0223_1.png,True,1,M,67.0,improving infiltrate in LUL,4020,4892,True,0.265848,4,test
+Montgomery,MCUCXR_0228_1,MCUCXR_0228,Lung Segmentation/CXR_png/MCUCXR_0228_1.png,Lung Segmentation/masks/MCUCXR_0228_1.png,True,1,M,32.0,"positive improvement in cavities, infiltrates, and left effusion",4892,4020,True,0.2733,3,test
+Montgomery,MCUCXR_0243_1,MCUCXR_0243,Lung Segmentation/CXR_png/MCUCXR_0243_1.png,Lung Segmentation/masks/MCUCXR_0243_1.png,True,1,M,54.0,"improving infiltrate, active TB",4020,4892,True,0.324557,3,test
+Montgomery,MCUCXR_0251_1,MCUCXR_0251,Lung Segmentation/CXR_png/MCUCXR_0251_1.png,Lung Segmentation/masks/MCUCXR_0251_1.png,True,1,F,77.0,RUL fibrocavitary disease with volume loss and tracheal deviation to right; COPD scoliosis;,4020,4892,True,0.227486,1,test
+Montgomery,MCUCXR_0253_1,MCUCXR_0253,Lung Segmentation/CXR_png/MCUCXR_0253_1.png,Lung Segmentation/masks/MCUCXR_0253_1.png,True,1,M,31.0,worsening diffuse infiltrate bilaterally with fine nodular appearance; recent PCP treatment; recurrent PCP likely although miliary TB is also observed.,4892,4020,True,0.264234,4,test
+Montgomery,MCUCXR_0254_1,MCUCXR_0254,Lung Segmentation/CXR_png/MCUCXR_0254_1.png,Lung Segmentation/masks/MCUCXR_0254_1.png,True,1,M,33.0,stable inactive scars in RUL; post treatment for abscillary TB,4892,4020,True,0.327294,2,test
+Montgomery,MCUCXR_0255_1,MCUCXR_0255,Lung Segmentation/CXR_png/MCUCXR_0255_1.png,Lung Segmentation/masks/MCUCXR_0255_1.png,True,1,M,33.0,stable inactive scars in RUL; post treatment for abscillary TB,4020,4892,True,0.334973,3,test
+Montgomery,MCUCXR_0258_1,MCUCXR_0258,Lung Segmentation/CXR_png/MCUCXR_0258_1.png,Lung Segmentation/masks/MCUCXR_0258_1.png,True,1,F,88.0,active PTB with compicating CHF condition,4892,4020,True,0.171433,3,test
+Montgomery,MCUCXR_0264_1,MCUCXR_0264,Lung Segmentation/CXR_png/MCUCXR_0264_1.png,Lung Segmentation/masks/MCUCXR_0264_1.png,True,1,M,15.0,active TB; cavitary infiltrarte LUL; non-consolidated;,4892,4020,True,0.259411,0,test
+Montgomery,MCUCXR_0266_1,MCUCXR_0266,Lung Segmentation/CXR_png/MCUCXR_0266_1.png,Lung Segmentation/masks/MCUCXR_0266_1.png,True,1,M,47.0,peripheral homogeneous infiltrate LUL; active pneumonia likely,4892,4020,True,0.264606,0,test
+Montgomery,MCUCXR_0275_1,MCUCXR_0275,Lung Segmentation/CXR_png/MCUCXR_0275_1.png,Lung Segmentation/masks/MCUCXR_0275_1.png,True,1,M,34.0,inactive scars unchanged for 6M,4892,4020,True,0.275786,2,test
+Montgomery,MCUCXR_0282_1,MCUCXR_0282,Lung Segmentation/CXR_png/MCUCXR_0282_1.png,Lung Segmentation/masks/MCUCXR_0282_1.png,True,1,M,51.0,inactive TB scars,4892,4020,True,0.301333,0,test
+Montgomery,MCUCXR_0289_1,MCUCXR_0289,Lung Segmentation/CXR_png/MCUCXR_0289_1.png,Lung Segmentation/masks/MCUCXR_0289_1.png,True,1,M,52.0,RUL cavitary infiltrate; positive smear,4892,4020,True,0.239545,1,test
+Montgomery,MCUCXR_0294_1,MCUCXR_0294,Lung Segmentation/CXR_png/MCUCXR_0294_1.png,Lung Segmentation/masks/MCUCXR_0294_1.png,True,1,F,63.0,inactive TB scars LUL,4892,4020,True,0.22199,3,test
+Montgomery,MCUCXR_0301_1,MCUCXR_0301,Lung Segmentation/CXR_png/MCUCXR_0301_1.png,Lung Segmentation/masks/MCUCXR_0301_1.png,True,1,M,47.0,"persistent rt pleural peel with some interval improvement with focal atelectasis in rt lung; anterior wedging of T5, T6 with loss of intervertebral disc space. Findings consistent with h/o spinal TB and pleural TB. Currently on Rx.",4020,4892,True,0.300104,3,test
+Montgomery,MCUCXR_0309_1,MCUCXR_0309,Lung Segmentation/CXR_png/MCUCXR_0309_1.png,Lung Segmentation/masks/MCUCXR_0309_1.png,True,1,F,89.0,"improvements after Rx. Has pleural, pulmonary, and probably percardial TB, pan-sensitive",4892,4020,True,0.16545,2,test
+Montgomery,MCUCXR_0311_1,MCUCXR_0311,Lung Segmentation/CXR_png/MCUCXR_0311_1.png,Lung Segmentation/masks/MCUCXR_0311_1.png,True,1,F,89.0,on Rx for culture proven TB. has been clearing of infiltrates in te rt lung. thre is some re-accomodation of pleural fluid along lateral left chest wall.,4892,4020,True,0.155807,2,test
+Montgomery,MCUCXR_0313_1,MCUCXR_0313,Lung Segmentation/CXR_png/MCUCXR_0313_1.png,Lung Segmentation/masks/MCUCXR_0313_1.png,True,1,M,15.0,improvements. LUL cavity has closed.,4892,4020,True,0.261172,4,test
+Montgomery,MCUCXR_0316_1,MCUCXR_0316,Lung Segmentation/CXR_png/MCUCXR_0316_1.png,Lung Segmentation/masks/MCUCXR_0316_1.png,True,1,M,16.0,improved LUL infiltrate and cavity. Active TB on therapy.,4892,4020,True,0.267036,3,test
+Montgomery,MCUCXR_0331_1,MCUCXR_0331,Lung Segmentation/CXR_png/MCUCXR_0331_1.png,Lung Segmentation/masks/MCUCXR_0331_1.png,True,1,M,47.0,inactive appearing RUL TB scars,4020,4892,True,0.295731,2,test
+Montgomery,MCUCXR_0334_1,MCUCXR_0334,Lung Segmentation/CXR_png/MCUCXR_0334_1.png,Lung Segmentation/masks/MCUCXR_0334_1.png,True,1,M,24.0,RUL infiltrate consistent with TB,4892,4020,True,0.231686,4,test
+Montgomery,MCUCXR_0338_1,MCUCXR_0338,Lung Segmentation/CXR_png/MCUCXR_0338_1.png,Lung Segmentation/masks/MCUCXR_0338_1.png,True,1,M,35.0,LUL inactive scars and some volume loss. h/o treatment 5 years ago.,4892,4020,True,0.384318,2,test
+Montgomery,MCUCXR_0348_1,MCUCXR_0348,Lung Segmentation/CXR_png/MCUCXR_0348_1.png,Lung Segmentation/masks/MCUCXR_0348_1.png,True,1,F,69.0,scoliosis to the left with some scarring in LLL and over the left apex; calcified granuloma in the rt lung. could be related to old TB.,4020,4892,True,0.166644,1,test
+Montgomery,MCUCXR_0350_1,MCUCXR_0350,Lung Segmentation/CXR_png/MCUCXR_0350_1.png,Lung Segmentation/masks/MCUCXR_0350_1.png,True,1,M,36.0,suspicious active disease,4020,4892,True,0.286835,4,test
+Montgomery,MCUCXR_0352_1,MCUCXR_0352,Lung Segmentation/CXR_png/MCUCXR_0352_1.png,Lung Segmentation/masks/MCUCXR_0352_1.png,True,1,F,25.0,"12x9mm nodule LUL, consistent with large granuloma or some other type of a solitary pulmonary nodule",4892,4020,True,0.245849,4,test
+Montgomery,MCUCXR_0354_1,MCUCXR_0354,Lung Segmentation/CXR_png/MCUCXR_0354_1.png,Lung Segmentation/masks/MCUCXR_0354_1.png,True,1,M,46.0,bilateral calcified granulomas scars consistent with inactive TB.,4020,4892,True,0.357292,2,test
+Montgomery,MCUCXR_0362_1,MCUCXR_0362,Lung Segmentation/CXR_png/MCUCXR_0362_1.png,Lung Segmentation/masks/MCUCXR_0362_1.png,True,1,M,61.0,rt pleural effusion with some nodular infiltrate in rt lower lung; there are findings also of previous cardiac surgery; suspicious for active TB.,4892,4020,True,0.234356,3,test
+Montgomery,MCUCXR_0367_1,MCUCXR_0367,Lung Segmentation/CXR_png/MCUCXR_0367_1.png,Lung Segmentation/masks/MCUCXR_0367_1.png,True,1,F,31.0,cavitary fibronodular infiltrate RUL. typical appearance of active TB.,4892,4020,True,0.198471,3,test
+Montgomery,MCUCXR_0369_1,MCUCXR_0369,Lung Segmentation/CXR_png/MCUCXR_0369_1.png,Lung Segmentation/masks/MCUCXR_0369_1.png,True,1,F,31.0,cavitary nodular infiltrate in RUL; active TB,4892,4020,True,0.216157,4,test
+Montgomery,MCUCXR_0372_1,MCUCXR_0372,Lung Segmentation/CXR_png/MCUCXR_0372_1.png,Lung Segmentation/masks/MCUCXR_0372_1.png,True,1,F,49.0,rt pleural effusion some infoltrate likely in outer RUL,4892,4020,True,0.218677,0,test
+Montgomery,MCUCXR_0375_1,MCUCXR_0375,Lung Segmentation/CXR_png/MCUCXR_0375_1.png,Lung Segmentation/masks/MCUCXR_0375_1.png,True,1,F,49.0,improving rt pleural effusion and the RUL infiltrate is less apparent,4892,4020,True,0.262094,0,test
+Montgomery,MCUCXR_0383_1,MCUCXR_0383,Lung Segmentation/CXR_png/MCUCXR_0383_1.png,Lung Segmentation/masks/MCUCXR_0383_1.png,True,1,F,14.0,calcified granuloma LUL behind 4th rib anterior,4892,4020,True,0.230558,1,test
+Montgomery,MCUCXR_0387_1,MCUCXR_0387,Lung Segmentation/CXR_png/MCUCXR_0387_1.png,Lung Segmentation/masks/MCUCXR_0387_1.png,True,1,M,42.0,inactive scars RUL,4892,4020,True,0.310443,1,test
+Montgomery,MCUCXR_0390_1,MCUCXR_0390,Lung Segmentation/CXR_png/MCUCXR_0390_1.png,Lung Segmentation/masks/MCUCXR_0390_1.png,True,1,M,52.0,Rt apical scarring. LUL scars and some infiltrates as well; findings consistent with TB; ?active,4892,4020,True,0.263889,3,test
+Montgomery,MCUCXR_0393_1,MCUCXR_0393,Lung Segmentation/CXR_png/MCUCXR_0393_1.png,Lung Segmentation/masks/MCUCXR_0393_1.png,True,1,F,30.0,left pleural effusion; best seen on lateral view; with some scar and soft infiltrates in the LUL on the PA and lordotic views; active TB on pleura and lung likely,4892,4020,True,0.256968,1,test
+Montgomery,MCUCXR_0399_1,MCUCXR_0399,Lung Segmentation/CXR_png/MCUCXR_0399_1.png,Lung Segmentation/masks/MCUCXR_0399_1.png,True,1,F,63.0,large infiltrate RUL with cavitation plus infiltrate in RML. consistent with active cavitary TB,4892,4020,True,0.20617,2,test
