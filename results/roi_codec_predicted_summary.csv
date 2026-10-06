@@ -1,0 +1,10 @@
+source,variant,d_pixels,count,mean_total_bytes,mean_mask_bytes,mean_roi_bytes,mean_background_bytes,mean_ratio_vs_png,roi_lossless_fraction,mean_lung_pixels_outside,mean_pct_lung_outside,mean_psnr_lung_true
+all,dilation_0px,0,800,41315.3,1602.7,31575.6,8115.0,2.5793,1.0,2625.1,4.1459,51.28
+all,dilation_4px,4,800,44243.3,1656.8,34863.6,7700.9,2.405,1.0,1155.9,1.743,62.2
+all,dilation_8px,8,800,47169.4,1707.3,38008.2,7431.9,2.253,1.0,829.5,1.2317,65.73
+Montgomery,dilation_0px,0,138,34672.0,1465.1,26508.8,6676.1,2.1784,1.0,1694.8,3.1518,51.57
+Montgomery,dilation_4px,4,138,37308.7,1515.3,29482.2,6289.3,2.0212,1.0,451.5,0.8671,65.4
+Montgomery,dilation_8px,8,138,39982.6,1564.5,32356.3,6039.8,1.8834,1.0,279.0,0.5453,71.18
+Shenzhen,dilation_0px,0,662,42700.2,1631.4,32631.9,8415.0,2.6628,1.0,2851.9,4.3882,51.21
+Shenzhen,dilation_4px,4,662,45688.9,1686.3,35985.4,7995.2,2.485,1.0,1327.6,1.9566,61.37
+Shenzhen,dilation_8px,8,662,48667.6,1737.0,39186.4,7722.1,2.3301,1.0,963.7,1.399,64.36
