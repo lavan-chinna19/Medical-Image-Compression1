@@ -23,6 +23,7 @@ htmlcov/
 
 # Large generated plots/artifacts
 results/plots/
+results/*.png
 
 
 # IDE / OS junk
