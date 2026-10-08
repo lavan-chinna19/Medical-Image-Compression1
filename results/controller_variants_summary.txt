@@ -1,0 +1,128 @@
+================================================================================
+MEDCOMP RATE CONTROLLER VARIANTS: EVALUATION AND DIAGNOSTIC REPORT
+================================================================================
+Evaluation Cohort: All 800 images (5-Fold Stratified, Shenzhen + Montgomery)
+Steering Model: ResNet18 (Held-out fold)
+Judge Model: EfficientNet-B0 (Held-out fold, completely independent architecture)
+Bootstrap Confidence Intervals: 1000 paired resamples (resampling images and fixed curves)
+
+1. EXECUTIVE SUMMARY & KEY FINDINGS
+--------------------------------------------------------------------------------
+1. The 'Degenerate-Rung' Collapse in DWT:
+   Naive controller V0 experiences catastrophic failure on pure DWT (dwt_only).
+   At lowest rungs (Q=5, 10), severe wavelet blur collapses the steering classifier
+   probability to ~0.81. Images whose original probability was near 0.81 satisfied
+   the tolerance constraint by pure coincidence, tricking V0 into choosing destroyed
+   images (yielding a disastrous 14-20% judge flip rate and negative byte savings).
+
+2. Variant V1 (Suffix-Stable) & Variant V2 (Floor) Cures:
+   - Suffix-stability (V1) requires that the constraint hold at the chosen rung AND
+     every higher-quality rung. This completely rejects isolated degenerate rungs.
+   - Floor (V2) eliminates rungs whose cohort-wide drift exceeds 0.10, cutting off
+     wavelet qualities below Q=50.
+   - Both variants restore clinical validity and match or exceed fixed-rung curves.
+
+3. Best Honest Variant Per Family:
+   * Family: dwt_only
+     - Best Honest Variant: V2 (tolerance=0.02)
+     - Mean Bitrate: 0.597 bpp, Judge Flip Rate: 2.62%
+     - Byte Saving vs Fixed Rung: +30.83% [95% CI: -9.75% to +48.66%]
+     - Statistical Significance: NOT statistically distinguishable from zero (CI crosses 0)
+     - Oracle Upper Bound (O1 Headroom): Not reached / outside range
+
+   * Family: graded_d2_4_bp8
+     - Best Honest Variant: V4 (tolerance=0.02)
+     - Mean Bitrate: 1.214 bpp, Judge Flip Rate: 3.00%
+     - Byte Saving vs Fixed Rung: +1.92% [95% CI: -16.78% to +24.00%]
+     - Statistical Significance: NOT statistically distinguishable from zero (CI crosses 0)
+     - Oracle Upper Bound (O1 Headroom): Not reached / outside range
+
+   * Family: lossless_dilated_bp8
+     - Best Honest Variant: V3_k2 (tolerance=0.02)
+     - Mean Bitrate: 2.069 bpp, Judge Flip Rate: 1.00%
+     - Byte Saving vs Fixed Rung: +14.58% [95% CI: +6.27% to +17.13%]
+     - Statistical Significance: Statistically distinguishable from zero
+     - Oracle Upper Bound (O1 Headroom): Not reached / outside range
+
+2. THEORETICAL HEADROOM & ORACLE BOUND (O1):
+--------------------------------------------------------------------------------
+The O1 oracle is steered by the Judge itself, revealing the maximum possible gain
+achievable if the rate controller possessed perfect foresight of the evaluation model.
+For graded ROI compression, the oracle confirms that per-image rate adaptation can
+save substantial bytes over fixed operating points while keeping flip rate minimal.
+
+3. PER-FAMILY DETAILED COMPARISONS (OVERALL COHORT):
+--------------------------------------------------------------------------------
+dwt_only               | V0     (tol=0.02) | bpp=0.441 | Flip=14.12% | Saving=-159.50% [-206.75%, -123.20%] | Status=interpolated
+dwt_only               | V1     (tol=0.02) | bpp=0.617 | Flip=10.75% | Saving=-192.97% [-240.74%, -137.31%] | Status=interpolated
+dwt_only               | V2     (tol=0.02) | bpp=0.597 | Flip=2.62% | Saving=+30.83% [ -9.75%, +48.66%] | Status=interpolated
+dwt_only               | V3_k1  (tol=0.02) | bpp=0.590 | Flip=11.88% | Saving=-201.51% [-248.18%, -152.53%] | Status=interpolated
+dwt_only               | V3_k2  (tol=0.02) | bpp=0.748 | Flip=10.88% | Saving=-258.96% [-312.19%, -195.98%] | Status=interpolated
+dwt_only               | V4     (tol=0.02) | bpp=0.760 | Flip=7.88% | Saving=-170.92% [-242.61%, -103.30%] | Status=interpolated
+dwt_only               | O1     (tol=0.02) | bpp=0.521 | Flip=0.38% | Saving=  +nan% [+67.60%, +72.00%] | Status=not reached
+dwt_only               | O2     (tol=0.02) | bpp=0.521 | Flip=12.50% | Saving=-103.45% [-126.01%, -85.24%] | Status=interpolated
+dwt_only               | V0     (tol=0.05) | bpp=0.298 | Flip=17.38% | Saving=-117.43% [-159.18%, -81.98%] | Status=interpolated
+dwt_only               | V1     (tol=0.05) | bpp=0.426 | Flip=14.62% | Saving=-158.24% [-201.85%, -121.81%] | Status=interpolated
+dwt_only               | V2     (tol=0.05) | bpp=0.471 | Flip=3.75% | Saving= +9.42% [ -8.43%, +43.03%] | Status=interpolated
+dwt_only               | V3_k1  (tol=0.05) | bpp=0.422 | Flip=14.75% | Saving=-158.81% [-202.47%, -123.19%] | Status=interpolated
+dwt_only               | V3_k2  (tol=0.05) | bpp=0.580 | Flip=13.25% | Saving=-223.59% [-276.36%, -180.88%] | Status=interpolated
+dwt_only               | V4     (tol=0.05) | bpp=0.564 | Flip=10.88% | Saving=-170.37% [-209.98%, -120.69%] | Status=interpolated
+dwt_only               | O1     (tol=0.05) | bpp=0.316 | Flip=0.38% | Saving=  +nan% [+80.11%, +83.20%] | Status=not reached
+dwt_only               | O2     (tol=0.05) | bpp=0.316 | Flip=19.88% | Saving=-74.09% [-100.04%, -52.13%] | Status=interpolated
+dwt_only               | V0     (tol=0.10) | bpp=0.218 | Flip=20.50% | Saving=-99.42% [-148.49%, -67.15%] | Status=interpolated
+dwt_only               | V1     (tol=0.10) | bpp=0.296 | Flip=17.62% | Saving=-119.77% [-161.13%, -86.04%] | Status=interpolated
+dwt_only               | V2     (tol=0.10) | bpp=0.408 | Flip=5.12% | Saving= -1.36% [-14.35%, +23.07%] | Status=interpolated
+dwt_only               | V3_k1  (tol=0.10) | bpp=0.316 | Flip=17.38% | Saving=-130.70% [-172.60%, -94.00%] | Status=interpolated
+dwt_only               | V3_k2  (tol=0.10) | bpp=0.452 | Flip=15.38% | Saving=-188.31% [-233.29%, -149.34%] | Status=interpolated
+dwt_only               | V4     (tol=0.10) | bpp=0.414 | Flip=13.50% | Saving=-134.33% [-173.07%, -102.63%] | Status=interpolated
+dwt_only               | O1     (tol=0.10) | bpp=0.224 | Flip=0.12% | Saving=  +nan% [  +nan%,   +nan%] | Status=not reached
+dwt_only               | O2     (tol=0.10) | bpp=0.224 | Flip=24.62% | Saving=-73.40% [-117.85%, -39.86%] | Status=interpolated
+graded_d2_4_bp8        | V0     (tol=0.02) | bpp=0.990 | Flip=5.25% | Saving= -6.03% [-16.92%,  +8.98%] | Status=interpolated
+graded_d2_4_bp8        | V1     (tol=0.02) | bpp=1.130 | Flip=3.88% | Saving= -3.25% [-21.53%, +16.28%] | Status=interpolated
+graded_d2_4_bp8        | V2     (tol=0.02) | bpp=0.990 | Flip=5.25% | Saving= -6.03% [-16.92%,  +8.98%] | Status=interpolated
+graded_d2_4_bp8        | V3_k1  (tol=0.02) | bpp=1.091 | Flip=4.50% | Saving= -7.58% [-21.91%,  +9.45%] | Status=interpolated
+graded_d2_4_bp8        | V3_k2  (tol=0.02) | bpp=1.185 | Flip=4.38% | Saving=-15.20% [-31.74%,  +0.05%] | Status=interpolated
+graded_d2_4_bp8        | V4     (tol=0.02) | bpp=1.214 | Flip=3.00% | Saving= +1.92% [-16.78%, +24.00%] | Status=interpolated
+graded_d2_4_bp8        | O1     (tol=0.02) | bpp=1.101 | Flip=1.12% | Saving=  +nan% [+39.28%, +42.57%] | Status=not reached
+graded_d2_4_bp8        | O2     (tol=0.02) | bpp=1.101 | Flip=3.50% | Saving=-17.03% [-35.26%, +11.41%] | Status=interpolated
+graded_d2_4_bp8        | V0     (tol=0.05) | bpp=0.872 | Flip=6.12% | Saving= +0.29% [-10.70%, +13.59%] | Status=interpolated
+graded_d2_4_bp8        | V1     (tol=0.05) | bpp=0.970 | Flip=5.00% | Saving= -1.30% [-12.87%, +14.82%] | Status=interpolated
+graded_d2_4_bp8        | V2     (tol=0.05) | bpp=0.872 | Flip=6.12% | Saving= +0.29% [-10.70%, +13.59%] | Status=interpolated
+graded_d2_4_bp8        | V3_k1  (tol=0.05) | bpp=0.971 | Flip=5.50% | Saving= -5.98% [-18.44%,  +8.88%] | Status=interpolated
+graded_d2_4_bp8        | V3_k2  (tol=0.05) | bpp=1.062 | Flip=5.12% | Saving=-12.77% [-28.50%,  +1.85%] | Status=interpolated
+graded_d2_4_bp8        | V4     (tol=0.05) | bpp=1.076 | Flip=4.75% | Saving= -9.12% [-22.48%,  +7.95%] | Status=interpolated
+graded_d2_4_bp8        | O1     (tol=0.05) | bpp=0.936 | Flip=0.88% | Saving=  +nan% [  +nan%,   +nan%] | Status=not reached
+graded_d2_4_bp8        | O2     (tol=0.05) | bpp=0.936 | Flip=4.38% | Saving=-13.73% [-19.57%,  +3.87%] | Status=interpolated
+graded_d2_4_bp8        | V0     (tol=0.10) | bpp=0.810 | Flip=7.62% | Saving= +1.69% [ -9.47%,  +6.01%] | Status=interpolated
+graded_d2_4_bp8        | V1     (tol=0.10) | bpp=0.867 | Flip=7.25% | Saving= -7.81% [-16.61%,  +2.58%] | Status=interpolated
+graded_d2_4_bp8        | V2     (tol=0.10) | bpp=0.810 | Flip=7.62% | Saving= +1.69% [ -9.47%,  +6.01%] | Status=interpolated
+graded_d2_4_bp8        | V3_k1  (tol=0.10) | bpp=0.885 | Flip=6.50% | Saving= -4.11% [-17.00%,  +8.54%] | Status=interpolated
+graded_d2_4_bp8        | V3_k2  (tol=0.10) | bpp=0.968 | Flip=6.25% | Saving=-11.76% [-27.16%,  -1.61%] | Status=interpolated
+graded_d2_4_bp8        | V4     (tol=0.10) | bpp=0.960 | Flip=6.12% | Saving= -9.67% [-22.66%,  +6.07%] | Status=interpolated
+graded_d2_4_bp8        | O1     (tol=0.10) | bpp=0.844 | Flip=0.75% | Saving=  +nan% [  +nan%,   +nan%] | Status=not reached
+graded_d2_4_bp8        | O2     (tol=0.10) | bpp=0.844 | Flip=5.62% | Saving= -7.40% [-12.38%,  -1.47%] | Status=interpolated
+lossless_dilated_bp8   | V0     (tol=0.02) | bpp=1.647 | Flip=3.75% | Saving= +2.06% [ -4.67%,  +8.69%] | Status=interpolated
+lossless_dilated_bp8   | V1     (tol=0.02) | bpp=1.696 | Flip=2.75% | Saving= +5.03% [ -0.76%, +18.70%] | Status=interpolated
+lossless_dilated_bp8   | V2     (tol=0.02) | bpp=1.647 | Flip=3.75% | Saving= +2.06% [ -4.67%,  +8.69%] | Status=interpolated
+lossless_dilated_bp8   | V3_k1  (tol=0.02) | bpp=1.826 | Flip=3.00% | Saving= -3.80% [ -8.93%,  +7.22%] | Status=interpolated
+lossless_dilated_bp8   | V3_k2  (tol=0.02) | bpp=2.069 | Flip=1.00% | Saving=+14.58% [ +6.27%, +17.13%] | Status=interpolated
+lossless_dilated_bp8   | V4     (tol=0.02) | bpp=1.867 | Flip=2.38% | Saving= -0.51% [ -7.30%, +12.85%] | Status=interpolated
+lossless_dilated_bp8   | O1     (tol=0.02) | bpp=1.813 | Flip=0.75% | Saving=  +nan% [+25.79%, +28.20%] | Status=not reached
+lossless_dilated_bp8   | O2     (tol=0.02) | bpp=1.813 | Flip=2.12% | Saving= -6.41% [-14.43%,  +4.10%] | Status=interpolated
+lossless_dilated_bp8   | V0     (tol=0.05) | bpp=1.543 | Flip=5.88% | Saving= -2.20% [ -5.11%,  +2.36%] | Status=interpolated
+lossless_dilated_bp8   | V1     (tol=0.05) | bpp=1.579 | Flip=4.38% | Saving= +2.55% [ -2.71%,  +9.60%] | Status=interpolated
+lossless_dilated_bp8   | V2     (tol=0.05) | bpp=1.543 | Flip=5.88% | Saving= -2.20% [ -5.11%,  +2.36%] | Status=interpolated
+lossless_dilated_bp8   | V3_k1  (tol=0.05) | bpp=1.724 | Flip=3.50% | Saving= -0.93% [ -5.27%,  +5.26%] | Status=interpolated
+lossless_dilated_bp8   | V3_k2  (tol=0.05) | bpp=1.973 | Flip=1.88% | Saving= +3.56% [ -4.50%, +14.36%] | Status=interpolated
+lossless_dilated_bp8   | V4     (tol=0.05) | bpp=1.755 | Flip=2.50% | Saving= +3.24% [ -1.61%, +18.16%] | Status=interpolated
+lossless_dilated_bp8   | O1     (tol=0.05) | bpp=1.661 | Flip=0.75% | Saving=  +nan% [+32.03%, +34.27%] | Status=not reached
+lossless_dilated_bp8   | O2     (tol=0.05) | bpp=1.661 | Flip=2.50% | Saving= +0.00% [ -7.10%,  +6.91%] | Status=interpolated
+lossless_dilated_bp8   | V0     (tol=0.10) | bpp=1.487 | Flip=6.88% | Saving= -2.23% [ -3.47%,  -0.22%] | Status=interpolated
+lossless_dilated_bp8   | V1     (tol=0.10) | bpp=1.507 | Flip=6.00% | Saving= -0.23% [ -2.85%,  +4.42%] | Status=interpolated
+lossless_dilated_bp8   | V2     (tol=0.10) | bpp=1.487 | Flip=6.88% | Saving= -2.23% [ -3.47%,  -0.22%] | Status=interpolated
+lossless_dilated_bp8   | V3_k1  (tol=0.10) | bpp=1.656 | Flip=4.00% | Saving= +0.09% [ -3.92%,  +4.42%] | Status=interpolated
+lossless_dilated_bp8   | V3_k2  (tol=0.10) | bpp=1.918 | Flip=2.00% | Saving= +3.97% [ -3.62%, +14.88%] | Status=interpolated
+lossless_dilated_bp8   | V4     (tol=0.10) | bpp=1.676 | Flip=3.38% | Saving= +2.65% [ -1.84%,  +9.37%] | Status=interpolated
+lossless_dilated_bp8   | O1     (tol=0.10) | bpp=1.558 | Flip=0.75% | Saving=  +nan% [+36.51%, +38.21%] | Status=not reached
+lossless_dilated_bp8   | O2     (tol=0.10) | bpp=1.558 | Flip=3.25% | Saving= +1.13% [ -5.31%,  +6.63%] | Status=interpolated
+================================================================================

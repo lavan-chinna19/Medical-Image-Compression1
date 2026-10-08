@@ -1,0 +1,45 @@
+================================================================================
+TUBERCULOSIS (TB) EFFICIENTNET-B0 JUDGE CLASSIFIER EVALUATION SUMMARY
+================================================================================
+Evaluation Model: EfficientNet-B0 (ImageNet Pretrained backbone, 320x320 resolution)
+Architecture: Dropout(0.2) + Linear(1280, 1), ImageNet weights, Seed=1337
+Cross-Validation: 5-Fold Patient-Level Stratified Out-of-Fold (800 Images Total)
+Decision Threshold: 0.50
+Confidence Intervals: 95% Non-Parametric Bootstrap (1000 Resamples, Seed=1337)
+
+1. OVERALL COHORT PERFORMANCE (N = 800)
+--------------------------------------------------------------------------------
+Accuracy:    89.12%  [95% CI: 86.88% - 91.38%]
+Sensitivity: 89.59%  [95% CI: 86.31% - 92.58%]
+Specificity: 88.67%  [95% CI: 85.63% - 92.09%]
+Precision:   88.47%  [95% CI: 85.54% - 91.80%]
+F1-Score:    0.8903   [95% CI: 0.8655 - 0.9132]
+ROC AUC:     0.9528   [95% CI: 0.9378 - 0.9664]
+
+Confusion Matrix:
+               Pred Normal    Pred TB
+  True Normal     360          46          
+  True TB         41           353         
+
+2. PER-SOURCE PERFORMANCE BREAKDOWN
+--------------------------------------------------------------------------------
+Shenzhen Hospital (N = 662):
+  Accuracy:    89.88%  [95% CI: 87.61% - 92.15%]
+  Sensitivity: 89.58%  [95% CI: 86.20% - 92.92%]
+  Specificity: 90.18%  [95% CI: 86.89% - 93.43%]
+  ROC AUC:     0.9577   [95% CI: 0.9425 - 0.9713]
+
+Montgomery County (N = 138):
+  Accuracy:    85.51%  [95% CI: 79.71% - 91.30%]
+  Sensitivity: 89.66%  [95% CI: 81.54% - 96.61%]
+  Specificity: 82.50%  [95% CI: 74.03% - 90.59%]
+  ROC AUC:     0.9262   [95% CI: 0.8738 - 0.9680]
+
+3. PER-FOLD PERFORMANCE SUMMARY
+--------------------------------------------------------------------------------
+Fold 0     (N=160): Accuracy=91.25%, Sens=92.31%, Spec=90.24%, AUC=0.9575
+Fold 1     (N=160): Accuracy=92.50%, Sens=91.14%, Spec=93.83%, AUC=0.9720
+Fold 2     (N=160): Accuracy=85.62%, Sens=92.41%, Spec=79.01%, AUC=0.9414
+Fold 3     (N=160): Accuracy=86.25%, Sens=89.87%, Spec=82.72%, AUC=0.9484
+Fold 4     (N=160): Accuracy=90.00%, Sens=82.28%, Spec=97.53%, AUC=0.9672
+================================================================================
