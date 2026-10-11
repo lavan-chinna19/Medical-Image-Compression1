@@ -11,3 +11,4 @@ tqdm>=4.66.0
 scikit-learn>=1.3.0
 torch==2.14.1+cu126
 torchvision==0.29.1+cu126
+streamlit>=1.30.0
