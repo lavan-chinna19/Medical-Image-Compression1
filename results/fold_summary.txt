@@ -1,0 +1,32 @@
+=== FOLD SUMMARY (5-FOLD STRATIFIED K-FOLD) ===
+Total images: 800
+Random state: 42 (shuffled)
+Stratification key: source + label
+
+--- OVERALL FOLD SIZES ---
+Fold 0: 160 images
+Fold 1: 160 images
+Fold 2: 160 images
+Fold 3: 160 images
+Fold 4: 160 images
+
+--- COUNTS PER FOLD BY SOURCE, LABEL, AND HAS_MASK ---
+Fold 0 (Total = 160):
+  Montgomery: Total=27, Class 0=16, Class 1=11, has_mask=27, no_mask=0
+  Shenzhen: Total=133, Class 0=66, Class 1=67, has_mask=118, no_mask=15
+Fold 1 (Total = 160):
+  Montgomery: Total=27, Class 0=16, Class 1=11, has_mask=27, no_mask=0
+  Shenzhen: Total=133, Class 0=65, Class 1=68, has_mask=115, no_mask=18
+Fold 2 (Total = 160):
+  Montgomery: Total=28, Class 0=16, Class 1=12, has_mask=28, no_mask=0
+  Shenzhen: Total=132, Class 0=65, Class 1=67, has_mask=112, no_mask=20
+Fold 3 (Total = 160):
+  Montgomery: Total=28, Class 0=16, Class 1=12, has_mask=28, no_mask=0
+  Shenzhen: Total=132, Class 0=65, Class 1=67, has_mask=108, no_mask=24
+Fold 4 (Total = 160):
+  Montgomery: Total=28, Class 0=16, Class 1=12, has_mask=28, no_mask=0
+  Shenzhen: Total=132, Class 0=65, Class 1=67, has_mask=113, no_mask=19
+
+--- CROSS-SCANNER SPLIT COUNTS ---
+Train (Shenzhen):   662
+Test  (Montgomery): 138

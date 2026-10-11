@@ -1,0 +1,50 @@
+================================================================================
+TUBERCULOSIS (TB) RESNET18 CLASSIFIER EVALUATION SUMMARY
+================================================================================
+Evaluation Model: ResNet18 (ImageNet Pretrained backbone, 320x320 resolution)
+Cross-Validation: 5-Fold Patient-Level Stratified Out-of-Fold (800 Images Total)
+Decision Threshold: 0.50
+Confidence Intervals: 95% Non-Parametric Bootstrap (1000 Resamples, Seed=42)
+
+1. OVERALL COHORT PERFORMANCE (N = 800)
+--------------------------------------------------------------------------------
+Accuracy:    86.00%  [95% CI: 83.62% - 88.12%]
+Sensitivity: 79.95%  [95% CI: 76.18% - 83.82%]
+Specificity: 91.87%  [95% CI: 89.00% - 94.40%]
+Precision:   90.52%  [95% CI: 87.43% - 93.53%]
+F1-Score:    0.8491   [95% CI: 0.8232 - 0.8740]
+ROC AUC:     0.9413   [95% CI: 0.9249 - 0.9547]
+
+Confusion Matrix:
+               Pred Normal    Pred TB
+  True Normal     373          33          
+  True TB         79           315         
+
+2. PER-SOURCE PERFORMANCE BREAKDOWN
+--------------------------------------------------------------------------------
+Shenzhen Hospital (N = 662):
+  Accuracy:    86.25%  [95% CI: 83.53% - 88.82%]
+  Sensitivity: 81.55%  [95% CI: 77.14% - 85.51%]
+  Specificity: 91.10%  [95% CI: 87.72% - 94.17%]
+  ROC AUC:     0.9393   [95% CI: 0.9221 - 0.9563]
+
+Montgomery County (N = 138):
+  Accuracy:    84.78%  [95% CI: 78.99% - 90.58%]
+  Sensitivity: 70.69%  [95% CI: 58.46% - 82.26%]
+  Specificity: 95.00%  [95% CI: 90.12% - 98.86%]
+  ROC AUC:     0.9499   [95% CI: 0.9136 - 0.9778]
+
+3. PER-FOLD PERFORMANCE SUMMARY
+--------------------------------------------------------------------------------
+Fold 0     (N=160): Accuracy=90.00%, Sens=92.31%, Spec=87.80%, AUC=0.9629
+Fold 1     (N=160): Accuracy=91.25%, Sens=86.08%, Spec=96.30%, AUC=0.9806
+Fold 2     (N=160): Accuracy=86.25%, Sens=91.14%, Spec=81.48%, AUC=0.9474
+Fold 3     (N=160): Accuracy=81.88%, Sens=69.62%, Spec=93.83%, AUC=0.9275
+Fold 4     (N=160): Accuracy=80.62%, Sens=60.76%, Spec=100.00%, AUC=0.9541
+
+4. GENERATED PLOTS
+--------------------------------------------------------------------------------
+- ROC Curves:             C:\project\medical\results\plots\classifier_roc_curves.png
+- Confusion Matrices:     C:\project\medical\results\plots\classifier_confusion_matrices.png
+- Probability Histograms: C:\project\medical\results\plots\classifier_prob_histograms.png
+================================================================================

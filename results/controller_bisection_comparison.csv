@@ -1,0 +1,10 @@
+family,tolerance,n_images,agreement_rate,mean_bisection_rounds,mean_exhaustive_rounds
+dwt_only,0.02,800,0.88125,3.55375,11.0
+dwt_only,0.05,800,0.88375,3.47375,11.0
+dwt_only,0.1,800,0.8925,3.425,11.0
+graded_d2_4_bp8,0.02,800,0.92125,2.4875,6.0
+graded_d2_4_bp8,0.05,800,0.93875,2.355,6.0
+graded_d2_4_bp8,0.1,800,0.96375,2.22375,6.0
+lossless_dilated_bp8,0.02,800,0.9775,2.1525,4.0
+lossless_dilated_bp8,0.05,800,0.98,2.06375,4.0
+lossless_dilated_bp8,0.1,800,0.98375,2.0175,4.0

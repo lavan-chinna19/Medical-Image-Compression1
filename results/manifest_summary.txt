@@ -1,0 +1,28 @@
+=== MEDICAL DATASET MANIFEST SUMMARY ===
+Total images: 800
+Total masks: 704
+
+--- IMAGES AND MASKS PER SOURCE ---
+Montgomery: 138 images, 138 masks, 0 unmasked
+Shenzhen: 662 images, 566 masks, 96 unmasked
+
+--- HAS_MASK COUNTS ---
+With mask (has_mask=True):  704
+Without mask (has_mask=False): 96
+
+--- CLASS COUNTS PER SOURCE AND HAS_MASK GROUP ---
+Montgomery Overall: Class 0 (Normal) = 80, Class 1 (TB) = 58
+  has_mask=True: Class 0 = 80, Class 1 = 58 (Total = 138)
+Shenzhen Overall: Class 0 (Normal) = 326, Class 1 (TB) = 336
+  has_mask=False: Class 0 = 47, Class 1 = 49 (Total = 96)
+  has_mask=True: Class 0 = 279, Class 1 = 287 (Total = 566)
+
+--- OVERALL CLASS COUNTS ---
+Class 0 (Normal): 406 (50.75%)
+Class 1 (TB):     394 (49.25%)
+
+--- QUALITY CHECKS & ANOMALIES ---
+Unparseable readings count: 0
+Unparseable reading stems: None
+Mask shape mismatches count: 0
+Label vs reading mismatches count: 0

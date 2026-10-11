@@ -1,0 +1,5 @@
+| source | images_count | mean_roi_pixels | mean_roi_fraction | mean_roi_bytes | mean_roi_bpp | mean_context_roi_bytes | mean_context_roi_bpp | mean_roi_residual_entropy | mean_roi_avg_code_length | mean_mask_bytes | mean_mask_rle_bytes | mean_mask_bbox_bytes | mean_full_lossless_bpp | mean_png_bpp | mean_encode_time_s | mean_decode_time_s | roi_exact_fraction |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| all | 704 | 60976.1000 | 0.2532 | 31749.4000 | 4.1544 | 31524.8000 | 4.1255 | 2.1530 | 2.2639 | 1618.8000 | 1943.8000 | 1618.8000 | 3.4191 | 3.4095 | 0.7590 | 0.7515 | 1.0000 |
+| Montgomery | 138 | 55066.3000 | 0.2555 | 26870.4000 | 3.9083 | 26593.2000 | 3.8689 | 2.1082 | 2.2364 | 1491.9000 | 1810.2000 | 1491.9000 | 2.9373 | 2.7625 | 0.6860 | 0.6790 | 1.0000 |
+| Shenzhen | 566 | 62417.0000 | 0.2526 | 32939.0000 | 4.2144 | 32727.1000 | 4.1880 | 2.1640 | 2.2706 | 1649.7000 | 1976.3000 | 1649.7000 | 3.5366 | 3.5673 | 0.7768 | 0.7692 | 1.0000 |

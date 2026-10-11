@@ -1,0 +1,4 @@
+source,total_images,normal_cases,tb_cases,tb_prevalence_pct,masked_images,unmasked_images,mask_availability_pct
+Montgomery,138,80,58,42.03,138,0,100.0
+Shenzhen,662,326,336,50.76,566,96,85.5
+Combined,800,406,394,49.25,704,96,88.0

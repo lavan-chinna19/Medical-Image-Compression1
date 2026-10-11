@@ -1,0 +1,217 @@
+family,tolerance,variant,scope,eval_flip_rate,controller_mean_bpp,controller_mean_bytes,status,fixed_equiv_bytes,byte_saving_pct,byte_saving_ci_lower,byte_saving_ci_upper
+dwt_only,0.02,V0,Overall,0.1412,0.4412,13407.5612,interpolated,5166.7459,-159.4972,-206.7485,-123.2001
+dwt_only,0.02,V1,Overall,0.1075,0.6174,18714.31,interpolated,6387.8254,-192.9684,-240.7424,-137.3137
+dwt_only,0.02,V2,Overall,0.0262,0.5969,18108.2412,interpolated,26181.0097,30.8344,-9.7549,48.6591
+dwt_only,0.02,V3_k1,Overall,0.1188,0.5898,17945.1475,interpolated,5951.7003,-201.513,-248.18,-152.5325
+dwt_only,0.02,V3_k2,Overall,0.1088,0.7478,22750.1775,interpolated,6337.8301,-258.9585,-312.1931,-195.9814
+dwt_only,0.02,V4,Overall,0.0788,0.7598,23058.485,interpolated,8511.3095,-170.9158,-242.6121,-103.3004
+dwt_only,0.02,O1,Overall,0.0038,0.5215,15788.4775,not reached,,,67.5967,72.0047
+dwt_only,0.02,O2,Overall,0.125,0.5215,15788.4775,interpolated,7760.3484,-103.4506,-126.009,-85.2395
+dwt_only,0.05,V0,Overall,0.1737,0.2978,9055.4838,interpolated,4164.8419,-117.4268,-159.1847,-81.9785
+dwt_only,0.05,V1,Overall,0.1462,0.4261,12929.6975,interpolated,5006.8817,-158.2385,-201.8503,-121.8097
+dwt_only,0.05,V2,Overall,0.0375,0.4708,14293.3562,interpolated,15780.2883,9.4227,-8.4297,43.03
+dwt_only,0.05,V3_k1,Overall,0.1475,0.4224,12857.0012,interpolated,4967.6946,-158.8122,-202.4663,-123.1938
+dwt_only,0.05,V3_k2,Overall,0.1325,0.5802,17664.2637,interpolated,5458.8881,-223.5872,-276.3638,-180.8835
+dwt_only,0.05,V4,Overall,0.1088,0.5637,17135.6675,interpolated,6337.8301,-170.3712,-209.9847,-120.6871
+dwt_only,0.05,O1,Overall,0.0038,0.3159,9522.3675,not reached,,,80.1114,83.2048
+dwt_only,0.05,O2,Overall,0.1988,0.3159,9522.3675,interpolated,5469.804,-74.0897,-100.0409,-52.1275
+dwt_only,0.1,V0,Overall,0.205,0.2181,6634.5025,interpolated,3326.9764,-99.4154,-148.493,-67.1479
+dwt_only,0.1,V1,Overall,0.1762,0.2958,8990.0312,interpolated,4090.6716,-119.7691,-161.1316,-86.0406
+dwt_only,0.1,V2,Overall,0.0512,0.4076,12375.2625,interpolated,12209.3192,-1.3592,-14.3518,23.0654
+dwt_only,0.1,V3_k1,Overall,0.1737,0.3157,9608.255,interpolated,4164.8419,-130.6992,-172.5965,-94.0006
+dwt_only,0.1,V3_k2,Overall,0.1538,0.4524,13770.6062,interpolated,4776.3119,-188.3104,-233.2914,-149.3387
+dwt_only,0.1,V4,Overall,0.135,0.4138,12592.1963,interpolated,5373.7729,-134.3269,-173.0741,-102.6253
+dwt_only,0.1,O1,Overall,0.0012,0.224,6759.1512,not reached,,,,
+dwt_only,0.1,O2,Overall,0.2462,0.224,6759.1512,interpolated,3898.0356,-73.3989,-117.8529,-39.8596
+dwt_only,0.02,V0,Shenzhen,0.142,0.4537,14060.2432,interpolated,5474.2723,-156.8422,-209.1629,-112.812
+dwt_only,0.02,V1,Shenzhen,0.1073,0.6336,19585.929,interpolated,6869.5415,-185.1126,-237.6689,-118.6249
+dwt_only,0.02,V2,Shenzhen,0.0257,0.6191,19129.5378,interpolated,27224.4681,29.734,-15.6575,54.1881
+dwt_only,0.02,V3_k1,Shenzhen,0.1208,0.6082,18869.6858,interpolated,6285.5692,-200.2065,-248.271,-140.3782
+dwt_only,0.02,V3_k2,Shenzhen,0.1193,0.7685,23850.9109,interpolated,6347.9227,-275.7278,-336.5895,-198.8658
+dwt_only,0.02,V4,Shenzhen,0.0816,0.7814,24180.9592,interpolated,8958.9952,-169.907,-248.4814,-102.7342
+dwt_only,0.02,O1,Shenzhen,0.0045,0.5287,16345.3459,not reached,,,68.8172,73.2169
+dwt_only,0.02,O2,Shenzhen,0.1148,0.5287,16345.3459,interpolated,8558.6674,-90.98,-115.0097,-69.1442
+dwt_only,0.05,V0,Shenzhen,0.1752,0.3065,9504.3369,interpolated,4373.1409,-117.3343,-168.0247,-82.0133
+dwt_only,0.05,V1,Shenzhen,0.145,0.4358,13492.5514,interpolated,5367.2567,-151.3864,-204.9092,-111.1047
+dwt_only,0.05,V2,Shenzhen,0.0363,0.4887,15110.3112,interpolated,17375.028,13.0343,-9.3741,47.6199
+dwt_only,0.05,V3_k1,Shenzhen,0.1495,0.4366,13548.0997,interpolated,5210.643,-160.0082,-212.0695,-120.3345
+dwt_only,0.05,V3_k2,Shenzhen,0.142,0.5985,18580.4713,interpolated,5474.2723,-239.4145,-303.1735,-183.0498
+dwt_only,0.05,V4,Shenzhen,0.1088,0.5805,17992.5498,interpolated,6802.0643,-164.516,-209.3982,-107.1101
+dwt_only,0.05,O1,Shenzhen,0.0045,0.32,9843.2825,not reached,,,80.8998,84.36
+dwt_only,0.05,O2,Shenzhen,0.1888,0.32,9843.2825,interpolated,5832.9168,-68.754,-94.8093,-43.1311
+dwt_only,0.1,V0,Shenzhen,0.2069,0.2234,6937.0332,interpolated,3485.9195,-99.0015,-161.1263,-64.8533
+dwt_only,0.1,V1,Shenzhen,0.1813,0.3011,9347.0181,interpolated,4188.2839,-123.1706,-172.8526,-85.027
+dwt_only,0.1,V2,Shenzhen,0.0514,0.4217,13046.5393,interpolated,13042.4672,-0.0312,-12.0444,18.5012
+dwt_only,0.1,V3_k1,Shenzhen,0.1737,0.3254,10099.2674,interpolated,4420.6161,-128.4584,-172.0993,-92.0326
+dwt_only,0.1,V3_k2,Shenzhen,0.1616,0.4671,14495.1254,interpolated,4814.9878,-201.0418,-252.953,-155.4871
+dwt_only,0.1,V4,Shenzhen,0.1344,0.4253,13202.9773,interpolated,5751.2397,-129.5675,-175.8981,-92.8449
+dwt_only,0.1,O1,Shenzhen,0.0015,0.2292,7048.8686,not reached,,,,
+dwt_only,0.1,O2,Shenzhen,0.2387,0.2292,7048.8686,interpolated,3755.0116,-87.719,-161.2512,-38.4176
+dwt_only,0.02,V0,Montgomery,0.1377,0.3814,10276.5797,interpolated,3826.3288,-168.5754,-310.6798,-66.9765
+dwt_only,0.02,V1,Montgomery,0.1087,0.5394,14533.0652,interpolated,4463.8295,-225.5739,-370.754,-25.3404
+dwt_only,0.02,V2,Montgomery,0.029,0.4902,13208.9783,interpolated,13937.5546,5.2274,-78.3654,50.6281
+dwt_only,0.02,V3_k1,Montgomery,0.1087,0.5014,13510.0435,interpolated,4463.8295,-202.6559,-335.3261,-21.9574
+dwt_only,0.02,V3_k2,Montgomery,0.058,0.6484,17469.8478,interpolated,7062.6339,-147.356,-288.8752,1.1383
+dwt_only,0.02,V4,Montgomery,0.0652,0.6559,17673.8623,interpolated,6380.5105,-176.9976,-322.8336,-0.3716
+dwt_only,0.02,O1,Montgomery,0.0,0.4868,13117.1232,not reached,,,37.1096,55.2059
+dwt_only,0.02,O2,Montgomery,0.1739,0.4868,13117.1232,interpolated,5090.8576,-157.6604,-211.6918,-52.3701
+dwt_only,0.05,V0,Montgomery,0.1667,0.2562,6902.2899,interpolated,3183.8079,-116.7935,-236.443,-48.6237
+dwt_only,0.05,V1,Montgomery,0.1522,0.3797,10229.6304,interpolated,3542.5797,-188.7622,-356.9376,-99.9071
+dwt_only,0.05,V2,Montgomery,0.0435,0.385,10374.3406,interpolated,16809.1667,38.2816,-87.4699,45.7526
+dwt_only,0.05,V3_k1,Montgomery,0.1377,0.3541,9541.7319,interpolated,3826.3288,-149.3704,-273.8639,-53.5972
+dwt_only,0.05,V3_k2,Montgomery,0.087,0.4925,13269.1232,interpolated,5010.7366,-164.8138,-260.0366,12.0007
+dwt_only,0.05,V4,Montgomery,0.1087,0.4834,13025.1159,interpolated,4463.8295,-191.7924,-311.2624,-24.4031
+dwt_only,0.05,O1,Montgomery,0.0,0.2963,7982.9058,not reached,,,60.2865,74.8486
+dwt_only,0.05,O2,Montgomery,0.2464,0.2963,7982.9058,interpolated,4058.5544,-96.6933,-150.5238,-59.7295
+dwt_only,0.1,V0,Montgomery,0.1957,0.1924,5183.2319,interpolated,2571.5875,-101.5577,-197.0521,-32.8912
+dwt_only,0.1,V1,Montgomery,0.1522,0.2701,7277.529,interpolated,3542.5797,-105.4302,-222.9337,-43.8943
+dwt_only,0.1,V2,Montgomery,0.0507,0.3398,9155.0797,interpolated,7817.6812,-17.1074,-69.1795,48.4705
+dwt_only,0.1,V3_k1,Montgomery,0.1739,0.2692,7252.8188,interpolated,3018.2866,-140.2959,-249.7889,-66.2868
+dwt_only,0.1,V3_k2,Montgomery,0.1159,0.3821,10295.0145,interpolated,4295.1296,-139.6904,-220.0405,-22.2158
+dwt_only,0.1,V4,Montgomery,0.1377,0.3586,9662.2174,interpolated,3826.3288,-152.5193,-276.2446,-76.501
+dwt_only,0.1,O1,Montgomery,0.0,0.1993,5369.3478,not reached,,,73.4702,82.8833
+dwt_only,0.1,O2,Montgomery,0.2826,0.1993,5369.3478,interpolated,3623.778,-48.1699,-110.7287,-16.7504
+graded_d2_4_bp8,0.02,V0,Overall,0.0525,0.99,29990.72,interpolated,28284.2791,-6.0332,-16.9199,8.9752
+graded_d2_4_bp8,0.02,V1,Overall,0.0388,1.1303,34205.9125,interpolated,33130.085,-3.2473,-21.528,16.2838
+graded_d2_4_bp8,0.02,V2,Overall,0.0525,0.99,29990.72,interpolated,28284.2791,-6.0332,-16.9199,8.9752
+graded_d2_4_bp8,0.02,V3_k1,Overall,0.045,1.0912,33087.2725,interpolated,30755.7734,-7.5807,-21.9085,9.4491
+graded_d2_4_bp8,0.02,V3_k2,Overall,0.0438,1.1852,35961.7525,interpolated,31216.6167,-15.2007,-31.7381,0.0505
+graded_d2_4_bp8,0.02,V4,Overall,0.03,1.2136,36762.7938,interpolated,37482.4202,1.9199,-16.7833,24.0014
+graded_d2_4_bp8,0.02,O1,Overall,0.0112,1.1009,33412.8525,not reached,,,39.2825,42.5686
+graded_d2_4_bp8,0.02,O2,Overall,0.035,1.1009,33412.8525,interpolated,28551.62,-17.0261,-35.2603,11.4056
+graded_d2_4_bp8,0.05,V0,Overall,0.0612,0.872,26404.6625,interpolated,26481.6855,0.2909,-10.695,13.5941
+graded_d2_4_bp8,0.05,V1,Overall,0.05,0.9704,29355.6688,interpolated,28979.4364,-1.2983,-12.8709,14.8191
+graded_d2_4_bp8,0.05,V2,Overall,0.0612,0.872,26404.6625,interpolated,26481.6855,0.2909,-10.695,13.5941
+graded_d2_4_bp8,0.05,V3_k1,Overall,0.055,0.9709,29417.52,interpolated,27757.0834,-5.982,-18.4351,8.8847
+graded_d2_4_bp8,0.05,V3_k2,Overall,0.0512,1.0621,32196.52,interpolated,28551.62,-12.766,-28.5032,1.8548
+graded_d2_4_bp8,0.05,V4,Overall,0.0475,1.0763,32577.9362,interpolated,29854.3963,-9.1227,-22.4835,7.954
+graded_d2_4_bp8,0.05,O1,Overall,0.0088,0.9361,28335.575,not reached,,,,
+graded_d2_4_bp8,0.05,O2,Overall,0.0438,0.9361,28335.575,interpolated,24914.5038,-13.7312,-19.5695,3.8691
+graded_d2_4_bp8,0.1,V0,Overall,0.0762,0.8097,24494.1113,interpolated,24914.5038,1.6873,-9.4675,6.0076
+graded_d2_4_bp8,0.1,V1,Overall,0.0725,0.8673,26232.385,interpolated,24331.8343,-7.811,-16.6122,2.5842
+graded_d2_4_bp8,0.1,V2,Overall,0.0762,0.8097,24494.1113,interpolated,24914.5038,1.6873,-9.4675,6.0076
+graded_d2_4_bp8,0.1,V3_k1,Overall,0.065,0.8853,26802.0912,interpolated,25744.7512,-4.107,-17.0003,8.5363
+graded_d2_4_bp8,0.1,V3_k2,Overall,0.0625,0.9683,29318.9412,interpolated,26233.7262,-11.7605,-27.1562,-1.6081
+graded_d2_4_bp8,0.1,V4,Overall,0.0612,0.9596,29041.485,interpolated,26481.6855,-9.6663,-22.6619,6.0688
+graded_d2_4_bp8,0.1,O1,Overall,0.0075,0.8443,25524.4538,not reached,,,,
+graded_d2_4_bp8,0.1,O2,Overall,0.0562,0.8443,25524.4538,interpolated,23766.5696,-7.3965,-12.3843,-1.4657
+graded_d2_4_bp8,0.02,V0,Shenzhen,0.0453,1.0167,31400.7628,interpolated,32764.2978,4.1616,-20.7917,23.2886
+graded_d2_4_bp8,0.02,V1,Shenzhen,0.0347,1.1554,35665.1964,interpolated,36975.4149,3.5435,-17.1814,28.0871
+graded_d2_4_bp8,0.02,V2,Shenzhen,0.0453,1.0167,31400.7628,interpolated,32764.2978,4.1616,-20.7917,23.2886
+graded_d2_4_bp8,0.02,V3_k1,Shenzhen,0.0393,1.126,34791.8202,interpolated,35108.1408,0.901,-21.5887,21.5753
+graded_d2_4_bp8,0.02,V3_k2,Shenzhen,0.0408,1.224,37844.4456,interpolated,34506.9114,-9.6721,-34.6066,8.7539
+graded_d2_4_bp8,0.02,V4,Shenzhen,0.0242,1.2467,38502.4819,interpolated,48332.5617,20.3384,-7.4077,34.886
+graded_d2_4_bp8,0.02,O1,Shenzhen,0.0121,1.1199,34703.8248,not reached,,,40.198,43.074
+graded_d2_4_bp8,0.02,O2,Shenzhen,0.0347,1.1199,34703.8248,interpolated,29204.9526,-18.8286,-30.4515,4.7093
+graded_d2_4_bp8,0.05,V0,Shenzhen,0.0559,0.893,27578.6269,interpolated,28753.6237,4.0864,-14.6373,21.1725
+graded_d2_4_bp8,0.05,V1,Shenzhen,0.0453,0.9882,30505.4532,interpolated,32764.2978,6.8942,-16.8172,26.9271
+graded_d2_4_bp8,0.05,V2,Shenzhen,0.0559,0.893,27578.6269,interpolated,28753.6237,4.0864,-14.6373,21.1725
+graded_d2_4_bp8,0.05,V3_k1,Shenzhen,0.0483,0.9988,30848.5785,interpolated,31651.7248,2.5374,-22.1087,17.4063
+graded_d2_4_bp8,0.05,V3_k2,Shenzhen,0.0498,1.0905,33706.5378,interpolated,31109.6868,-8.3474,-40.0557,6.2836
+graded_d2_4_bp8,0.05,V4,Shenzhen,0.0393,1.101,33990.9003,interpolated,35108.1408,3.1823,-18.0498,24.1444
+graded_d2_4_bp8,0.05,O1,Shenzhen,0.0106,0.944,29196.9577,not reached,,,,
+graded_d2_4_bp8,0.05,O2,Shenzhen,0.0453,0.944,29196.9577,interpolated,26972.372,-8.2476,-18.4839,3.3401
+graded_d2_4_bp8,0.1,V0,Shenzhen,0.071,0.8265,25506.6843,interpolated,23411.9017,-8.9475,-11.0925,13.1448
+graded_d2_4_bp8,0.1,V1,Shenzhen,0.065,0.8845,27291.1208,interpolated,24462.7689,-11.5619,-17.9012,12.1571
+graded_d2_4_bp8,0.1,V2,Shenzhen,0.071,0.8265,25506.6843,interpolated,23411.9017,-8.9475,-11.0925,13.1448
+graded_d2_4_bp8,0.1,V3_k1,Shenzhen,0.0574,0.9099,28082.0151,interpolated,27989.4753,-0.3306,-19.1301,14.4563
+graded_d2_4_bp8,0.1,V3_k2,Shenzhen,0.0589,0.9985,30806.4456,interpolated,27245.6346,-13.0693,-33.541,3.4666
+graded_d2_4_bp8,0.1,V4,Shenzhen,0.0514,0.9842,30368.7356,interpolated,30576.9313,0.6809,-24.0376,15.5714
+graded_d2_4_bp8,0.1,O1,Shenzhen,0.0091,0.8515,26296.6949,not reached,,,,
+graded_d2_4_bp8,0.1,O2,Shenzhen,0.0604,0.8515,26296.6949,interpolated,24645.9357,-6.6979,-12.1427,1.3617
+graded_d2_4_bp8,0.02,V0,Montgomery,0.087,0.862,23226.6014,interpolated,20790.9348,-11.715,-24.0478,1.0973
+graded_d2_4_bp8,0.02,V1,Montgomery,0.058,1.0097,27205.5797,interpolated,22469.5198,-21.0777,-35.0342,6.9747
+graded_d2_4_bp8,0.02,V2,Montgomery,0.087,0.862,23226.6014,interpolated,20790.9348,-11.715,-24.0478,1.0973
+graded_d2_4_bp8,0.02,V3_k1,Montgomery,0.0725,0.9245,24910.3841,interpolated,21613.9381,-15.2515,-29.4714,4.6602
+graded_d2_4_bp8,0.02,V3_k2,Montgomery,0.058,0.9995,26930.2826,interpolated,22469.5198,-19.8525,-34.3266,8.6628
+graded_d2_4_bp8,0.02,V4,Montgomery,0.058,1.0547,28417.3333,interpolated,22469.5198,-26.4706,-40.7803,2.242
+graded_d2_4_bp8,0.02,O1,Montgomery,0.0072,1.0102,27219.9275,interpolated,41823.1522,34.9166,6.9664,38.6805
+graded_d2_4_bp8,0.02,O2,Montgomery,0.0362,1.0102,27219.9275,interpolated,19778.4638,-37.6241,-47.2396,37.2169
+graded_d2_4_bp8,0.05,V0,Montgomery,0.087,0.771,20773.0362,interpolated,20790.9348,0.0861,-7.6417,11.7326
+graded_d2_4_bp8,0.05,V1,Montgomery,0.0725,0.8848,23840.0362,interpolated,21613.9381,-10.2994,-22.1194,5.9838
+graded_d2_4_bp8,0.05,V2,Montgomery,0.087,0.771,20773.0362,interpolated,20790.9348,0.0861,-7.6417,11.7326
+graded_d2_4_bp8,0.05,V3_k1,Montgomery,0.087,0.837,22552.587,interpolated,20790.9348,-8.4732,-18.9834,4.2634
+graded_d2_4_bp8,0.05,V3_k2,Montgomery,0.058,0.9261,24952.8116,interpolated,22469.5198,-11.0518,-21.8722,19.9628
+graded_d2_4_bp8,0.05,V4,Montgomery,0.087,0.9575,25799.8043,interpolated,20790.9348,-24.0916,-37.7803,-12.0175
+graded_d2_4_bp8,0.05,O1,Montgomery,0.0,0.8983,24203.4348,not reached,,,18.2306,45.3036
+graded_d2_4_bp8,0.05,O2,Montgomery,0.0362,0.8983,24203.4348,interpolated,19778.4638,-22.3727,-29.829,43.9383
+graded_d2_4_bp8,0.1,V0,Montgomery,0.1014,0.7288,19636.6957,interpolated,19896.3785,1.3052,-4.2341,9.0545
+graded_d2_4_bp8,0.1,V1,Montgomery,0.1087,0.7851,21153.5217,interpolated,19463.6391,-8.6823,-13.9699,1.0063
+graded_d2_4_bp8,0.1,V2,Montgomery,0.1014,0.7288,19636.6957,interpolated,19896.3785,1.3052,-4.2341,9.0545
+graded_d2_4_bp8,0.1,V3_k1,Montgomery,0.1014,0.7669,20662.1667,interpolated,19896.3785,-3.8489,-9.8002,4.9661
+graded_d2_4_bp8,0.1,V3_k2,Montgomery,0.0797,0.8233,22183.2319,interpolated,21198.4428,-4.6456,-13.6755,6.9044
+graded_d2_4_bp8,0.1,V4,Montgomery,0.1087,0.8415,22674.529,interpolated,19463.6391,-16.4969,-22.8222,-4.0105
+graded_d2_4_bp8,0.1,O1,Montgomery,0.0,0.8098,21819.9348,not reached,,,26.5923,49.9446
+graded_d2_4_bp8,0.1,O2,Montgomery,0.0362,0.8098,21819.9348,interpolated,19778.4638,-10.3217,-16.9373,49.2525
+lossless_dilated_bp8,0.02,V0,Overall,0.0375,1.6469,49832.8025,interpolated,50883.476,2.0649,-4.6688,8.693
+lossless_dilated_bp8,0.02,V1,Overall,0.0275,1.6963,51325.8938,interpolated,54043.1229,5.0279,-0.7611,18.7008
+lossless_dilated_bp8,0.02,V2,Overall,0.0375,1.6469,49832.8025,interpolated,50883.476,2.0649,-4.6688,8.693
+lossless_dilated_bp8,0.02,V3_k1,Overall,0.03,1.826,55257.535,interpolated,53235.2773,-3.7987,-8.9292,7.2193
+lossless_dilated_bp8,0.02,V3_k2,Overall,0.01,2.0688,62646.2388,interpolated,73342.2197,14.5837,6.2687,17.1264
+lossless_dilated_bp8,0.02,V4,Overall,0.0238,1.8669,56494.9962,interpolated,56206.6124,-0.5131,-7.2955,12.8544
+lossless_dilated_bp8,0.02,O1,Overall,0.0075,1.8131,54868.7838,not reached,,,25.79,28.205
+lossless_dilated_bp8,0.02,O2,Overall,0.0213,1.8131,54868.7838,interpolated,51564.1862,-6.4087,-14.4286,4.1048
+lossless_dilated_bp8,0.05,V0,Overall,0.0588,1.5432,46663.3163,interpolated,45659.3715,-2.1988,-5.1148,2.3566
+lossless_dilated_bp8,0.05,V1,Overall,0.0438,1.5791,47752.325,interpolated,49003.2045,2.5526,-2.7082,9.5976
+lossless_dilated_bp8,0.05,V2,Overall,0.0588,1.5432,46663.3163,interpolated,45659.3715,-2.1988,-5.1148,2.3566
+lossless_dilated_bp8,0.05,V3_k1,Overall,0.035,1.7237,52133.9413,interpolated,51655.633,-0.926,-5.2709,5.2609
+lossless_dilated_bp8,0.05,V3_k2,Overall,0.0188,1.9734,59712.5612,interpolated,61917.2477,3.5607,-4.4979,14.3551
+lossless_dilated_bp8,0.05,V4,Overall,0.025,1.7551,53085.1137,interpolated,54863.2275,3.241,-1.6074,18.1563
+lossless_dilated_bp8,0.05,O1,Overall,0.0075,1.6607,50209.7888,not reached,,,32.0269,34.2691
+lossless_dilated_bp8,0.05,O2,Overall,0.025,1.6607,50209.7888,interpolated,50211.752,0.0039,-7.0997,6.9089
+lossless_dilated_bp8,0.1,V0,Overall,0.0688,1.4867,44949.1075,interpolated,43968.2088,-2.2309,-3.47,-0.2245
+lossless_dilated_bp8,0.1,V1,Overall,0.06,1.5068,45550.6012,interpolated,45444.4692,-0.2335,-2.8541,4.4178
+lossless_dilated_bp8,0.1,V2,Overall,0.0688,1.4867,44949.1075,interpolated,43968.2088,-2.2309,-3.47,-0.2245
+lossless_dilated_bp8,0.1,V3_k1,Overall,0.04,1.6556,50075.3288,interpolated,50122.8614,0.0948,-3.9213,4.4151
+lossless_dilated_bp8,0.1,V3_k2,Overall,0.02,1.9178,58035.3075,interpolated,60437.3739,3.9745,-3.6221,14.8838
+lossless_dilated_bp8,0.1,V4,Overall,0.0338,1.6756,50669.3262,interpolated,52046.0945,2.6453,-1.8434,9.3696
+lossless_dilated_bp8,0.1,O1,Overall,0.0075,1.5577,47073.1325,not reached,,,36.5127,38.2098
+lossless_dilated_bp8,0.1,O2,Overall,0.0325,1.5577,47073.1325,interpolated,47612.3688,1.1326,-5.3084,6.6263
+lossless_dilated_bp8,0.02,V0,Shenzhen,0.0347,1.6716,51637.136,interpolated,53594.9308,3.6529,-3.4394,13.6115
+lossless_dilated_bp8,0.02,V1,Shenzhen,0.0257,1.7237,53235.0906,interpolated,56771.5876,6.2293,-0.8658,22.018
+lossless_dilated_bp8,0.02,V2,Shenzhen,0.0347,1.6716,51637.136,interpolated,53594.9308,3.6529,-3.4394,13.6115
+lossless_dilated_bp8,0.02,V3_k1,Shenzhen,0.0302,1.8587,57401.5861,interpolated,55160.3962,-4.063,-10.6082,7.3231
+lossless_dilated_bp8,0.02,V3_k2,Shenzhen,0.0091,2.1128,65272.7704,interpolated,78708.1813,17.0699,7.6046,17.8527
+lossless_dilated_bp8,0.02,V4,Shenzhen,0.0242,1.901,58702.8172,interpolated,58483.0515,-0.3758,-9.3458,14.1148
+lossless_dilated_bp8,0.02,O1,Shenzhen,0.0076,1.8344,56697.077,not reached,,,26.5919,29.2971
+lossless_dilated_bp8,0.02,O2,Shenzhen,0.0227,1.8344,56697.077,interpolated,52576.0482,-7.8382,-16.5391,3.4941
+lossless_dilated_bp8,0.05,V0,Shenzhen,0.0514,1.5654,48323.5876,interpolated,48300.3373,-0.0481,-4.4158,5.4265
+lossless_dilated_bp8,0.05,V1,Shenzhen,0.0363,1.6002,49405.1405,interpolated,53083.045,6.9286,-0.3774,16.3405
+lossless_dilated_bp8,0.05,V2,Shenzhen,0.0514,1.5654,48323.5876,interpolated,48300.3373,-0.0481,-4.4158,5.4265
+lossless_dilated_bp8,0.05,V3_k1,Shenzhen,0.0347,1.7524,54091.5725,interpolated,53594.9308,-0.9267,-6.2996,6.3826
+lossless_dilated_bp8,0.05,V3_k2,Shenzhen,0.0181,2.0095,62049.3822,interpolated,65860.6429,5.7869,-4.1782,20.7474
+lossless_dilated_bp8,0.05,V4,Shenzhen,0.0227,1.7827,55035.9215,interpolated,60246.1099,8.6482,-1.4453,22.1982
+lossless_dilated_bp8,0.05,O1,Shenzhen,0.0076,1.6759,51759.864,not reached,,,32.9719,35.415
+lossless_dilated_bp8,0.05,O2,Shenzhen,0.0242,1.6759,51759.864,interpolated,51907.577,0.2846,-7.4275,10.2537
+lossless_dilated_bp8,0.1,V0,Shenzhen,0.0619,1.5058,46484.4698,interpolated,45654.9033,-1.817,-3.843,1.4689
+lossless_dilated_bp8,0.1,V1,Shenzhen,0.0544,1.5247,47064.0997,interpolated,47529.2335,0.9786,-3.2257,7.1428
+lossless_dilated_bp8,0.1,V2,Shenzhen,0.0619,1.5058,46484.4698,interpolated,45654.9033,-1.817,-3.843,1.4689
+lossless_dilated_bp8,0.1,V3_k1,Shenzhen,0.0393,1.6815,51911.9864,interpolated,52073.8937,0.3109,-4.7922,5.3367
+lossless_dilated_bp8,0.1,V3_k2,Shenzhen,0.0196,1.9539,60336.1571,interpolated,63933.2792,5.6264,-3.1305,19.2972
+lossless_dilated_bp8,0.1,V4,Shenzhen,0.0317,1.6986,52438.929,interpolated,54633.5586,4.017,-1.4575,13.4692
+lossless_dilated_bp8,0.1,O1,Shenzhen,0.0076,1.5695,48455.9773,not reached,,,37.529,39.3458
+lossless_dilated_bp8,0.1,O2,Shenzhen,0.0302,1.5695,48455.9773,interpolated,49317.6102,1.7471,-2.7446,10.0006
+lossless_dilated_bp8,0.02,V0,Montgomery,0.0507,1.5283,41177.2319,interpolated,40005.6159,-2.9286,-8.03,8.424
+lossless_dilated_bp8,0.02,V1,Montgomery,0.0362,1.565,42167.2826,interpolated,42762.1552,1.3911,-8.4785,9.2005
+lossless_dilated_bp8,0.02,V2,Montgomery,0.0507,1.5283,41177.2319,interpolated,40005.6159,-2.9286,-8.03,8.424
+lossless_dilated_bp8,0.02,V3_k1,Montgomery,0.029,1.6691,44972.3043,interpolated,44210.8533,-1.7223,-10.3702,3.851
+lossless_dilated_bp8,0.02,V3_k2,Montgomery,0.0145,1.8574,50046.5,interpolated,51494.1461,2.8113,-10.8265,14.6866
+lossless_dilated_bp8,0.02,V4,Montgomery,0.0217,1.7037,45903.8551,interpolated,45708.6304,-0.4271,-3.2235,2.6491
+lossless_dilated_bp8,0.02,O1,Montgomery,0.0072,1.7109,46098.2754,interpolated,58011.9565,20.5366,-1.6436,23.2846
+lossless_dilated_bp8,0.02,O2,Montgomery,0.0145,1.7109,46098.2754,interpolated,41113.1759,-12.1253,-26.1558,22.4529
+lossless_dilated_bp8,0.05,V0,Montgomery,0.0942,1.4363,38698.8261,interpolated,37397.5741,-3.4795,-6.0881,0.1267
+lossless_dilated_bp8,0.05,V1,Montgomery,0.0797,1.478,39823.6014,interpolated,38247.4608,-4.1209,-7.771,2.3135
+lossless_dilated_bp8,0.05,V2,Montgomery,0.0942,1.4363,38698.8261,interpolated,37397.5741,-3.4795,-6.0881,0.1267
+lossless_dilated_bp8,0.05,V3_k1,Montgomery,0.0362,1.5864,42742.9855,interpolated,42762.1552,0.0448,-7.4865,7.6252
+lossless_dilated_bp8,0.05,V3_k2,Montgomery,0.0217,1.8001,48502.5942,interpolated,45708.6304,-6.1126,-8.2345,-4.2299
+lossless_dilated_bp8,0.05,V4,Montgomery,0.0362,1.6229,43726.8913,interpolated,42762.1552,-2.2561,-10.2677,5.6741
+lossless_dilated_bp8,0.05,O1,Montgomery,0.0072,1.5875,42773.9203,interpolated,58011.9565,26.2671,5.9777,28.566
+lossless_dilated_bp8,0.05,O2,Montgomery,0.029,1.5875,42773.9203,interpolated,37962.0406,-12.6755,-17.9256,25.928
+lossless_dilated_bp8,0.1,V0,Montgomery,0.1014,1.3949,37583.8188,interpolated,36979.7391,-1.6335,-2.6417,-0.7836
+lossless_dilated_bp8,0.1,V1,Montgomery,0.087,1.4211,38290.1957,interpolated,37820.1302,-1.2429,-3.7314,4.0561
+lossless_dilated_bp8,0.1,V2,Montgomery,0.1014,1.3949,37583.8188,interpolated,36979.7391,-1.6335,-2.6417,-0.7836
+lossless_dilated_bp8,0.1,V3_k1,Montgomery,0.0435,1.5315,41264.6957,interpolated,41360.9279,0.2327,-4.5352,10.0287
+lossless_dilated_bp8,0.1,V3_k2,Montgomery,0.0217,1.7443,46997.8986,interpolated,45708.6304,-2.8206,-4.3858,-1.4671
+lossless_dilated_bp8,0.1,V4,Montgomery,0.0435,1.5655,42180.3623,interpolated,41360.9279,-1.9812,-7.3935,8.2294
+lossless_dilated_bp8,0.1,O1,Montgomery,0.0072,1.5009,40439.4855,interpolated,58011.9565,30.2911,11.5787,32.1644
+lossless_dilated_bp8,0.1,O2,Montgomery,0.0435,1.5009,40439.4855,interpolated,40005.6159,-1.0845,-9.801,22.3287

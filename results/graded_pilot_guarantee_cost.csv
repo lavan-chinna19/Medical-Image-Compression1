@@ -1,0 +1,14 @@
+family,bpp_for_p99_le_2,bpp_for_p99_le_4,bpp_for_p99_le_8,bpp_for_flip_le_0.05
+graded_d0_2_bp4,1.267,<=1.159,<=1.159,1.323
+graded_d0_2_bp8,1.252,<=1.209,<=1.209,1.409
+graded_d0_4_bp4,not reached,<=1.147,<=1.147,1.312
+graded_d0_4_bp8,not reached,<=1.189,<=1.189,1.388
+graded_d1_3_bp4,not reached,<=0.808,<=0.808,1.015
+graded_d1_3_bp8,not reached,<=0.852,<=0.852,1.052
+graded_d2_4_bp4,not reached,<=0.676,<=0.676,0.884
+graded_d2_4_bp8,not reached,<=0.718,<=0.718,0.918
+graded_d3_6_bp4,not reached,0.812,<=0.605,not reached
+graded_d3_6_bp8,not reached,not reached,<=0.643,not reached
+lossless_dilated_bp4,<=1.213,<=1.213,<=1.213,1.377
+lossless_dilated_bp8,<=1.315,<=1.315,<=1.315,1.515
+dwt_only,not reached,not reached,0.468,0.589

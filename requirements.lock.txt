@@ -1,0 +1,25 @@
+# Locked dependencies for Medical Image Compression Pipeline
+# Generated from active virtual environment (Python 3.13)
+# Filtered to direct project runtime & evaluation dependencies
+
+numpy==2.3.3
+scipy==1.16.2
+pandas==2.3.2
+scikit-learn==1.7.2
+scikit-image==0.26.0
+PyWavelets==1.10.0
+opencv-python==5.0.0.93
+pydicom==3.0.2
+pillow==12.3.0
+matplotlib==3.11.1
+seaborn==0.13.2
+python-docx==1.2.0
+pytest==9.1.1
+tqdm==4.70.0
+streamlit==1.61.1
+
+# PyTorch (Installed locally: torch 2.14.0, torchvision 0.29.1)
+# For CUDA 12.6 acceleration on NVIDIA RTX GPUs:
+# pip install torch==2.14.0 torchvision==0.29.1 --index-url https://download.pytorch.org/whl/cu126
+torch==2.14.0
+torchvision==0.29.1
