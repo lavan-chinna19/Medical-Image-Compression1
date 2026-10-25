@@ -98,10 +98,6 @@ st.markdown(
         color: #495057;
         margin-top: 4px;
     }
-    .proposed-row {
-        background-color: #e8f4fd !important;
-        font-weight: bold;
-    }
     .footer-text {
         font-size: 0.85rem;
         color: #6c757d;
@@ -466,16 +462,11 @@ def main() -> None:
         )
 
     # -------------------------------------------------------------------------
-    # Render Comparison Table with Highlighting
+    # Render Comparison Table
     # -------------------------------------------------------------------------
-    def highlight_proposed(row: pd.Series) -> list[str]:
-        is_prop = "Proposed" in str(row.get("Compression Technique", ""))
-        return ["background-color: #e8f4fd; font-weight: bold;" if is_prop else "" for _ in row]
-
     st.markdown('<div class="custom-table-container">', unsafe_allow_html=True)
-    styled_table = df_display.style.apply(highlight_proposed, axis=1)
     st.dataframe(
-        styled_table,
+        df_display,
         use_container_width=True,
         hide_index=True,
     )
@@ -484,8 +475,7 @@ def main() -> None:
     st.caption(
         "💡 **Evaluation Note:** Accuracy, Precision, and Recall display **N/A** because single-image compression is a continuous pixel reconstruction "
         "(fidelity regression) task without binary diagnostic classification boundaries. Paired clinical diagnostic accuracy and classification flip rates "
-        "across patient cohorts are rigorously reported on the **Model Performance** and **Mini-Benchmark** pages. "
-        "The **Proposed Technique** row is highlighted in light blue."
+        "across patient cohorts are rigorously reported on the **Model Performance** and **Mini-Benchmark** pages."
     )
 
     # -------------------------------------------------------------------------
