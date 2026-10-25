@@ -96,6 +96,7 @@ class TechniqueResult:
     mse: Optional[float] = None
     compression_ratio: Optional[float] = None
     reconstruction_time: Optional[float] = None
+    encoding_time: Optional[float] = None
     original_bytes: Optional[int] = None
     compressed_bytes: Optional[int] = None
     recon_img: Optional[np.ndarray] = None
@@ -125,7 +126,7 @@ class TechniqueResult:
         r2_str = f"{self.r2_score:.4f}" if self.r2_score is not None else "—"
         ssim_str = f"{self.ssim:.4f}" if self.ssim is not None else "—"
         mse_str = f"{self.mse:.2f}" if self.mse is not None else "—"
-        cr_str = f"{self.compression_ratio:.2f}:1 ({self.compression_ratio:.2f}x)" if self.compression_ratio is not None else "—"
+        cr_str = f"{self.compression_ratio:.2f}:1" if self.compression_ratio is not None else "—"
         time_str = f"{self.reconstruction_time:.4f}" if self.reconstruction_time is not None else "—"
 
         return {
@@ -158,6 +159,7 @@ class TechniqueResult:
             "mse": self.mse,
             "compression_ratio": self.compression_ratio,
             "reconstruction_time": self.reconstruction_time,
+            "encoding_time": self.encoding_time,
             "original_bytes": self.original_bytes,
             "compressed_bytes": self.compressed_bytes,
             "status": self.status,
@@ -226,26 +228,35 @@ def evaluate_technique(
     try:
         comp_bytes: bytes
         recon_img: np.ndarray
+        enc_time: float
         recon_time: float
 
         if key == "dct":
             q = int(params.get("quality", 50))
+            t0 = time.perf_counter()
             comp_bytes, _ = dct_encode(img_uint8, quality=q)
-            # Isolated reconstruction time measurement
+            enc_time = time.perf_counter() - t0
+
             t0 = time.perf_counter()
             recon_img = dct_decode(comp_bytes)
             recon_time = time.perf_counter() - t0
 
         elif key == "dwt":
             q = int(params.get("quality", 50))
+            t0 = time.perf_counter()
             comp_bytes, _ = dwt_encode(img_uint8, quality=q)
+            enc_time = time.perf_counter() - t0
+
             t0 = time.perf_counter()
             recon_img = dwt_decode(comp_bytes)
             recon_time = time.perf_counter() - t0
 
         elif key == "jpeg":
             q = int(params.get("quality", 50))
+            t0 = time.perf_counter()
             comp_bytes, _ = jpeg_codec(img_uint8, quality=q)
+            enc_time = time.perf_counter() - t0
+
             t0 = time.perf_counter()
             with Image.open(io.BytesIO(comp_bytes)) as pil_im:
                 recon_img = np.array(pil_im, dtype=np.uint8)
@@ -253,7 +264,10 @@ def evaluate_technique(
 
         elif key == "jpeg2000":
             r = float(params.get("ratio", 10.0))
+            t0 = time.perf_counter()
             comp_bytes, _ = jpeg2000_codec(img_uint8, ratio=r)
+            enc_time = time.perf_counter() - t0
+
             t0 = time.perf_counter()
             with Image.open(io.BytesIO(comp_bytes)) as pil_im:
                 recon_img = np.array(pil_im, dtype=np.uint8)
@@ -261,7 +275,10 @@ def evaluate_technique(
 
         elif key == "hybrid":
             q = int(params.get("quality", 50))
+            t0 = time.perf_counter()
             comp_bytes, _ = hybrid_encode(img_uint8, quality=q)
+            enc_time = time.perf_counter() - t0
+
             t0 = time.perf_counter()
             recon_img = hybrid_decode(comp_bytes)
             recon_time = time.perf_counter() - t0
@@ -292,7 +309,10 @@ def evaluate_technique(
                 "bg_method": "dwt",
                 "fill": "inpaint",
             }
+            t0 = time.perf_counter()
             comp_bytes, _, _ = graded_encode(img_uint8, active_mask, graded_params)
+            enc_time = time.perf_counter() - t0
+
             t0 = time.perf_counter()
             recon_img = graded_decode(comp_bytes)
             recon_time = time.perf_counter() - t0
@@ -311,6 +331,7 @@ def evaluate_technique(
 
         res.compressed_bytes = comp_len
         res.recon_img = recon_img
+        res.encoding_time = max(0.0001, float(enc_time))
         res.reconstruction_time = max(0.0001, float(recon_time))
         res.compression_ratio = float(cr)
         res.r2_score = float(r2)

@@ -222,7 +222,7 @@ def main() -> None:
     band_px = st.sidebar.slider("Band Dilation Radius (pixels)", 1, 20, 8, key="comp_band_px")
     bg_q = st.sidebar.slider("Background Quality Factor", 10, 95, 50, key="comp_bg_q")
 
-    run_clicked = st.sidebar.button("🚀 Run Comparison", type="primary", use_container_width=True)
+    run_clicked = st.sidebar.button("🚀 Run Evaluation", type="primary", use_container_width=True)
 
     if img_uint8 is None:
         st.info("👈 Please select or upload a chest X-ray image in the sidebar to begin.")
@@ -251,19 +251,26 @@ def main() -> None:
         unsafe_allow_html=True,
     )
 
-    # State container for comparison results
-    if "comparison_results" not in st.session_state:
-        st.session_state["comparison_results"] = None
-        st.session_state["comparison_image_name"] = ""
+    comp_params = {
+        "quality": q_baseline,
+        "ratio": r_jp2k,
+        "delta_core": delta_core,
+        "delta_band": delta_band,
+        "band_px": band_px,
+        "bg_quality": bg_q,
+    }
 
-    # Check if image changed
-    if st.session_state.get("comparison_image_name") != selected_filename:
-        st.session_state["comparison_results"] = None
-        st.session_state["comparison_image_name"] = selected_filename
+    cache_key = f"{selected_filename}_{q_baseline}_{r_jp2k}_{delta_core}_{delta_band}_{band_px}_{bg_q}"
 
-    # Execute workflow when Run Comparison is clicked
-    if run_clicked:
-        with st.spinner("Executing real compression & reconstruction across all 6 techniques..."):
+    # Auto-execute evaluation if results are not yet present or if image/settings changed or if Run Evaluation was clicked
+    should_run = (
+        run_clicked
+        or (st.session_state.get("comparison_results") is None)
+        or (st.session_state.get("comparison_cache_key") != cache_key)
+    )
+
+    if should_run:
+        with st.spinner(f"Evaluating all 6 compression techniques on {selected_filename}..."):
             # 1. Obtain lung core mask for proposed technique
             mask_bool = None
             pred_mask_path = WORK_DIR / "pred" / "mask" / f"{Path(selected_filename).stem}.png"
@@ -282,33 +289,16 @@ def main() -> None:
                     mask_bool = np.zeros_like(img_uint8, dtype=bool)
                     mask_bool[int(0.15 * orig_h) : int(0.85 * orig_h), int(0.12 * orig_w) : int(0.88 * orig_w)] = True
 
-            comp_params = {
-                "quality": q_baseline,
-                "ratio": r_jp2k,
-                "delta_core": delta_core,
-                "delta_band": delta_band,
-                "band_px": band_px,
-                "bg_quality": bg_q,
-            }
-
-            progress_bar = st.progress(0.0)
-            status_text = st.empty()
-
-            def progress_cb(step_idx: int, total_steps: int, name: str) -> None:
-                progress_bar.progress(step_idx / total_steps)
-                status_text.text(f"Running technique {step_idx}/{total_steps}: {name}...")
-
             results = run_all_techniques(
                 img_uint8=img_uint8,
                 mask_bool=mask_bool,
                 params=comp_params,
-                progress_callback=progress_cb,
             )
 
-            progress_bar.empty()
-            status_text.empty()
             st.session_state["comparison_results"] = results
-            st.success("Comparison completed successfully with real measurements!")
+            st.session_state["comparison_cache_key"] = cache_key
+            st.session_state["comparison_image_name"] = selected_filename
+            st.toast(f"Evaluated 6 techniques on {selected_filename}!", icon="✅")
 
     results_list: Optional[list[TechniqueResult]] = st.session_state.get("comparison_results")
 
@@ -331,7 +321,7 @@ def main() -> None:
                 f"""<div class="metric-card">
                     <div class="metric-title">Best PSNR</div>
                     <div class="metric-val">{psnr_display}</div>
-                    <div class="metric-sub">{best_psnr.technique_name}</div>
+                    <div class="metric-sub">🏆 {best_psnr.technique_name}</div>
                 </div>""",
                 unsafe_allow_html=True,
             )
@@ -340,7 +330,7 @@ def main() -> None:
                 f"""<div class="metric-card">
                     <div class="metric-title">Best SSIM</div>
                     <div class="metric-val">{best_ssim.ssim:.4f}</div>
-                    <div class="metric-sub">{best_ssim.technique_name}</div>
+                    <div class="metric-sub">🏆 {best_ssim.technique_name}</div>
                 </div>""",
                 unsafe_allow_html=True,
             )
@@ -349,7 +339,7 @@ def main() -> None:
                 f"""<div class="metric-card">
                     <div class="metric-title">Lowest MSE</div>
                     <div class="metric-val">{lowest_mse.mse:.2f}</div>
-                    <div class="metric-sub">{lowest_mse.technique_name}</div>
+                    <div class="metric-sub">🏆 {lowest_mse.technique_name}</div>
                 </div>""",
                 unsafe_allow_html=True,
             )
@@ -357,8 +347,8 @@ def main() -> None:
             st.markdown(
                 f"""<div class="metric-card">
                     <div class="metric-title">Highest Ratio</div>
-                    <div class="metric-val">{highest_cr.compression_ratio:.2f}&times;</div>
-                    <div class="metric-sub">{highest_cr.technique_name}</div>
+                    <div class="metric-val">{highest_cr.compression_ratio:.2f}:1</div>
+                    <div class="metric-sub">🏆 {highest_cr.technique_name}</div>
                 </div>""",
                 unsafe_allow_html=True,
             )
@@ -367,7 +357,7 @@ def main() -> None:
                 f"""<div class="metric-card">
                     <div class="metric-title">Fastest Decode</div>
                     <div class="metric-val">{fastest_time.reconstruction_time:.4f}s</div>
-                    <div class="metric-sub">{fastest_time.technique_name}</div>
+                    <div class="metric-sub">🏆 {fastest_time.technique_name}</div>
                 </div>""",
                 unsafe_allow_html=True,
             )
