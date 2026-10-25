@@ -31,6 +31,7 @@ if str(SRC_DIR) not in sys.path:
 from medcomp.app_logic import (
     LoadedModels,
     classify,
+    classify_heldout,
     compress,
     diagnose,
     get_model_benchmark_metrics,
@@ -39,7 +40,8 @@ from medcomp.app_logic import (
     load_models,
     segment,
 )
-from medcomp.config import PROCESSED_IMAGES_DIR
+from medcomp.config import DATA_DIR, PROCESSED_IMAGES_DIR
+from medcomp.data_utils import resize_long_side
 
 # Page configuration
 st.set_page_config(
@@ -164,10 +166,26 @@ def main() -> None:
             except Exception as e:
                 st.sidebar.error(f"Error loading image: {e}")
 
-    # Dataset warning
+    # Dataset warning & manifest metadata lookup
+    dataset_manifest_row = None
+    manifest_csv = DATA_DIR / "manifest.csv"
+    if manifest_csv.is_file():
+        try:
+            m_df = pd.read_csv(manifest_csv)
+            stem_query = Path(selected_filename).stem
+            matched = m_df[m_df["stem"] == stem_query]
+            if not matched.empty:
+                dataset_manifest_row = matched.iloc[0]
+                is_dataset = True
+        except Exception:
+            pass
+
+    heldout_fold = int(dataset_manifest_row["fold"]) if dataset_manifest_row is not None else None
+    ground_truth_label = int(dataset_manifest_row["label"]) if dataset_manifest_row is not None else None
+
     if is_dataset:
-        st.sidebar.warning(
-            "⚠️ This image was used to train the models; results are for demonstration, not evaluation."
+        st.sidebar.info(
+            f"ℹ️ **Evaluation Protocol:** Out-of-fold inference using **Fold {heldout_fold}** model checkpoint (zero training leakage)."
         )
 
     if img_uint8 is None:
@@ -242,7 +260,7 @@ def main() -> None:
         return
 
     try:
-        diag_res = diagnose(img_uint8, comp_res["recon"], models=models)
+        diag_res = diagnose(img_uint8, comp_res["recon"], models=models, fold=heldout_fold)
     except Exception as e:
         st.error(f"Diagnosis inference failed: {e}")
         return
@@ -365,8 +383,24 @@ def main() -> None:
 
     # --- TAB 4: DIAGNOSIS ---
     with tab_diag:
-        st.subheader("Clinical TB Prediction & Flip Detection")
-        st.caption("Measures whether lossy compression triggers classification flips across the 0.5 decision threshold.")
+        st.subheader("Clinical TB Prediction & Diagnostic Fidelity")
+        st.caption("Measures whether compression triggers classification flips across the 0.50 decision threshold.")
+
+        threshold = 0.50
+
+        if dataset_manifest_row is not None:
+            label_text = "TB (Positive)" if ground_truth_label == 1 else "Normal (Negative)"
+            st.info(
+                f"📋 **Dataset Sample:** True ground-truth label is **{label_text}** (Source: {dataset_manifest_row['source']}).\n\n"
+                f"🔒 **Zero Training Leakage:** Predictions are evaluated using the **Fold {heldout_fold}** held-out model checkpoint, "
+                f"which was not trained on this image."
+            )
+        else:
+            st.warning(
+                "ℹ️ **Uploaded Image &mdash; No Ground-Truth Label Available:**\n\n"
+                "No label is available for this uploaded image, so accuracy, precision, and recall cannot be computed for a single image. "
+                "Please explore the **Model performance** and **Mini-benchmark** pages in the sidebar to view validated cohort metrics."
+            )
 
         dcol1, dcol2 = st.columns(2)
 
@@ -374,11 +408,21 @@ def main() -> None:
             st.markdown("##### ResNet18 (Steering Classifier)")
             p_ro = diag_res["resnet_prob_orig"]
             p_rd = diag_res["resnet_prob_dec"]
+            pred_ro_text = "TB suspected" if p_ro >= threshold else "Normal"
+            pred_rd_text = "TB suspected" if p_rd >= threshold else "Normal"
             diff_r = p_rd - p_ro
-            st.write(f"**Original Image:** `{p_ro:.4f}`")
-            st.write(f"**Reconstructed Image:** `{p_rd:.4f}` (Drift: `{diff_r:+.4f}`)")
+
+            st.write(f"**Original Image:** `{pred_ro_text}` (prob: `{p_ro:.4f}`, threshold: `{threshold:.2f}`)")
+            st.write(f"**Reconstructed Image:** `{pred_rd_text}` (prob: `{p_rd:.4f}`, threshold: `{threshold:.2f}`) &mdash; Drift: `{diff_r:+.4f}`")
+
+            if ground_truth_label is not None:
+                orig_correct = (p_ro >= threshold) == (ground_truth_label == 1)
+                dec_correct = (p_rd >= threshold) == (ground_truth_label == 1)
+                st.write(f"**Original Correctness:** {'✅ Correct' if orig_correct else '❌ Incorrect'}")
+                st.write(f"**Reconstruction Correctness:** {'✅ Correct' if dec_correct else '❌ Incorrect'}")
+
             if diag_res["flip_resnet"]:
-                st.error("⚠️ **CLASSIFIER DECISION FLIPPED!** Binary prediction changed across 0.5.")
+                st.error("⚠️ **CLASSIFIER DECISION FLIPPED!** Binary prediction changed across 0.50.")
             else:
                 st.success("✅ **Binary Decision Preserved** (Consistent with original).")
 
@@ -386,11 +430,21 @@ def main() -> None:
             st.markdown("##### EfficientNet-B0 (Independent Judge)")
             p_jo = diag_res["judge_prob_orig"]
             p_jd = diag_res["judge_prob_dec"]
+            pred_jo_text = "TB suspected" if p_jo >= threshold else "Normal"
+            pred_jd_text = "TB suspected" if p_jd >= threshold else "Normal"
             diff_j = p_jd - p_jo
-            st.write(f"**Original Image:** `{p_jo:.4f}`")
-            st.write(f"**Reconstructed Image:** `{p_jd:.4f}` (Drift: `{diff_j:+.4f}`)")
+
+            st.write(f"**Original Image:** `{pred_jo_text}` (prob: `{p_jo:.4f}`, threshold: `{threshold:.2f}`)")
+            st.write(f"**Reconstructed Image:** `{pred_jd_text}` (prob: `{p_jd:.4f}`, threshold: `{threshold:.2f}`) &mdash; Drift: `{diff_j:+.4f}`")
+
+            if ground_truth_label is not None:
+                orig_correct_j = (p_jo >= threshold) == (ground_truth_label == 1)
+                dec_correct_j = (p_jd >= threshold) == (ground_truth_label == 1)
+                st.write(f"**Original Correctness:** {'✅ Correct' if orig_correct_j else '❌ Incorrect'}")
+                st.write(f"**Reconstruction Correctness:** {'✅ Correct' if dec_correct_j else '❌ Incorrect'}")
+
             if diag_res["flip_judge"]:
-                st.error("⚠️ **JUDGE DECISION FLIPPED!** Binary prediction changed across 0.5.")
+                st.error("⚠️ **JUDGE DECISION FLIPPED!** Binary prediction changed across 0.50.")
             else:
                 st.success("✅ **Judge Decision Preserved** (Consistent with original).")
 

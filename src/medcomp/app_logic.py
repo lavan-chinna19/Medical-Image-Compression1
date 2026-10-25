@@ -255,6 +255,50 @@ def classify(
     }
 
 
+@torch.no_grad()
+def classify_heldout(
+    img_uint8: np.ndarray,
+    fold: int,
+    models: Optional[LoadedModels] = None,
+) -> dict[str, Any]:
+    """Compute TB binary classification probabilities using held-out fold models.
+
+    For an image belonging to fold k, the fold k checkpoint was trained strictly on
+    the remaining folds (folds != k), with fold k held out as the validation set.
+    Therefore, evaluating fold k images with fold k models guarantees zero training leakage.
+
+    Args:
+        img_uint8: 2D uint8 numpy array.
+        fold: Integer fold index (0 to 4).
+        models: Preloaded models container (if None, loaded via load_models()).
+
+    Returns:
+        dict[str, Any]:
+            - 'resnet_prob': float in [0, 1] from fold k ResNet18 model.
+            - 'judge_prob': float in [0, 1] from fold k EfficientNet-B0 model.
+            - 'fold': int, the fold index evaluated.
+    """
+    if not isinstance(img_uint8, np.ndarray) or img_uint8.ndim != 2 or img_uint8.dtype != np.uint8:
+        raise ValueError(f"Input must be a 2D uint8 numpy array, got {getattr(img_uint8, 'shape', None)}")
+    if not (0 <= fold < 5):
+        raise ValueError(f"Fold must be between 0 and 4, got {fold}")
+
+    if models is None:
+        models = load_models()
+
+    resnet_model = models.resnet_models[fold]
+    judge_model = models.judge_models[fold]
+
+    p_resnet = float(predict_proba(resnet_model, img_uint8, device=models.device)[0])
+    p_judge = float(predict_proba_judge(judge_model, img_uint8, device=models.device)[0])
+
+    return {
+        "resnet_prob": float(np.clip(p_resnet, 0.0, 1.0)),
+        "judge_prob": float(np.clip(p_judge, 0.0, 1.0)),
+        "fold": fold,
+    }
+
+
 def compress(
     img: np.ndarray,
     mask: Optional[np.ndarray],
@@ -443,16 +487,19 @@ def diagnose(
     original: np.ndarray,
     recon: np.ndarray,
     models: Optional[LoadedModels] = None,
+    fold: Optional[int] = None,
 ) -> dict[str, Any]:
     """Diagnose potential clinical decision flips across both classifier architectures.
 
-    Computes TB probabilities on both original and reconstructed images using
-    the 5-fold ensemble of ResNet18 and EfficientNet-B0.
+    Computes TB probabilities on both original and reconstructed images.
+    If fold is provided, uses strictly the held-out fold models (zero leakage);
+    otherwise uses the 5-fold ensemble average.
 
     Args:
         original: 2D uint8 original image.
         recon: 2D uint8 reconstructed image.
         models: Preloaded models container (if None, loaded via load_models()).
+        fold: Optional held-out fold index (0 to 4).
 
     Returns:
         dict[str, Any]:
@@ -466,8 +513,12 @@ def diagnose(
     if models is None:
         models = load_models()
 
-    c_orig = classify(original, models=models)
-    c_dec = classify(recon, models=models)
+    if fold is not None:
+        c_orig = classify_heldout(original, fold=fold, models=models)
+        c_dec = classify_heldout(recon, fold=fold, models=models)
+    else:
+        c_orig = classify(original, models=models)
+        c_dec = classify(recon, models=models)
 
     p_res_orig = c_orig["resnet_prob"]
     p_res_dec = c_dec["resnet_prob"]
